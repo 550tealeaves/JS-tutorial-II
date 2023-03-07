@@ -33,21 +33,22 @@ console.log(student.grade); //will equal "A"
 console.log(student.GPA); //will equal 4.0
 
 //create an array (which is a list or collection of objects - must use [] to enclose the objects)
-let students [
+
+let students = [
     {
         name: "Bob",
         grades: [88, 90, 80, 77, 89],
 
     },
-{
-    name: "Alicia",
-        grades: [100, 95, 92, 89, 97]
-},
-{
-    name: "Juan",
-        grades: [91, 90, 94, 86, 90]
-}
-];
+    {
+        name: "Alicia",
+            grades: [100, 95, 92, 89, 97]
+    },
+    {
+        name: "Juan",
+            grades: [91, 90, 94, 86, 90]
+    }
+    ];
 
 console.log(students); //should show the entire array (3 objects indexed 0,1,2)
 
