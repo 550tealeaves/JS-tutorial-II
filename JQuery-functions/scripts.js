@@ -1,3 +1,4 @@
+//JQuery 
 $("#noShow").hide(); //target the id noShow
 
 $("h1").html("These are awesome jokes.") // this will change the h1 w/o the id noShow to These are awesome jokes
@@ -11,16 +12,16 @@ $("#toggleJokes").click(function(){ //select toggleJokes id, on the click event,
 $("#changeHeader").click(function(){
     let response = prompt("Are these jokes the best ever? (yes/no)"); //click button and it asks prompt for user input
     if (response === "yes") { //if the response is yes (user inputs yes)
-        $("h1").html("The Best Jokes Ever!"); // if reponse is yes, then change header to The Best Jokes Ever
+        $("h1").html("The Best Jokes Ever!"); // if response is yes, then change header to The Best Jokes Ever
     }
     else if (response === "no") { //if user enters no
-        $("h1").html("The Worst Jokes Ever :-( "); //w/ a response of no, then the html will change to Worst jokes every
+        $("h1").html("The Worst Jokes Ever :-( "); //w/ a response of no, then the html will change to Worst jokes ever
     }
 });
 
 
 
-//console.log functions lecture
+//CONSOLE.LOG FUNCTIONS LECTURE
 
 let greet = "hi there";
 
