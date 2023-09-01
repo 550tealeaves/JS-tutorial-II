@@ -12,7 +12,7 @@ alert("You are " + userAge + " years old") //Will show an alert w/ user input co
 typeof userAge; //return integer
 
 
-// IF/ELSE statement - lets you react to user input
+// IF/ELSE STATEMENT - lets you react to user input
 //Use {} to enclose both the IF & ELSE code blocks 
 // if (condition) {
 //     //code runs if condition is TRUE
@@ -29,7 +29,8 @@ if (userAge >= 18) {
     alert("You are not legally old enough to vote in the US")
 }
 
-//ELSE IF statements - use as many as needed to check different conditions (goes before the else{} code block)
+//ELSE IF STATEMENTS
+//use as many as needed to check different conditions (goes before the else{} code block)
 //1st IF statement checks to see if condition is met (age >= 18) - if TRUE, then stops running and alerts the IF message
 //2nd ELSE IF runs when the IF is FALSE - now checks to see if this condition met (age >= 16) - if TRUE, stops running and alerts the ELSE IF message
 //If both IF/ELSE IF are FALSE, then runs the ELSE block b/c ELSE is opposite condition of IF & ELSE IF
@@ -42,4 +43,25 @@ if (userAge >= 18) {
     alert("You are not old enough to vote, but you are old enough to drive in the US")
 } else {
     alert("You are not legally old enough to vote or drive in the US")
+}
+
+
+//SWITCH STATEMENTS
+//Comprised of series of case statements
+//Switch statement checks each case statement as a condition - will run code block for case statement that is TRUE
+//Break statement breaks out of switch statement - if omitted, switch statement continues to execute code in next case statement even if they don't match case
+var difficulty = prompt('What difficulty would you like to play? 1-Easy, 2-Medium, 3-Hard');
+switch (difficulty) {
+    case "1":
+        alert("You have selected the Easy difficulty.");
+        break;
+    case "2":
+        alert("You have selected the Medium difficulty.");
+        break;
+    case "3":
+        alert("You have selected the Hard difficulty.");
+        break;
+    default:
+        alert("Invalid entry.");
+        break;
 }
