@@ -50,6 +50,7 @@ if (userAge >= 18) {
 //Comprised of series of case statements
 //Switch statement checks each case statement as a condition - will run code block for case statement that is TRUE
 //Break statement breaks out of switch statement - if omitted, switch statement continues to execute code in next case statement even if they don't match case
+
 var difficulty = prompt('What difficulty would you like to play? 1-Easy, 2-Medium, 3-Hard');
 switch (difficulty) {
     case "1":
