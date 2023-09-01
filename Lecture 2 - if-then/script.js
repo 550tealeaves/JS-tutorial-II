@@ -13,8 +13,33 @@ typeof userAge; //return integer
 
 
 // IF/ELSE statement - lets you react to user input
-if (condition) {
-    //code runs if condition is TRUE
+//Use {} to enclose both the IF & ELSE code blocks 
+// if (condition) {
+//     //code runs if condition is TRUE
+// } else {
+//     //code runs if condition is FALSE
+// }
+
+
+var userAge= prompt("How old are you?")
+userAge = parseInt(userAge);
+if (userAge >= 18) {
+    alert("You are legally old enough to vote in the US");
 } else {
-    //code runs if condition is FALSE
+    alert("You are not legally old enough to vote in the US")
+}
+
+//ELSE IF statements - use as many as needed to check different conditions (goes before the else{} code block)
+//1st IF statement checks to see if condition is met (age >= 18) - if TRUE, then stops running and alerts the IF message
+//2nd ELSE IF runs when the IF is FALSE - now checks to see if this condition met (age >= 16) - if TRUE, stops running and alerts the ELSE IF message
+//If both IF/ELSE IF are FALSE, then runs the ELSE block b/c ELSE is opposite condition of IF & ELSE IF
+
+var userAge = prompt("How old are you?")
+userAge = parseInt(userAge);
+if (userAge >= 18) {
+    alert("You are legally old enough to vote in the US");
+} else if (userAge >= 16) {
+    alert("You are not old enough to vote, but you are old enough to drive in the US")
+} else {
+    alert("You are not legally old enough to vote or drive in the US")
 }
