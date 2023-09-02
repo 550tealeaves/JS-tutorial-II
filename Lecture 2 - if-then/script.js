@@ -119,3 +119,15 @@ if (playerChoice == "1") { // here's their first choice #1
 else { //runs if you don't select 1 or 2 from the initial prompt
     alert("Invalid entry."); // invalid entry for first choices
 }
+
+
+//CHALLENGE 1
+var number = prompt("Enter a number") //will return a string
+number = parseInt(number) //converts string to number
+if (number % 2 == 0) { //if the remainder is 0, # is even 
+    alert("The number is even")
+} else {
+    alert("The number is odd") 
+}
+
+//CHALLENGE - Use switch statements to write a Choose your own adventure story that gives player 3 choices 
