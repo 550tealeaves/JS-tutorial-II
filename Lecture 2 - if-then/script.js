@@ -93,11 +93,11 @@ if (playerChoice == "1") {
 //Nested choose your own adventure
 if (playerChoice == "1") { // here's their first choice #1
     alert("Your hands are trembling as you approach the door. You pause a moment before it.");
-    playerChoice = prompt("Enter 1 to bravely open the door. Enter 2 to look through the door's peephole.");
-    if (playerChoice == "1") { //here's their second choice #1
+    playerChoice = prompt("Enter 1 to bravely open the door. Enter 2 to look through the door's peephole."); //Choose 1 or 2
+    if (playerChoice == "1") { //If you select 1 from above prompt
         alert("You swing the door open with courageous gusto.")
     }
-    else if (playerChoice == "2") { //here's their second choice #2
+    else if (playerChoice == "2") { //If you select 2 from playerCHoice = prompt
         alert("You cautiously look through the peephole. You make out a vague shape looming before the door.")
     }
     else {
@@ -106,16 +106,16 @@ if (playerChoice == "1") { // here's their first choice #1
 } else if (playerChoice == "2") { // here's their first choice #2
     alert("As you hide under the table you hear the doorknob rattling.");
     playerChoice = prompt("Enter 1 to stay hidden under the table. Enter 2 to get up and find a weapon to defend yourself with.");
-    if (playerChoice == "1") { //here's their second choice #1
+    if (playerChoice == "1") { //If you select #1 from above playerChoice prompt
         alert("Whatever is at the door has now begun banging on it loudly.");
     }
-    else if (playerChoice == "2") { //here's their second choice #2
+    else if (playerChoice == "2") { //If you select #2 from playerChoice prompt
         alert("You quickly but quietly get up and look around. You see a broom in the corner of the room and wield it mightily.");
     }
     else {
         alert("Invalid entry."); // invalid entry for second choices
     }
 }
-else {
+else { //runs if you don't select 1 or 2 from the initial prompt
     alert("Invalid entry."); // invalid entry for first choices
 }
