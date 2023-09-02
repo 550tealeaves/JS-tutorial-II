@@ -76,3 +76,46 @@ var playerName, playerChoice; //declare both variables in same "var" statement
 
 var playerName = prompt("What is your name?");
 alert("Welcome " + playerName + "!"); //will include player name in alert
+
+alert(playerName + ", you are the last person on Earth, sitting alone in a room. There is a knock on the door...What shall you do?");
+playerChoice = prompt("Enter 1 to cautiously approach the door, creeping slowly to the knob. Enter 2 to hide under the table, hoping any would-be intruder goes away. Enter 3 to climb out of the back window, scaling over the neighbor's fence to safety as you then run to call the police.");
+if (playerChoice == "1") {
+    alert("Your hands tremble as you tentatively approach the door. You pause a moment before it.");
+} else if (playerChoice == "2") {
+    alert("As you hide under the table, breathing rapidly, panic racing through your veins, you hear the doorknob rattling.");
+} else if (playerChoice == "3") {
+    alert("Your labored breathing is causing you to slow down. You forgot your inhaler. The footsteps approaching you are alarming.")
+} else {
+    alert("Invalid entry.")
+}
+
+
+//Nested choose your own adventure
+if (playerChoice == "1") { // here's their first choice #1
+    alert("Your hands are trembling as you approach the door. You pause a moment before it.");
+    playerChoice = prompt("Enter 1 to bravely open the door. Enter 2 to look through the door's peephole.");
+    if (playerChoice == "1") { //here's their second choice #1
+        alert("You swing the door open with courageous gusto.")
+    }
+    else if (playerChoice == "2") { //here's their second choice #2
+        alert("You cautiously look through the peephole. You make out a vague shape looming before the door.")
+    }
+    else {
+        alert("Invalid entry."); // invalid entry for second choices
+    }
+} else if (playerChoice == "2") { // here's their first choice #2
+    alert("As you hide under the table you hear the doorknob rattling.");
+    playerChoice = prompt("Enter 1 to stay hidden under the table. Enter 2 to get up and find a weapon to defend yourself with.");
+    if (playerChoice == "1") { //here's their second choice #1
+        alert("Whatever is at the door has now begun banging on it loudly.");
+    }
+    else if (playerChoice == "2") { //here's their second choice #2
+        alert("You quickly but quietly get up and look around. You see a broom in the corner of the room and wield it mightily.");
+    }
+    else {
+        alert("Invalid entry."); // invalid entry for second choices
+    }
+}
+else {
+    alert("Invalid entry."); // invalid entry for first choices
+}
