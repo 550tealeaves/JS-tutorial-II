@@ -66,3 +66,13 @@ switch (difficulty) {
         alert("Invalid entry.");
         break;
 }
+
+
+//CHOOSE OWN ADVENTURE
+//uSE prompt() for input & alert() for output
+//Use variable to track player choices and player name
+
+var playerName, playerChoice; //declare both variables in same "var" statement
+
+var playerName = prompt("What is your name?");
+alert("Welcome " + playerName + "!"); //will include player name in alert

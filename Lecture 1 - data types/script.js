@@ -1,4 +1,4 @@
-var book, author, isbn, description;
+var book, author, isbn, description; //can list all variables in 1 statement
 
 book = "Hunger";
 author = "Knut Hamsun";
