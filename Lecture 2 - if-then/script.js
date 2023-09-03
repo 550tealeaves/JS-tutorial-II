@@ -131,3 +131,22 @@ if (number % 2 == 0) { //if the remainder is 0, # is even
 }
 
 //CHALLENGE - Use switch statements to write a Choose your own adventure story that gives player 3 choices 
+
+var yourName = prompt("Enter your name");
+alert("Welcome, " + yourName + " prepare yourself");
+alert(yourName + ", everyone has vanished! Somehow 8 billion people disappeared without a trace. The quiet is eerie. What is the first thing you are going to do?");
+
+var survival = prompt("1 - Steal all the money from the banks, 2 - Take your car and speed down the highways - there is no traffic, 3 - Quiver in your boots because what happened to everyone and why were you left behind?");
+switch (survival) {
+    case "1":
+        alert("You swim in an ocean of liquid cash, but realize that a lot of stores with the goods are closed and there is no one to open them.")
+        break;
+    case "2":
+        alert("Driving down the I-495 is fun until you realize that there is no way to get gas if no trucks deliver the fuel nor are there any mechanics to repair your car when you inevitably ruin your transmission");
+        break;
+    case "3":
+        alert("You dissolve into a puddle of tears because everybody you know is gone. Humans are social creatures; you beg to go to the same place as everyone else.")
+    default:
+        alert("Sorry, that's not an option");
+        break;
+}
