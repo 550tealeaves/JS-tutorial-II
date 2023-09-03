@@ -121,7 +121,7 @@ else { //runs if you don't select 1 or 2 from the initial prompt
 }
 
 
-//CHALLENGE 1
+//CHALLENGE 1 - user inputs number and if even, it will alert that. If odd, it will alert that. 
 var number = prompt("Enter a number") //will return a string
 number = parseInt(number) //converts string to number
 if (number % 2 == 0) { //if the remainder is 0, # is even 
