@@ -133,7 +133,7 @@ if (number % 2 == 0) { //if the remainder is 0, # is even
 //CHALLENGE - Use switch statements to write a Choose your own adventure story that gives player 3 choices 
 
 var yourName = prompt("Enter your name");
-alert("Welcome, " + yourName + " prepare yourself");
+alert("Welcome, " + yourName + ", prepare yourself");
 alert(yourName + ", everyone has vanished! Somehow 8 billion people disappeared without a trace. The quiet is eerie. What is the first thing you are going to do?");
 
 var survival = prompt("1 - Steal all the money from the banks, 2 - Take your car and speed down the highways - there is no traffic, 3 - Quiver in your boots because what happened to everyone and why were you left behind?");
@@ -149,4 +149,78 @@ switch (survival) {
     default:
         alert("Sorry, that's not an option");
         break;
+}
+
+
+//Nested switch statements - https://www.youtube.com/watch?v=id0NcHy0QQc
+let selectedName = prompt("State your name: ");
+let interest = prompt("What do you like?");
+//Asks the above 2 prompts (name and what you like)
+//If you enter Sylvester and math, it will alert the 2 prompts: you are a welcome astronomer and then you are a mathematical genius...
+switch (selectedName) {
+    case 'Sylvester':
+        alert("You are welcome astronomer");
+        switch(interest) {
+            case 'math':
+                alert("You are a mathematical genius astronomer");
+                break;
+            case 'english':
+                alert("You are an articulate astronomer");
+                break;
+            default:
+                alert("You are an unremarkable astronomer")
+                break;
+        }
+        break; //need this break to prevent the case 'Victor' from running after the case 'Sylvester'
+    case 'Victor': // if this is entered, then display alert below
+        alert("You are welcome, we are keeping our good eye on you");
+        break;
+    default: //if neither Sylvester or Victor entered, will display alert below
+        alert("Your presence is an insult. Get out!")
+}
+
+
+
+//Nested Switch statements - https://www.geeksforgeeks.org/nested-switch-case/
+switch (n) {
+    // code to be executed if n = 1;
+    case 1:
+
+        // Nested switch
+        switch (num) {
+            // code to be executed if num = 10
+            case 10: 
+      alert("This is case #10");
+                break;
+
+            // code to be executed if num = 20
+            case 20: 
+      alert("This is case #20");
+                break;
+
+            // code to be executed if num = 30
+            case 30: 
+      alert("This is case #30");
+                break;
+
+            // code to be executed if num 
+            // doesn't match any cases
+            default:
+        }
+
+
+        break;
+
+    // code to be executed if n = 2;
+    case 2:
+    alert("This is another version of case #2");
+        break;
+
+    // code to be executed if n = 3;
+    case 3: 
+    alert("This is case #3");
+        break;
+
+    // code to be executed if n doesn't match any cases
+    default:
 }
