@@ -69,6 +69,15 @@ while (i < 5) { //as long as i is less than 5
     i++; //iterate by 1 each time loop runs
 }
 
+//INDEXOF() method - returns index of 1st occurrence of value in array. Returns -1 if value NOT found
+var exArray = ['dog', 'cat', 'bird', 'fish'];
+exArray.indexOf('dog'); //returns 0
+exArray.indexOf('cat'); //returns 1
+exArray.indexOf('bird'); //returns 2
+exArray.indexOf('fish'); //returns 3
+exArray.indexOf('cow'); //returns -1 b/c item not found in array
+
+
 //LIBRARY APP - app will sort, display and search for book titles
 
 //Start by creating an array of book titles
@@ -83,7 +92,7 @@ var bookTitles = [
 ]
 
 bookTitles.sort(); //sort the titles alphabetically
-var requestedTitles = ""; //set requestedTitles equal to empty string to request books from user
+var requestedTitle = ""; //set requestedTitles equal to empty string to request books from user
 var libRequests = [] //set libRequests equal to an empty array so all requests are stored
 
 //Add welcome message with instructions - use \n to create new lines after each statement
@@ -93,3 +102,33 @@ alert("Welcome to the library!\n\nPlease search for a book title when prompted. 
 //(1) - While loop - lets user search for books until they quit
 //(2) - If/else statement - checks if user input = "request" or "display" - which then performs an action
 //(3) - For loop - iterate through array of book titles and display each one
+//(4) - indexOf() method - check if book title entered is in library - does string entered match item in array bookTitles? If not, can alert user that it's not in library
+
+var response = ""; //store response in empty string
+while (response != 'quit') { //as long as response is NOT "quit"
+    response = prompt("Search for a book title or make a request by typing 'request: "); //check if user wants to make request
+    if (response == 'request') { //if the response entered is "request"
+        requestedTitle = prompt("What would you like to request? "); //will ask this prompt
+        libRequests.push(requestedTitle) //add the requested title to end of library requests array
+        alert("You have requested the following titles:" + libRequests + "."); //show the user their requests 
+    }
+    //Check if user wants to display all the titles
+    else if(response == 'display') { //if user enters "display"
+        for (var i = 0; i < bookTitles.length; i++) { //start at first item and go till the last item and iterate list by 1 title each time loop runs
+            alert(bookTitles[i]); //display all titles
+        }
+    }
+    //Otherwise, check if the book entered is in the library
+    else {
+        var bookIndex = bookTitles.indexOf(response); //assign the index position of bookTitles to variable bookIndex
+        if (response != 'quit') { //if user does not enter "quit"
+            //if indexOf returns -1, title entered is not in the library
+            if(bookIndex == -1) { //if bookIndex returns -1
+                alert("Sorry, we don't have that book. You can always request it.");
+            }
+            else {
+                alert("Yes, " + response + " is available to check out.");
+            }
+        }
+    }
+}
