@@ -46,9 +46,50 @@ alert(myArray); //1,2,3,4,5
 //LOOPS - use them to perform an action over each item in the array
 //FOR LOOPS - 3 parts, each separated with ";"
 // (1) i = initialization variable of loop - can be named anything but is called "i" conventionally
-// (2) Condition loop continues to execute until
-// (3) Incrementor
+// (2) Condition loop continues to execute until - i < myArray.length
+// (3) Incrementor - i++ means value increases by 1 each time
 var myArray = [1, 2, 'dog', true, [1, 2, 3]];
 for (var i = 0; i < myArray.length; i++) {
     alert(myArray[i]); //will alert each item in array 1 by 1
 }
+
+var num = 5;
+
+// looping from i = 1 to 5
+// in each iteration, i is increased by 1
+for (var i = 1; i <= num; i++) {
+    console.log(i);     // printing the value of i - 1,2,3,4,5
+}
+
+
+//WHILE LOOP - infinitely executes code until specific condition is met 
+var i = 0; //i starts at 0
+while (i < 5) { //as long as i is less than 5
+    alert(i); //display all the #s from 0-4
+    i++; //iterate by 1 each time loop runs
+}
+
+//LIBRARY APP - app will sort, display and search for book titles
+
+//Start by creating an array of book titles
+var bookTitles = [
+    'Too Loud a Solitude',
+    'Things Fall Apart',
+    'The Master and Margarita',
+    'The Three Body Problem',
+    'The Woman Destroyed',
+    'Beloved',
+    'The Tenant'
+]
+
+bookTitles.sort(); //sort the titles alphabetically
+var requestedTitles = ""; //set requestedTitles equal to empty string to request books from user
+var libRequests = [] //set libRequests equal to an empty array so all requests are stored
+
+//Add welcome message with instructions - use \n to create new lines after each statement
+alert("Welcome to the library!\n\nPlease search for a book title when prompted. \n\nType `request` at the prompt to make a request for a book.\n\nYou can also type `display` at the prompt to display all available book titles.\n\nType `quit` at the prompt to quit the program.");
+
+//Plan for coding
+//(1) - While loop - lets user search for books until they quit
+//(2) - If/else statement - checks if user input = "request" or "display" - which then performs an action
+//(3) - For loop - iterate through array of book titles and display each one
