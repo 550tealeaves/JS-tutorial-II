@@ -137,6 +137,7 @@ while (response != 'quit') { //as long as response is NOT "quit"
 }
 
 
+
 //CHALLENGE 1 - Write for loop that prints all #s 0-100 in console
 var number = 100
 for (var i = 0; i <= number; i++) { //start at 0 and iterate until you reach up to 100, incrementing by 1 each time
