@@ -113,7 +113,7 @@ while (response != 'quit') { //as long as response is NOT "quit"
     if (response == 'request') { //if the response entered is "request"
         requestedTitle = prompt("What would you like to request? "); //will ask this prompt
         libRequests.push(requestedTitle) //add the requested title to end of library requests array
-        alert("You have requested the following titles:" + libRequests + "."); //show the user their requests 
+        alert("You have requested the following titles: " + libRequests + "."); //show the user their requests 
     }
     //Check if user wants to display all the titles
     else if(response == 'display') { //if user enters "display"
