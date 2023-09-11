@@ -44,14 +44,17 @@ myArray.sort(); //sorts items numerically
 alert(myArray); //1,2,3,4,5
 
 //LOOPS - use them to perform an action over each item in the array
+
 //FOR LOOPS - 3 parts, each separated with ";"
 // (1) i = initialization variable of loop - can be named anything but is called "i" conventionally
 // (2) Condition loop continues to execute until - i < myArray.length
 // (3) Incrementor - i++ means value increases by 1 each time
+
 var myArray = [1, 2, 'dog', true, [1, 2, 3]];
 for (var i = 0; i < myArray.length; i++) {
     alert(myArray[i]); //will alert each item in array 1 by 1
 }
+
 
 var num = 5;
 
@@ -104,7 +107,7 @@ alert("Welcome to the library!\n\nPlease search for a book title when prompted. 
 //(3) - For loop - iterate through array of book titles and display each one
 //(4) - indexOf() method - check if book title entered is in library - does string entered match item in array bookTitles? If not, can alert user that it's not in library
 
-var response = ""; //store response in empty string
+var response = ""; //store user response in empty string
 while (response != 'quit') { //as long as response is NOT "quit"
     response = prompt("Search for a book title or make a request by typing 'request: "); //check if user wants to make request
     if (response == 'request') { //if the response entered is "request"
@@ -114,7 +117,7 @@ while (response != 'quit') { //as long as response is NOT "quit"
     }
     //Check if user wants to display all the titles
     else if(response == 'display') { //if user enters "display"
-        for (var i = 0; i < bookTitles.length; i++) { //start at first item and go till the last item and iterate list by 1 title each time loop runs
+        for (var i = 0; i < bookTitles.length; i++) { //start at first item and go till the last item and iterate list by 1 title each time loop runs - return all items
             alert(bookTitles[i]); //display all titles
         }
     }
@@ -132,3 +135,14 @@ while (response != 'quit') { //as long as response is NOT "quit"
         }
     }
 }
+
+
+//CHALLENGE 1 - Write for loop that prints all #s 0-100 in console
+var number = 100
+for (var i = 0; i <= number; i++) { //start at 0 and iterate until you reach up to 100, incrementing by 1 each time
+    console.log(i); //display results of i
+}
+
+
+
+//CHALLENGE 2 - Improve library app so parameters are not case-sensitive - use toLowerCase() method on both user response & book titles - store results in new variable
