@@ -2,7 +2,7 @@
 var myArray1 = [1, 2, 3, 4, 5];
 var myArray2 = ['a', 'b', 'c', 'd', 'e'];
 var myArray3 = [true, false, true, false]; 
-var myArray4 = [1, 2, 'dog', true, [1, 2, 3]]; 
+var myArray4 = [1, 2, 'dog', true, [1, 2, 3]]; //[1,2,3] = list
 
 //ACCESSING VALUES IN ARRAY - use the variable name + index position
 alert(myArray4[0]); // returns 1
@@ -52,7 +52,7 @@ alert(myArray); //1,2,3,4,5
 
 var myArray = [1, 2, 'dog', true, [1, 2, 3]];
 for (var i = 0; i < myArray.length; i++) {
-    alert(myArray[i]); //will alert each item in array 1 by 1
+    alert(myArray[i]); //will alert each item in array 1 by 1 - starts at myArray[0] = 1, myArray[1] = 2, myArray[2] = dog, myArray[3] = true, myArray[4] = [1,2,3]
 }
 
 
@@ -107,8 +107,8 @@ alert("Welcome to the library!\n\nPlease search for a book title when prompted. 
 //(3) - For loop - iterate through array of book titles and display each one
 //(4) - indexOf() method - check if book title entered is in library - does string entered match item in array bookTitles? If not, can alert user that it's not in library
 
-var response = ""; //store user response in empty string
-while (response != 'quit') { //as long as response is NOT "quit"
+var response = ""; //store user response in empty string - wait for response
+while (response != 'quit') { //as long as response is NOT "quit", while loop keeps running
     response = prompt("Search for a book title or make a request by typing 'request: "); //check if user wants to make request
     if (response == 'request') { //if the response entered is "request"
         requestedTitle = prompt("What would you like to request? "); //will ask this prompt
@@ -117,13 +117,13 @@ while (response != 'quit') { //as long as response is NOT "quit"
     }
     //Check if user wants to display all the titles
     else if(response == 'display') { //if user enters "display"
-        for (var i = 0; i < bookTitles.length; i++) { //start at first item and go till the last item and iterate list by 1 title each time loop runs - return all items
-            alert(bookTitles[i]); //display all titles
+        for (var i = 0; i < bookTitles.length; i++) { //start at first item (index[0]) and run till the last item and iterate list by 1 title each time loop runs - return all items
+            alert(bookTitles[i]); //display all titles - bookTitles[0], bookTitles[1], bookTitles[2], bookTitles[3], bookTitles[4], bookTitles[5], bookTitles[6]
         }
     }
     //Otherwise, check if the book entered is in the library
     else {
-        var bookIndex = bookTitles.indexOf(response); //assign the index position of bookTitles to variable bookIndex
+        var bookIndex = bookTitles.indexOf(response); //check to see if entry is in the array and assign the index position of response - EX: enter "Beloved" - bookTitles.indexOf(Beloved) = 5 & assigns that to var bookIndex
         if (response != 'quit') { //if user does not enter "quit"
             //if indexOf returns -1, title entered is not in the library
             if(bookIndex == -1) { //if bookIndex returns -1
@@ -138,10 +138,16 @@ while (response != 'quit') { //as long as response is NOT "quit"
 
 
 
-//CHALLENGE 1 - Write for loop that prints all #s 0-100 in console
+//CHALLENGE 1 - Write for loop that prints all EVEN #s 0-100 in console
 var number = 100
-for (var i = 0; i <= number; i++) { //start at 0 and iterate until you reach up to 100, incrementing by 1 each time
+for (var i = 0; i <= number; i+= 2) { //start at 0 and iterate until you reach up to 100, incrementing by 2 each time
     console.log(i); //display results of i
+}
+
+//Write a loop that prints all ODD #s 0-100 
+var number = 100
+for (var i = 1; i <= number; i += 2) { //have to start at 1 and increment by 2 
+    console.log(i);
 }
 
 
