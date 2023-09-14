@@ -109,7 +109,8 @@ alert("Welcome to the library!\n\nPlease search for a book title when prompted. 
 
 var response = ""; //store user response in empty string - wait for response
 while (response != 'quit') { //as long as response is NOT "quit", while loop keeps running
-    response = prompt("Search for a book title or make a request by typing 'request: "); //check if user wants to make request
+    response = prompt("Search for a book title or make a request by typing 'request: ").toLowerCase(); //check if user wants to make request
+    response = response.toLowerCase(); //accepts response as lowercase
     if (response == 'request') { //if the response entered is "request"
         requestedTitle = prompt("What would you like to request? "); //will ask this prompt
         libRequests.push(requestedTitle) //add the requested title to end of library requests array
