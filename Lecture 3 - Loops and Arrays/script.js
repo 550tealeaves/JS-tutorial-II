@@ -107,10 +107,17 @@ alert("Welcome to the library!\n\nPlease search for a book title when prompted. 
 //(3) - For loop - iterate through array of book titles and display each one
 //(4) - indexOf() method - check if book title entered is in library - does string entered match item in array bookTitles? If not, can alert user that it's not in library
 
+
+//Create a loop that accepts lowercase book titles and adds them to list
+var lowerCaseBookTitles = []; //set var to an empty array 
+for (var i= 0; i < bookTitles.length; i++) {  // start at index[0] = Too loud a Solitude, and loop through until you reach the full array length (length = 7), and increment by 1 - bookTitles[0], bookTitles[1], bookTitles[2], bookTitles[3], bookTitles[4], bookTitles[5], bookTitles[6] - 0-6 which is less than the array lenth of 7
+    var title = bookTitles[i].toLowerCase(); //do the loop and accept lowercase version of book titles and assign to var title
+    lowerCaseBookTitles.push(title); //add each new title at the end of the lowerCaseBookTitles array
+}
+
 var response = ""; //store user response in empty string - wait for response
 while (response != 'quit') { //as long as response is NOT "quit", while loop keeps running
-    response = prompt("Search for a book title or make a request by typing 'request: ").toLowerCase(); //check if user wants to make request
-    response = response.toLowerCase(); //accepts response as lowercase
+    response = prompt("Search for a book title or make a request by typing 'request: ").toLowerCase(); //check if user wants to make request - //response = response.toLowerCase(); is alternative way to write this
     if (response == 'request') { //if the response entered is "request"
         requestedTitle = prompt("What would you like to request? "); //will ask this prompt
         libRequests.push(requestedTitle) //add the requested title to end of library requests array
@@ -124,7 +131,7 @@ while (response != 'quit') { //as long as response is NOT "quit", while loop kee
     }
     //Otherwise, check if the book entered is in the library
     else {
-        var bookIndex = bookTitles.indexOf(response); //check to see if entry is in the array and assign the index position of response - EX: enter "Beloved" - bookTitles.indexOf(Beloved) = 5 & assigns that to var bookIndex
+        var bookIndex = lowerCaseBookTitles.indexOf(response); //check to see if entry is in the array and assign the index position of response - EX: enter "Beloved" - bookTitles.indexOf(Beloved) = 5 & assigns that to var bookIndex - replaced bookTitles with lowerCaseBookTitles so that it can accept titles in any case
         if (response != 'quit') { //if user does not enter "quit"
             //if indexOf returns -1, title entered is not in the library
             if(bookIndex == -1) { //if bookIndex returns -1
