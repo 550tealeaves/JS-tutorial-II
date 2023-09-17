@@ -221,9 +221,27 @@ convertGrades(students); //call function & pass students array
 // CHALLENGES
 // 1. Write a function that always returns the last item in whatever array is passed to it. (Hint: Refer to the Loops and Arrays lesson if you need a refresher on an easy way to get the last element.)
 
+myArray = [37, 2122, 'gerbil', false, ['happy', 'silly', 'dopey'], 0.5334]; //should this have been set to an empty array - myArray = [];
+//myArray = [];
+function lastItem() {
+    newArray = myArray[myArray.length-1]; //assigns the last item to new var
+    console.log(newArray); //shows the last item of array - 0.5334
+}
+
+lastItem(); //calls function
+
 
 
 // 2. Biff decided to drop your class after his unfortunate grades.Add a function to the Student Grades program that will remove Biff from the list of students using the pop method.
-//added students.pop(); inside function convertGrades, before the for loop
+//added students.pop(); inside function convertGrades, before the for loop - but not a function
 
 // 3. In the wild, you will often see what are called arrow functions.In modern JavaScript, arrow functions are a shorter way to write functions, and utilize the => (arrow) syntax.Check out this resource to learn about the syntax for arrow functions.Then, try to reformat the following traditional function using arrow function syntax instead:
+
+//ORIGINAL WAY 
+// function addNumbers(a, b) {
+//     return a + b;
+// }
+
+//ARROW FUNCTIONS
+let addNumbers = (a, b) => a + b;
+console.log(addNumbers(100, 42)); //142
