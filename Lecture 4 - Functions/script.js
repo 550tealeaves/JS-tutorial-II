@@ -193,6 +193,7 @@ printGrades(students); //will include all students & Biff + grades
 //Need a for loop 
 function convertGrades(students) { //pass students array as parameter
     //1st for loop 
+    students.pop(); //removes Biff and his grades from array
     for (let i = 0; i < students.length; i++) { //start at index = 0, as long as i is less than array length (7), increment by 1 each time loop runs - students[0], students[1]...
         let grades = students[i].grades; //assign indexes values to var grades
         let letterGrade = ""; //set this to empty string
@@ -209,15 +210,20 @@ function convertGrades(students) { //pass students array as parameter
             } else {
                 letterGrade += "F ";
             }
-        }
+        } 
         console.log(students[i].name + ": " + letterGrade); //will print out each name: and letter grades
-    }
+    } 
 }
+
 convertGrades(students); //call function & pass students array
+
 
 // CHALLENGES
 // 1. Write a function that always returns the last item in whatever array is passed to it. (Hint: Refer to the Loops and Arrays lesson if you need a refresher on an easy way to get the last element.)
 
+
+
 // 2. Biff decided to drop your class after his unfortunate grades.Add a function to the Student Grades program that will remove Biff from the list of students using the pop method.
+//added students.pop(); inside function convertGrades, before the for loop
 
 // 3. In the wild, you will often see what are called arrow functions.In modern JavaScript, arrow functions are a shorter way to write functions, and utilize the => (arrow) syntax.Check out this resource to learn about the syntax for arrow functions.Then, try to reformat the following traditional function using arrow function syntax instead:
