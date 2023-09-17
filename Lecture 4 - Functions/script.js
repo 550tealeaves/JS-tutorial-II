@@ -175,3 +175,49 @@ function printGrades(students) {
 }
 
 printGrades(students); // prints Bob: 88, 90, 80, 77, 89, Alicia: grades, Juan: grades
+
+//ADD NEW STUDENT TO THE OBJECT - need new function
+function addStudent(name, grades) {
+    let student = {
+        name: name,  //value will be whatever is passed to name parameter
+        grades: grades //value will be whatever is passed into grades parameter
+    };
+    students.push(student); //use .push() method to add new student object to end of students array
+}
+addStudent("Biff", [71, 80, 56, 65, 60]); //call function & pass Biff as name & the list of grades into grades parameter
+
+printGrades(students); //will include all students & Biff + grades
+
+
+//CONVERT GRADES TO LETTERS - create function that converts # grades to letters & prints them
+//Need a for loop 
+function convertGrades(students) { //pass students array as parameter
+    //1st for loop 
+    for (let i = 0; i < students.length; i++) { //start at index = 0, as long as i is less than array length (7), increment by 1 each time loop runs - students[0], students[1]...
+        let grades = students[i].grades; //assign indexes values to var grades
+        let letterGrade = ""; //set this to empty string
+        //2nd for loop
+        for (let j = 0; j < grades.length; j++){ //start at index - 0, as long as index is less than grades array length (7), increment by 1
+            if (grades[j] >= 90) { //for index of grades, if the grade >= 90, assign value of A
+                letterGrade += "A ";
+            } else if (grades[j] >= 80) {
+                letterGrade += "B ";
+            } else if (grades[j] >= 70) {
+                letterGrade += "C ";
+            } else if (grades[j] >= 60) {
+                letterGrade += "D ";
+            } else {
+                letterGrade += "F ";
+            }
+        }
+        console.log(students[i].name + ": " + letterGrade); //will print out each name: and letter grades
+    }
+}
+convertGrades(students); //call function & pass students array
+
+// CHALLENGES
+// 1. Write a function that always returns the last item in whatever array is passed to it. (Hint: Refer to the Loops and Arrays lesson if you need a refresher on an easy way to get the last element.)
+
+// 2. Biff decided to drop your class after his unfortunate grades.Add a function to the Student Grades program that will remove Biff from the list of students using the pop method.
+
+// 3. In the wild, you will often see what are called arrow functions.In modern JavaScript, arrow functions are a shorter way to write functions, and utilize the => (arrow) syntax.Check out this resource to learn about the syntax for arrow functions.Then, try to reformat the following traditional function using arrow function syntax instead:
