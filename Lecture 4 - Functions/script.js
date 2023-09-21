@@ -26,6 +26,9 @@ function add(num1, num2) {
 
 add(1, 2); //pass 1 & 2 as num1, & num2 respectively - will return 3
 
+console.log(add("1", 77)) //returns 177 - it concatenates the two (joins them)
+console.log(add('2', 'dog')) //returns 2dog - joins strings
+
 
 //Can create variable for the result of the function & work w/ variable
 function add(num1, num2) {
