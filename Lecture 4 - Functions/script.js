@@ -196,13 +196,13 @@ printGrades(students); //will include all students & Biff + grades
 //Need a for loop 
 function convertGrades(students) { //pass students array as parameter
     //1st for loop 
-    for (let i = 0; i < students.length; i++) { //start at index = 0, as long as i is less than array length (7), increment by 1 each time loop runs - students[0], students[1]...
+    for (let i = 0; i < students.length; i++) { //start at index = 0, as long as i is less than array length (7) (go through each student), increment by 1 each time loop runs - students[0], students[1]...
         let grades = students[i].grades; //assign indexes values to var grades
         let letterGrade = ""; //set this to empty string
-        //2nd for loop
-        for (let j = 0; j < grades.length; j++){ //start at index - 0, as long as index is less than grades array length (7), increment by 1
+        //2nd for loop - for loop w/in a for loop is common - can be any letter
+        for (let j = 0; j < grades.length; j++){ //go through each grade, increment by 1
             if (grades[j] >= 90) { //for index of grades, if the grade >= 90, assign value of A
-                letterGrade += "A ";
+                letterGrade += "A "; // += means that it loop goes through each grade & adds a letter based on the range
             } else if (grades[j] >= 80) {
                 letterGrade += "B ";
             } else if (grades[j] >= 70) {
@@ -222,16 +222,17 @@ convertGrades(students); //call function & pass students array
 
 //cHALLENGES
 // 2. Biff decided to drop your class after his unfortunate grades.Add a function to the Student Grades program that will remove Biff from the list of students using the pop method.
-function removeBiff(students){ //create function that accepts students array
+function removeStudent(students){ //create function that accepts students array  
     console.log(students.pop()); //shows Biff and his grades from array b/c last item
 }
 
-removeBiff(students); 
+removeStudent(students); 
 console.log(students); //shows the students without Biff/grades
 
 // CHALLENGES
 // 1. Write a function that always returns the last item in whatever array is passed to it. (Hint: Refer to the Loops and Arrays lesson if you need a refresher on an easy way to get the last element.)
 
+//MY ANSWER
 myArray = [37, 2122, 'gerbil', false, ['happy', 'silly', 'dopey'], 0.5334]; //should this have been set to an empty array - myArray = [];
 //myArray = [];
 function lastItem() {
@@ -242,6 +243,15 @@ function lastItem() {
 lastItem(); //calls function
 
 
+//CORRECT ANSWER - array can be anything - doesn't have to be called myArray
+
+var prarie = [1, 3, 5, 4, 'cheese', false]
+
+function returnLastItem(myArray) {
+    return myArray[myArray.length - 1]
+}
+
+console.log(returnLastItem(prarie)); // shows last item - false
 
 // 3. In the wild, you will often see what are called arrow functions.In modern JavaScript, arrow functions are a shorter way to write functions, and utilize the => (arrow) syntax.Check out this resource to learn about the syntax for arrow functions.Then, try to reformat the following traditional function using arrow function syntax instead:
 
@@ -251,5 +261,5 @@ lastItem(); //calls function
 // }
 
 //ARROW FUNCTIONS
-let addNumbers = (a, b) => a + b;
+let addNumbers = (a, b) => a + b; 
 console.log(addNumbers(100, 42)); //142
