@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(255, 239, 221);
+}
+
+#header {
+    color: rgb(86, 204, 73);
+    font-style: italic;
+    text-align: center;
+}
+
+div {
+    text-align: center;
+}
+
+img {
+    width: 50%;
+    border: 2px dashed skyblue;
+}
+
+h2{
+    text-transform: uppercase;
+    text-decoration: underline wavy fuchsia; /*creates a pink wavy underline*/
+}
+
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: rgb(64, 30, 255);
+}
+
+h3{
+    text-decoration: underline dotted purple; /*creates a purple dotted underline*/
+}
+
+a:hover{
+    color: chartreuse;
+}
+
+.links-edit{
+    text-decoration: none;
+    font-size: 20px;
+}
