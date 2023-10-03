@@ -41,3 +41,7 @@ p {
     width: 40%;
     margin: 70px auto;
 }
+
+a{
+    text-decoration: underline wavy;
+}
