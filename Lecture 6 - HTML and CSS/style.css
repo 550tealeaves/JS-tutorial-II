@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(228, 168, 232);
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 30px; 
+}
+
+.formatText{
+    color: rgb(123, 52, 24);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    white-space: pre-line; /*this controls how white space is handled - pre-line = keeps q/a lines separate*/
+}
