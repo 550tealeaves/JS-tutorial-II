@@ -114,11 +114,10 @@ if (response === "bad") {
 //(1) Created button in HTML
 //(2) Styled it in JS
 $("#changeStyle").click(function(){
-    $("body").toggle().css({
+    $("body").css({
         "background-color": "forestgreen",
-        "color": "olive",
         "font-style": "italic",
-        "font-size": "25px",
+        "font-size": "35px",
         "font-family": "Times New Roman', Times, serif",
         "border": "16px solid pink",
         "border-radius": "80px", 
