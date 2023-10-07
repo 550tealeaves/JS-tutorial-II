@@ -114,7 +114,7 @@ if (response === "bad") {
 //(1) Created button in HTML
 //(2) Styled it in JS
 $("#changeStyle").click(function(){
-    $("body").css({
+    $("body").toggle().css({
         "background-color": "forestgreen",
         "color": "olive",
         "font-style": "italic",
@@ -126,8 +126,8 @@ $("#changeStyle").click(function(){
         "text-transform": "capitalize",
         "box-shadow": "27px 52px 4px 2px rgba(221, 132, 55, .4)",
         "display": "flex",
-        "flex-direction": "row",
+        "flex-direction": "column",
         "justify-content": "left",
-        "align-items": "safe",
-    });
+        "align-items": "self-start"
+    }); 
 });
