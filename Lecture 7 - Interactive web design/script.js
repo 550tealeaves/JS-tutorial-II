@@ -44,7 +44,12 @@ $("footer").css("color", "red");
 $("footer").css("padding-bottom", "12px");
 
 
-//CLEANER & MORE READABLE CODE - use 1 .css() method and wrap all the properties w/in {} and separate w/ commas - similar to style.css
+//Style the image
+$("img").css("border-radius", "43px");
+$("img").css("box-shadow", "12px 12px 2px 1px rgba(0, 0, 255, .2)");
+
+//CLEANER & MORE READABLE CODE - use 1 .css() method and wrap all the properties w/in {} and separate w/ commas - similar to style.css 
+//Like writing an object
 $("#toggleJokes").css({
     "background-color": "cornflowerblue",
     "color": "white",
@@ -63,6 +68,12 @@ $("footer").css({
 });
 
 
+//CLEANER - Style the img
+$("img").css({
+    "border-radius": "43px",
+    "box-shadow": "12px 12px 2px 1px rgba(0, 0, 255, .2)"
+})
+
 
 //ADD INTERACTIVITY TO BUTTON to show/hide jokes section when clicked
 //Use .click() method to add click event
@@ -73,4 +84,16 @@ $("#toggleJokes").click(function(){
     $("#joke").toggle();
 });
 
+//(1) Create prompt asking if the jokes are good or bad
+//(2) If response === "bad", then change the header to "The Worst Jokes Ever"
+//(3) If response === "good", keep the header as is The best jokes ever 
+//(4) if neither response, let h1 say "bad jokes galore"
+let response = prompt("Are these jokes good or bad?");
+if (response === "bad") {
+    $("h1").html("The Worst Jokes Ever :-(");
+} else if (response === "good") {
+    $("h1").html("The Best Jokes Ever :-)");
+} else {
+    $("h1").html("Bad Jokes Galore");
+}
 

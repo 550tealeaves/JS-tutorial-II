@@ -1,5 +1,6 @@
 body {
     background-color: rgb(228, 168, 232);
+    border-radius: 30px;
 }
 
 h1 {
@@ -56,6 +57,11 @@ p {
 a{
     text-decoration: underline wavy;
     color: greenyellow;
+}
+
+/*Can style img in CSS or JS*/
+img{
+    border-radius: 65px;
 }
 
 /*ADDED FOOTER IN JS - CAN STYLE IT IN CSS */
