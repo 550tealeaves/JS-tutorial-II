@@ -135,7 +135,7 @@ $(document).ready(function(){
 
 
 
-//This code toggles the button between red and orange when clicked 
+// // This code toggles the button between red and orange when clicked 
 // jQuery(document).ready(function ($) {
 //     $('#changeStyle').on('click', function () {
 //         if ($(this).attr('data-click-state') == 1) {
