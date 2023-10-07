@@ -1,5 +1,3 @@
-alert("This project is going to be super duper awesome!");
-
 //Use jQuery methods to add functionality $("argument")
 //Can find more jQuery methods at http://api.jquery.com/
 
@@ -74,6 +72,21 @@ $("img").css({
     "box-shadow": "12px 12px 2px 1px rgba(0, 0, 255, .2)"
 })
 
+//CLEANER - Style the other button
+$("#changeStyle").css({
+    "background-color": "lightseagreen",
+    "color": "yellow",
+    "font-size": "15px",
+    "padding": "10px",
+    "border": "3px dashed chocolate",
+    "border-radius": "25px",
+    "margin": "30px auto",
+    "display": "flex",
+    "flex-direction": "column",
+    "justify-content": "center",
+    "align-items": "center"
+});
+
 
 //ADD INTERACTIVITY TO BUTTON to show/hide jokes section when clicked
 //Use .click() method to add click event
@@ -97,3 +110,24 @@ if (response === "bad") {
     $("h1").html("Bad Jokes Galore");
 }
 
+//Create a button that changes the overall color scheme (background-color, text color etc) of page
+//(1) Created button in HTML
+//(2) Styled it in JS
+$("#changeStyle").click(function(){
+    $("body").css({
+        "background-color": "forestgreen",
+        "color": "olive",
+        "font-style": "italic",
+        "font-size": "25px",
+        "font-family": "Times New Roman', Times, serif",
+        "border": "16px solid pink",
+        "border-radius": "80px", 
+        "text-decoration": "underline dashed 4px purple",
+        "text-transform": "capitalize",
+        "box-shadow": "27px 52px 4px 2px rgba(221, 132, 55, .4)",
+        "display": "flex",
+        "flex-direction": "row",
+        "justify-content": "left",
+        "align-items": "safe",
+    });
+});
