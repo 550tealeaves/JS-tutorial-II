@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(228, 168, 232);
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 30px; 
+}
+
+.formatText{
+    color: rgb(123, 52, 24);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    white-space: pre-line; /*this controls how white space is handled - pre-line = keeps q/a lines separate*/
+}
+
+#joke{
+    border: 5px solid rgb(223, 241, 58);
+    background-color: rgb(24, 47, 163);
+    display: flex; /*defines flexbox layout*/
+    /*set layout direction to column - flexbox can do rows or col*/
+    flex-direction: column;  /*sets the jokes one below the other evenly spaced*/
+    justify-content: center; /*will move joke id to center */
+    align-items: center;
+    width: 50%; /*sets width of flexbox to 50% of screen width*/
+    margin: 0 auto; /*container centered on screen (even margins on all sides*/
+    color: rgb(225, 251, 224);
+}
+
+#poem{
+    border: 8px solid rgb(44, 246, 253);
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: right; /*affects h2/h3*/
+    align-items: first baseline; /*affects h2/h3*/
+    width: 40%;
+    margin: 70px auto;
+}
+
+a{
+    text-decoration: underline wavy;
+}
