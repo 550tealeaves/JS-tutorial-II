@@ -7,6 +7,17 @@ h1 {
     font-weight: bold;
 }
 
+/*CAN ALSO STYLE BUTTON IN JS*/
+/* #toggleJokes{
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 20px;
+    border: 3px solid darkred;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+} */
+
 p {
     font-size: 30px; 
 }
@@ -44,4 +55,10 @@ p {
 
 a{
     text-decoration: underline wavy;
+    color: greenyellow;
 }
+
+/*ADDED FOOTER IN JS - CAN STYLE IT IN CSS */
+/* footer{
+    padding-bottom: 12px;
+} */
