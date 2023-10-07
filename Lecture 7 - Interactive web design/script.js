@@ -113,7 +113,8 @@ if (response === "bad") {
 //Create a button that changes the overall color scheme (background-color, text color etc) of page
 //(1) Created button in HTML
 //(2) Styled it in JS
-$("#changeStyle").click(function(){
+$(document).ready(function(){
+  $("#changeStyle").click(function(){
     $("body").css({
         "background-color": "forestgreen",
         "font-style": "italic",
@@ -128,5 +129,22 @@ $("#changeStyle").click(function(){
         "flex-direction": "column",
         "justify-content": "left",
         "align-items": "self-start"
-    }); 
+        });   
+    })
 });
+
+
+
+//This code toggles the button between red and orange when clicked 
+// jQuery(document).ready(function ($) {
+//     $('#changeStyle').on('click', function () {
+//         if ($(this).attr('data-click-state') == 1) {
+//             $(this).attr('data-click-state', 0);
+//             $(this).css('background-color', 'red')
+//         }
+//         else {
+//             $(this).attr('data-click-state', 1);
+//             $(this).css('background-color', 'orange')
+//         }
+//     });
+// });
