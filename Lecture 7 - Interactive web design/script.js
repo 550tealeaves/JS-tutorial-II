@@ -113,38 +113,45 @@ if (response === "bad") {
 //Create a button that changes the overall color scheme (background-color, text color etc) of page
 //(1) Created button in HTML
 //(2) Styled it in JS
-$(document).ready(function(){
-  $("#changeStyle").click(function(){
-    $("body").css({
-        "background-color": "forestgreen",
-        "font-style": "italic",
-        "font-size": "35px",
-        "font-family": "Times New Roman', Times, serif",
-        "border": "16px solid pink",
-        "border-radius": "80px", 
-        "text-decoration": "underline dashed 4px purple",
-        "text-transform": "capitalize",
-        "box-shadow": "27px 52px 4px 2px rgba(221, 132, 55, .4)",
-        "display": "flex",
-        "flex-direction": "column",
-        "justify-content": "left",
-        "align-items": "self-start"
-        });   
-    })
+// $(document).ready(function(){
+//   $("#changeStyle").click(function(){
+//     $("body").css({
+//         "background-color": "forestgreen",
+//         "font-style": "italic",
+//         "font-size": "35px",
+//         "font-family": "Times New Roman', Times, serif",
+//         "border": "16px solid pink",
+//         "border-radius": "80px", 
+//         "text-decoration": "underline dashed 4px purple",
+//         "text-transform": "capitalize",
+//         "box-shadow": "27px 52px 4px 2px rgba(221, 132, 55, .4)",
+//         "display": "flex",
+//         "flex-direction": "column",
+//         "justify-content": "left",
+//         "align-items": "self-start"
+//         });   
+//     })
+// });
+
+// click to change css style, and back to original
+$("#changeStyle").click(function () {
+    if ($("#joke").css("color") == "rgb(255, 230, 204)") {
+        $("#joke").css("color", "pink");
+    } else {
+        $("#joke").css("color", "rgb(255, 230, 204)");
+    }
 });
 
 
-
-// // This code toggles the button between red and orange when clicked 
-// jQuery(document).ready(function ($) {
-//     $('#changeStyle').on('click', function () {
-//         if ($(this).attr('data-click-state') == 1) {
-//             $(this).attr('data-click-state', 0);
-//             $(this).css('background-color', 'red')
-//         }
-//         else {
-//             $(this).attr('data-click-state', 1);
-//             $(this).css('background-color', 'orange')
-//         }
-//     });
+// // CHANGE CSS STYLE AND BACK TO ORIGINAL
+// //trying to figure out how ot change multiple css properties
+// $("#changeStyle").click(function () {
+//     if ($("#joke").css("color") == "rgb(255, 230, 204)") {
+//         $("#joke").css("color", "red");
+//     } else if ($("#joke").css("border") == "5px solid rgb(223, 241, 58)") {
+//         $("#joke").css("border", "16px solid pink");
+//     }  else {
+//         $("#joke").css("color", "rgb(255, 230, 204)");
+//         $("#joke").css("border") == "5px solid rgb(223, 241, 58)";
+//     }
 // });
