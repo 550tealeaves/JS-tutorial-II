@@ -134,9 +134,10 @@ if (response === "bad") {
 // });
 
 // click to change css style, and back to original
+// When you click the button element w/ ID changeStyle, then change element w/ ID joke from specific color, to magenta. If you click it again, then revert it back to original 
 $("#changeStyle").click(function () {
     if ($("#joke").css("color") == "rgb(255, 230, 204)") {
-        $("#joke").css("color", "pink");
+        $("#joke").css("color", "magenta");
     } else {
         $("#joke").css("color", "rgb(255, 230, 204)");
     }
