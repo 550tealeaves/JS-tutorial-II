@@ -6,7 +6,8 @@ let line1, line1Text; //declaring variables
 //1st line of poem broken up into words 
 //Each word = object w/ text property that designates each word in poem
 line1 = [{
-    text: "What"
+    text: "What",
+    info: "Anaphora: The repetition of a word or phrase at the beginning of (usually successive) lines. Ex: the use of What in the first 4 lines."
 }, {
     text: "hurrying"
 }, {
@@ -26,10 +27,18 @@ line1 = [{
 
 //Use .map() to build a new array out of another array
 //.join() returns array as string
-line1Text = line1.map(function (word) {
-    return word.text;
-}).join(" "); 
-$("#poem").html("<p>" + line1Text + "<br /></p>"); //target ID poem and add paragraph containing the returned word array spaced out
+// line1Text = line1.map(function (word) {
+//     return word.text;
+// }).join(" "); 
+
+
+line1Text = "<blockquote><p>"; // opening tags for blockquote and p, we close them in the loop below
+line1.map(function(word){
+    line1Text = line1Text + word.text + " "; //add word object's .text property & space
+})
+//Break line & close 2 tags
+line1Text = line1Text + "<br />(line 2 would go here)</p></blockquote>";
+$("#poem").html(line1Text); //target ID poem 
 
 
 
