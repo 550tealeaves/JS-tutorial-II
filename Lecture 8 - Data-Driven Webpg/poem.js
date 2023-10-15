@@ -24,13 +24,7 @@ line1 = [{
     text: 'night!'
 }
 ];
-
-//Use .map() to build a new array out of another array
-//.join() returns array as string
-// line1Text = line1.map(function (word) {
-//     return word.text;
-// }).join(" "); 
-
+console.log('line1', line1); //will show each word as an array of objects
 
 line1Text = "<blockquote><p>"; // opening tags for blockquote and p, we close them in the loop below
 line1.map(function(word){
@@ -40,30 +34,47 @@ line1.map(function(word){
     //Test to see if .info property exists
     if (word.info){
         //if it does, wrap wordString in <a> tag
-        wordString = "<a href='#'>" + wordString + "</a>";
+        //Add data-info attribute to the word - stores info property of clicked word
+        wordString = "<a href='#' data-info='" + word.info + "'>" + wordString + "</a>";
     }
     //Add wordString + space to the line1Text
     line1Text = line1Text + wordString + " "; 
-})
-$('#poem').html(line1Text);
-$("#poem a").click(function(){
-    //Define text & word that was clicked
-    let infoText, clickedWord;
-    clickedWord = $( this).text();
-    infoText = "<h2> You clicked on the word: " + clickedWord + "</h2>"
-    $('#info').html(infoText);
+});
+$("#poem").html(line1Text); //target ID poem
+$("#poem a").click(function () {
+    let infoText, clickedWord, clickedInfo; //variables to capture the info text and the clicked text/info
+    clickedWord = $(this).text(); // get the clicked word
+    // .data("info") looks for the data-info HTML attribute.
+    clickedInfo = $(this).data("info"); // get the info from the clicked word using .data
+    infoText = clickedInfo; // set the info text var to the clicked info
+    $("#info").html(infoText); // change the info div to the info text
+
+console.log('infoText', infoText); //infoText = clickedInfo so console 1
+console.log('clickedWord', clickedWord);
 });
 
 
 
-line1Text = line1Text + "<br />(line 2 would go here)</p></blockquote>";
-$("#poem").html(line1Text); //target ID poem 
 
 
 
+// $("#poem a").click(function(){
+//     //Define text & word that was clicked
+//     let infoText, clickedWord;
+//     clickedWord = $( this).text();
+//     infoText = "<h2> You clicked on the word: " + clickedWord + "</h2>"
+//     $('#info').html(infoText);
+// });
 
 
+// line1Text = line1Text + "<br />(line 2 would go here)</p></blockquote>";
 
+
+//Use .map() to build a new array out of another array
+//.join() returns array as string
+// line1Text = line1.map(function (word) {
+//     return word.text;
+// }).join(" "); 
 
 
 
@@ -73,17 +84,20 @@ $("#poem").html(line1Text); //target ID poem
 //Use .MAP() to iterate over each element and apply a function - creates new array w/o changing original
 //Use .map() to build a new array out of another array
 
-let testTextArray = [] //set it to empty array
-testTextArray = line1.map(function(word){ //test code
-    return word.text;
-})
+// let testTextArray = [] //set it to empty array
+// testTextArray = line1.map(function(word){ //test code
+//     return word.text;
+// })
+// //console.log(testTextArray);
 
 
-//.map() creates new array out of array of word objects. New array has only .text property (the words) of each object
+// //.map() creates new array out of array of word objects. New array has only .text property (the words) of each object
 
-//.JOIN() METHOD - returns array as string
-//This example will return the array of words as string, separated by space
-let testText = testTextArray.join(" "); //this is test code
+// //.JOIN() METHOD - returns array as string
+// //This example will return the array of words as string, separated by space
+// let testText = testTextArray.join(" "); //this is test code
+
+
 
 
 
