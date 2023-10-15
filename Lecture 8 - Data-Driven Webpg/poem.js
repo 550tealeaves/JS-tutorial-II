@@ -34,15 +34,40 @@ line1 = [{
 
 line1Text = "<blockquote><p>"; // opening tags for blockquote and p, we close them in the loop below
 line1.map(function(word){
-    line1Text = line1Text + word.text + " "; //add word object's .text property & space
+// Define var that will be entirety of a single word-sized chunk of info
+    let wordString; 
+    wordString = word.text
+    //Test to see if .info property exists
+    if (word.info){
+        //if it does, wrap wordString in <a> tag
+        wordString = "<a href='#'>" + wordString + "</a>";
+    }
+    //Add wordString + space to the line1Text
+    line1Text = line1Text + wordString + " "; 
 })
-//Break line & close 2 tags
+$('#poem').html(line1Text);
+$("#poem a").click(function(){
+    //Define text & word that was clicked
+    let infoText, clickedWord;
+    clickedWord = $( this).text();
+    infoText = "<h2> You clicked on the word: " + clickedWord + "</h2>"
+    $('#info').html(infoText);
+});
+
+
+
 line1Text = line1Text + "<br />(line 2 would go here)</p></blockquote>";
 $("#poem").html(line1Text); //target ID poem 
 
 
 
 
+
+
+
+
+
+//TEST CODE
 
 //.MAP() METHOD
 //Use .MAP() to iterate over each element and apply a function - creates new array w/o changing original
