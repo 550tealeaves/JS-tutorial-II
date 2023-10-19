@@ -27,6 +27,11 @@ line1 = [{
 console.log('line1', line1); //will show each word as an array of objects
 
 line1Text = "<blockquote><p>"; // opening tags for blockquote and p, we close them in the loop below
+
+//map method iterates over each element & applies function - creates new array w/o changing original
+//"word" defines the variable for each loop
+//word = "what", "hurrying", "day" (from the above array)
+//this is a loop
 line1.map(function(word){
 // Define var that will be entirety of a single word-sized chunk of info
     let wordString; 
@@ -38,11 +43,17 @@ line1.map(function(word){
         wordString = "<a href='#' data-info='" + word.info + "'>" + wordString + "</a>";
     }
     //Add wordString + space to the line1Text
+    //Like <blockquote><p>What hurrying human etc - space b/w each word
     line1Text = line1Text + wordString + " "; 
 });
-$("#poem").html(line1Text); //target ID poem
+
+//Close the tags
+line1Text = line1Text + "</p></blockquote>";
+
+$("#poem").html(line1Text); //target div element w/ ID poem and change HTML to contain a blockquote & p 
 $("#poem a").click(function () {
     let infoText, clickedWord, clickedInfo; //variables to capture the info text and the clicked text/info
+    //"this" is self-referential to an object 
     clickedWord = $(this).text(); // get the clicked word
     // .data("info") looks for the data-info HTML attribute.
     clickedInfo = $(this).data("info"); // get the info from the clicked word using .data
