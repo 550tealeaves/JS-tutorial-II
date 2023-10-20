@@ -1,3 +1,7 @@
+//JSON (JavaScript Object Notation) - lets you store data in structured way & use it in variety of ways
+//JSON has key-value pairs
+
+
 //Target ID info and add paragraph content to html
 $("#info").html("<p>The info will go here</p>"); 
 
