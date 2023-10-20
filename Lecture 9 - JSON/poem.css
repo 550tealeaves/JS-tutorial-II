@@ -10,17 +10,35 @@ background: linear-gradient(to right,
             pink);
 }
 
+/* .container{
+    aspect-ratio: 1 / 1;
+        animation: 10s linear 0s infinite alternate animating-multiple-properties;
+} */
+
+
 h1{
     font-family: 'Pattaya', sans-serif;
     color: rgb(138, 58, 130);
+        
 }
 
 #poem{
     font-weight: lighter;
 }
 
+/*add transition here - will change the font-size*/
 #info{
     border: 3px dashed  gold;
+    transition: font-size 2s 1s;
+    color: brown;
+}
+
+/*hover over & font-size/weight, border and color will change*/
+#info:hover{
+    font-size: 25px;
+    color: midnightblue;
+    font-weight: 600;
+    border: 8px solid darkred;
 }
 
 #poem a{
@@ -32,6 +50,3 @@ h1{
     color: mediumorchid;
 }
 
-/* #poem a:active{
-    color: darkgreen;
-} */
