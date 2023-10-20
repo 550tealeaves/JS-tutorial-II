@@ -1,0 +1,37 @@
+/*import font from google fonts (don't have to add as HTML link*/
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+
+body{
+    /* background: conic-gradient(lightpink, white, powderblue); */
+background: linear-gradient(to right,
+            white,
+            skyblue,
+            violet,
+            pink);
+}
+
+h1{
+    font-family: 'Pattaya', sans-serif;
+    color: rgb(138, 58, 130);
+}
+
+#poem{
+    font-weight: lighter;
+}
+
+#info{
+    border: 3px dashed  gold;
+}
+
+#poem a{
+    color:darkorange;
+    font-weight: 600;
+}
+
+#poem a:hover{
+    color: mediumorchid;
+}
+
+/* #poem a:active{
+    color: darkgreen;
+} */
