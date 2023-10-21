@@ -1,0 +1,30 @@
+body{
+    background-image: url("Walt-Whitman-1870.webp");
+    background-size: 630px; /*this resizes the background image*/
+    color: rgba(5, 38, 139, 0.991);
+    text-align: center;
+}
+
+a{
+    color: aquamarine;
+}
+
+a:hover{
+    color: fuchsia;
+}
+
+h1{
+    text-align: center;
+    color: indianred;
+}
+
+#poem,#info{
+    font-size: larger;
+}
+
+#info{
+    border: 2px solid brown;
+    border-radius: 70px;
+    box-shadow: 5px -7px 2px 6px rgba(128, 0, 128, 0.527);
+    color: rgb(110, 0, 189);
+}
