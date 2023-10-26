@@ -1,7 +1,7 @@
 {
     "lines": [
 [
-    {"text": "What", "info": "Anaphora: The repetition of a word or phrase at the beginning of (usually successive) lines. For example, the use of What in the first four lines."},
+    {"text": "What", "info": "Anaphora: The repetition of a word or phrase at the beginning of (usually successive) lines. For example, the use of What in the first four lines.", "wiki": "https://en.wikipedia.org/wiki/Anaphora"},
     {"text": "hurrying"},
     {"text": "human"},
     {"text": "tides,"},
@@ -22,7 +22,7 @@
 ],
 [
     {"text": "What", "info": "Alliteration: Can be seen when the poet repeats the same consonant sound at the beginning of multiple words. Here - What whirls"},
-    {"text": "whirls", "info": "Alliteration: Can be seen when the poet repeats the same consonant sound at the beginning of multiple words. Here - What whirls"},
+    {"text": "whirls", "info": "Alliteration: Can be seen when the poet repeats the same consonant sound at the beginning of multiple words. Here - What whirls", "wiki": "https://en.wikipedia.org/wiki/Alliteration"},
     {"text": "of"},
     {"text": "evil,"},
     {"text": "bliss"},
@@ -35,7 +35,7 @@
     {"text": "What"},
     {"text": "curious"},
     {"text": "questioning"},
-    {"text": "glances-", "info": "Caesura: Occurs when the poet inserts a pause in the middle of a line of text. This could be through the use of punctuation or a natural pause in the meter."},
+    {"text": "glances-", "info": "Caesura: Occurs when the poet inserts a pause in the middle of a line of text. This could be through the use of punctuation or a natural pause in the meter.", "wiki": "https://en.wikipedia.org/wiki/Caesura"},
     {"text": "glints"},
     {"text": "of"},
     {"text": "love!"}
@@ -46,7 +46,7 @@
     {"text": "scorn,"},
     {"text": "contempt,"},
     {"text": "hope,"},
-    {"text": "aspiration!", "info": "Accumulation: In this phrase we see an increasing crescendo of emotions to create rhetorical tension and affect."}
+    {"text": "aspiration!", "info": "Accumulation: In this phrase we see an increasing crescendo of emotions to create rhetorical tension and affect.", "wiki": "https://en.wikipedia.org/wiki/Accumulation"}
 ],
 [
     {"text": "Thou", "info": "Along with being an anaphora (see above) with the lines that follow, Whitman uses a kind of personification here, addressing Times Square as Thou."},
