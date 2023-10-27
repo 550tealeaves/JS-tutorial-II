@@ -1,0 +1,74 @@
+/*import font from google fonts (don't have to add as HTML link*/
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+
+body{
+    /* background: conic-gradient(lightpink, white, powderblue); */
+background: linear-gradient(to right,
+            white,
+            skyblue,
+            violet,
+            pink);
+}
+
+/* .container{
+    aspect-ratio: 1 / 1;
+        animation: 10s linear 0s infinite alternate animating-multiple-properties;
+} */
+
+
+h1{
+    font-family: 'Pattaya', sans-serif;
+    color: rgb(138, 58, 130);
+        
+}
+
+#poem{
+    font-weight: lighter;
+}
+
+/*add transition here - will change the font-size*/
+#info{
+    border: 3px dashed  gold;
+    transition: font-size 2s 1s;
+    color: brown;
+}
+
+/*hover over & font-size/weight, border and color will change*/
+#info:hover{
+    font-size: 25px;
+    color: midnightblue;
+    font-weight: 600;
+    border: 8px solid darkred;
+}
+
+/*add transition here - will change the font-size*/
+#wiki {
+    border: 3px dashed gold;
+    transition: text-align 2s 1s;
+    color: brown;
+}
+
+/*hover over & font-size/alignment/style/weight, border and color will change*/
+#wiki:hover {
+    font-size: 25px;
+    color: rgb(90, 18, 78);
+    text-align: center;
+    font-style: italic;
+    font-weight: 600;
+    border: 8px solid darkred;
+}
+
+
+#poem a{
+    color:darkorange;
+    font-weight: 600;
+}
+
+#poem a:hover{
+    color: mediumorchid;
+}
+
+
+#map{
+    height: 450px;
+}
