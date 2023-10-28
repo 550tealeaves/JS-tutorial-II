@@ -29,6 +29,8 @@ let grandCentral = L.marker([40.7525, -73.9773]).addTo(poemMap);
 //Add popup to marker using .bindPopup() method, which takes 1 parameter (text that will show up)
 timesSquare.bindPopup("<b>Times Square</b>");
 
+theGC.bindPopup("<b>CUNY Graduate Center</b>");
+
 vivThai.bindPopup("<b>Viv Thai - awesome duck and fried ice-cream</b>");
 
 grandCentral.bindPopup("<b>Grand Central Terminal is always crowded!</b>");
