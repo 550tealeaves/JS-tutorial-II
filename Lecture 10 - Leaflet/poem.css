@@ -10,11 +10,6 @@ background: linear-gradient(to right,
             pink);
 }
 
-/* .container{
-    aspect-ratio: 1 / 1;
-        animation: 10s linear 0s infinite alternate animating-multiple-properties;
-} */
-
 
 h1{
     font-family: 'Pattaya', sans-serif;
