@@ -2,6 +2,7 @@
 let poemMap; //declare a variable - it is now a object that is used to modify the map
 poemMap = L.map("map"); //L.map() = leaflet method that creates map w/in the div w/ ID map
 
+//TILE LAYER
 //Add tile layer using L.tileLayer() method - which takes 2 parameters (1) URL of tile layer source & (2) object w/ 2 properties (1) maxZoon - max zoom of map & (2) attribution - attribution = shows map source at bottom
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 18,
@@ -10,6 +11,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 poemMap.setView([40.7128, -74.0060], 16); //.setView() method takes 2 parameters (coords + zoom level)
 
+//MARKERS  
 //add Marker - adding Times Square - use L.marker() object - takes 1 parameter (coords) 
 let timesSquare = L.marker([40.7580, -73.9855]).addTo(poemMap);
 
@@ -19,11 +21,20 @@ let theGC = L.marker([40.7486, -73.9840]).addTo(poemMap);
 //Add marker for favorite restaurant
 let vivThai = L.marker([40.7629, -73.9897]).addTo(poemMap);
 
+//Add marker for train station
+let grandCentral = L.marker([40.7525, -73.9773]).addTo(poemMap);
+
+
+//POPUPS
 //Add popup to marker using .bindPopup() method, which takes 1 parameter (text that will show up)
 timesSquare.bindPopup("<b>Times Square</b>");
 
+vivThai.bindPopup("<b>Viv Thai - awesome duck and fried ice-cream</b>");
+
+grandCentral.bindPopup("<b>Grand Central Terminal is always crowded!</b>");
 
 
+//SHAPES & POLYLINES
 //Add circle using L.circle() method - takes 2 parameters (coordinates) & object w/ following properties (color, fillColor, fillOpacity, radius)
 let circle = L.circle([40.7580, -73.9855], {
     color: 'indigo',
@@ -54,7 +65,7 @@ let walkToStop = L.polyline([
 }).addTo(poemMap);
 
 
-
+//BIND POPUPS TO SHAPES
 //Can bind popups to shapes - add popup to line from Times Square to GC
 polyline.bindPopup("<b>Times Square to the Graduate Center</b>");
 
@@ -62,15 +73,19 @@ polyline.bindPopup("<b>Times Square to the Graduate Center</b>");
 circle.bindPopup("I'm a circle - fear me!");
 
 
+//COORDINATES
 //leaflet has diff methods to handle coords - .getLatLng()
 let latLng = timesSquare.getLatLng();
 console.log('lat', latLng.lat); //shows latitude 
 console.log('lon', latLng.lng);//shows longitude
 
+
 //Use .panTo() method to shift map's view (pan) to Times Square
 poemMap.panTo(timesSquare.getLatLng()); 
 //poemMap.panTo(latLng); - shorter way to write the above code
 
+
+//CLICK EVENT
 //Add click event that logs lat/lon of point the user clicks - use .on('click') method
 poemMap.on('click', function(e) {  //click on map, .on() method calls function
     const latLng = e.latlng; // Get the coordinates w/ the latlng property of the e object
