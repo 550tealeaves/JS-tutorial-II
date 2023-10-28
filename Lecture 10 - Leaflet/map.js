@@ -2,7 +2,7 @@
 let poemMap; //declare a variable - it is now a object that is used to modify the map
 poemMap = L.map("map"); //L.map() = leaflet method that creates map w/in the div w/ ID map
 
-//Add tile layer using L.tileLayer() method - which takes 2 parameters (1) URL of tile layer source & (2) object w/ 2 properties (1) maxZoon - max zoom of map & (2) attribution - attirbution = shows map source at bottom
+//Add tile layer using L.tileLayer() method - which takes 2 parameters (1) URL of tile layer source & (2) object w/ 2 properties (1) maxZoon - max zoom of map & (2) attribution - attribution = shows map source at bottom
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 18,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
