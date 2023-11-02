@@ -53,9 +53,6 @@ let polyline = L.polyline([
     color: 'brown'
 }).addTo(poemMap);
 
-//Add a popup on the polyline
-polyline.bindPopup("<b>Times Square to the Graduate Center</b>");
-
 
 //Create popup that shows how you get to Grand Central terminal
 // each coordinates represents a new line
