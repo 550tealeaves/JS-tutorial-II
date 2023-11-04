@@ -40,6 +40,33 @@ $('#pan-to-flatbush').click(function(){
     //find flatbush neighborhood property in data
     let flatbush = nyc.features.find(function(feature){  //use find() method to find the neighborhood - takes  a function that's called for each feature (neighborhood)
         return feature.properties.neighborhood === "Flatbush"; //returns the first neighborhood that matches the function
-    })
+    });
     console.log('flatbush', flatbush);
+    //find the coordinates of the flatbush property
+    //need to access feature.geometry.coordinates
+    let coordinates = nyc.features.find(function(feature){
+        return feature.properties.neighborhood === "Flatbush";
+    }).geometry.coordinates; 
+    console.log('coords', coordinates); //coordinates = array of arrays
+    nycMap.panTo(new L.LatLng(coordinates[0][0][1], coordinates[0][0][0]));
+});
+
+//LISTING THE NEIGHBORHOODS
+//Loop through dataset objects & pull neighborhood names to be on list
+
+//use .map() method to loop through data 
+let neighborhoods = nyc.features.map(function(feature){
+    return feature.properties.neighborhood; //returns array of neighborhood names
+}).filter(function (neighborhood) { //.filter() removes blank neighborhoods
+    return neighborhood !== ""; //return neighborhoods NOT equal to blank 
+}).sort(); //sorts names alphabetically
+console.log('neighborhoods', neighborhoods); //make sure right data is used
+
+//Show all neighborhoods in the neighborhoods div
+neighborhoods.forEach(function(neighborhood){
+    $("#neighborhoods").append("<a href='#'><li>" + neighborhood + "</li></a>");
+    //Display in columns
+    if (neighborhoods.indexOf(neighborhood) % 4 === 0) {
+        $("#neighborhoods").append("<br>");
+    }
 });
