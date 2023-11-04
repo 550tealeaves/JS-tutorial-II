@@ -1,4 +1,4 @@
-{
+const nyc = {
 "type": "FeatureCollection",
                                                                                 
 "features": [

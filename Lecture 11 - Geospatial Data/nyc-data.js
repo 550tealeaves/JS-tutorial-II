@@ -1,4 +1,3 @@
-let nyc = {}; //create new variable to store the JSON data
 //Call the map
 let nycMap;
 nycMap = L.map("map");
@@ -10,8 +9,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
 }).addTo(nycMap);
 //Can chain the different methods - could do L.tilelayer(.....{}).addTo(nycMap).setView([lat, lng], zoom);
 
-
 nycMap.setView([40.7128, -74.0060], 16);
 
 //Add data
-L.geoJSON(nyc).addTo(nycMap);
+// L.geoJSON(nyc).addTo(nycMap);
