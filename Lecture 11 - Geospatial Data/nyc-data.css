@@ -1,6 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&family=Yuji+Mai&display=swap');
+
 #map{
     height: 600px;
     width: 75%;
+}
+
+body{
+    background: linear-gradient(0.25turn,
+        #ec6fb3,
+        #a9b69f,
+        #289775);
+}
+
+h1{
+    font-family: 'Pattaya',
+        sans-serif;
+    font-family: 'Yuji Mai',
+        serif;
+    color: rgb(94, 92, 205);
+    font-style: italic;
 }
 
 #pan-to-flatbush{
@@ -41,3 +59,18 @@ button:active{
 #neighborhoods{
     columns: 100px 3;
 }
+
+#neighborhoods,a{
+    color: navy;
+}
+
+#neighborhoods,a:hover {
+    color: lightblue;
+    text-decoration: none;
+}
+
+#neighborhoods,a:active{
+    color: gold;
+
+}
+
