@@ -62,11 +62,23 @@ let neighborhoods = nyc.features.map(function(feature){
 }).sort(); //sorts names alphabetically
 console.log('neighborhoods', neighborhoods); //make sure right data is used
 
-//Show all neighborhoods in the neighborhoods div
-neighborhoods.forEach(function(neighborhood){
-    $("#neighborhoods").append("<a href='#'><li>" + neighborhood + "</li></a>");
+//SHOW ALL THE NEIGHBORHOODS IN THE DIV
+neighborhoods.forEach(function(neighborhood){ //forEach loops through neighborhoods array
+    $("#neighborhoods").append("<a href='#'><li>" + neighborhood + "</li></a>"); //append each neighborhood to the div w/ id #neighborhoods and surround them w/ a href & li = clickable list
     //Display in columns
-    if (neighborhoods.indexOf(neighborhood) % 4 === 0) {
-        $("#neighborhoods").append("<br>");
+    if (neighborhoods.indexOf(neighborhood) % 4 === 0) { //find index of neighborhood in array, see if the # divisible by 4
+        $("#neighborhoods").append("<br>"); //if # divisible by 4, then add <br> to separate the groups 
     }
+});
+
+//ADD CLICK EVENT TO EACH NEIGHBORHOOD TO PAN THE MAP TO THAT AREA
+$("#neighborhoods").on("click", "li", function(){ //target ID neighborhoods & if the li element is clicked
+    let neighborhoodText = $(this).text(); //get the text of neighborhood
+    let coordinates = nyc.features.find(function(feature){
+        return feature.properties.neighborhood === neighborhoodText; //check if text matches the neighborhood in data
+    }).geometry.coordinates; //get neighborhood coordinates
+    nycMap.panTo(new L.LatLng(coordinates[0][0][1], coordinates[0][0][0]));
+    nycMap.setZoom(16); //zoom in
+    L.marker(new L.LatLng(coordinates[0][0][1], coordinates[0][0][0])).bindPopup("<h3>" + neighborhoodText + "</h3>").addTo(nycMap); //add marker to neighborhood polygon based on its coordinates and then popup to the marker that lists the neighborhood name
+    // L.marker(new L.LatLng(coordinates[0][0][1], coordinates[0][0][0])).bindPopup("<h3>" + neighborhoodText + "</h3>").addTo(nycMap); alternative way to write this the L.marker(...).bindPopup(...).addTo(nycMap);
 });
