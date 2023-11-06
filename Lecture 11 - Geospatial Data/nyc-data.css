@@ -3,6 +3,10 @@
     width: 75%;
 }
 
+#pan-to-flatbush{
+    margin-right: 40px;
+}
+
 button{
     margin: 15px auto;
     border: 0;
