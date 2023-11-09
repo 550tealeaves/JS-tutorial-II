@@ -101,7 +101,7 @@ $('#pan-to-midtown').click(function () {
     nycMap.panTo(new L.LatLng(coordinates[0][0][1], coordinates[0][0][0]));
 });
 
-//Draw polylines that connect neighborhoods - not sure how to flip coordinates
+//2. Draw polylines that connect neighborhoods - not sure how to flip coordinates
 let coordinates = nyc.features.find(function(feature){
     return feature.properties.neighborhood === "Upper East Side";
 }).geometry.coordinates;
@@ -112,7 +112,7 @@ let polyline = L.polyline([
 }).addTo(nycMap);
 
 
-//Change color of Manhattan to red - error feature is undefined
+//3. Change color of Manhattan to red - error feature is undefined
 function changeColor(){
     if (feature.properties.borough === "Manhattan") {
         return {
