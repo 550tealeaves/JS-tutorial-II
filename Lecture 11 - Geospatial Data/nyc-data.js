@@ -197,7 +197,8 @@ let travelCoords = [[
     [
         -73.98064541676692,
         40.75919823476576
-    ]];
+    ],
+];
     console.log('travel', travelCoords); //returns array of 6 indices
 
     //function to reverse coordinates
