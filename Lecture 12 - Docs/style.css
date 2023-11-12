@@ -1,0 +1,10 @@
+.rectangle{
+    background-color: pink;
+    width: 120px;
+    height: 360px;
+    border: 11px solid navy;
+}
+
+p{
+    margin: 150px auto;
+}
