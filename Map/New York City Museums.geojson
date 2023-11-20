@@ -345,31 +345,13 @@
       "type": "Feature",
       "properties": {
         "city": "New York",
-        "name": "Chelsea Art Museum",
-        "tel": "(212) 255-0719",
-        "zip": "10011.0",
-        "url": "http://www.chelseaartmuseum.org/",
-        "address2": "",
-        "address1": "556 West 22nd Street"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.00731553374261,
-          40.74789760206738
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "city": "New York",
         "name": "Children's Museum of Manhattan",
-        "tel": "(212) 721-1234",
-        "zip": "10024.0",
+        "tel": "(212) 721-1223",
+        "zip": "10024",
         "url": "http://www.cmom.org/",
         "address2": "",
-        "address1": "212 West 83rd Street"
+        "address1": "212 West 83rd Street",
+        "summary": "Nurtures the next generation of creative global citizens as they learn through exploration and play"
       },
       "geometry": {
         "type": "Point",
@@ -385,10 +367,11 @@
         "city": "New York",
         "name": "Children's Museum of the Arts",
         "tel": "(212) 274-0986",
-        "zip": "10012.0",
-        "url": "http://cmany.org/intro.php?pn=home",
+        "zip": "10012",
+        "url": "http://cmany.org/",
         "address2": "",
-        "address1": "182 Lafayette Street"
+        "address1": "182 Lafayette Street",
+        "summary": "Changing the way people value our youngest artists and their aesthetic contributions to the world"
       },
       "geometry": {
         "type": "Point",
@@ -404,10 +387,11 @@
         "city": "New York",
         "name": "Cloisters",
         "tel": "(212) 923-3700",
-        "zip": "10040.0",
+        "zip": "10040",
         "url": "http://www.metmuseum.org/cloisters/",
         "address2": "",
-        "address1": "99 Margaret Corbin Drive"
+        "address1": "99 Margaret Corbin Drive",
+        "summary": "Specializes in European medieval art and architecture, with a focus on the Romanesque and Gothic periods"
       },
       "geometry": {
         "type": "Point",
@@ -423,10 +407,11 @@
         "city": "Brooklyn",
         "name": "Coney Island Museum",
         "tel": "(718) 372-5159",
-        "zip": "11224.0",
-        "url": "http://www.coneyisland.com/",
+        "zip": "11224",
+        "url": "http://www.coneyislandmuseum.org/",
         "address2": "",
-        "address1": "1208 Surf Ave"
+        "address1": "1208 Surf Ave",
+        "summary": "Keeping alive the memories and magic of NYC’s favorite seaside resort, since 1983. From art to artifacts, they are dedicated to preserving and promoting the unique history of the People’s Playground, and its many contributions to American popular culture"
       },
       "geometry": {
         "type": "Point",
@@ -440,12 +425,13 @@
       "type": "Feature",
       "properties": {
         "city": "New York",
-        "name": "Cooper-Hewitt, National Design Museum",
+        "name": "Cooper-Hewitt, Smithsonian Design Museum",
         "tel": "(212) 849-8400",
-        "zip": "10128.0",
+        "zip": "10128",
         "url": "http://www.cooperhewitt.org/",
         "address2": "",
-        "address1": "2 East 91st Street"
+        "address1": "2 East 91st Street",
+        "summary": "The only museum in the US devoted exclusively to historical and contemporary design and is the steward of one of the most diverse and comprehensive design collections in existence—more than 215,000 design objects spanning 30 centuries"
       },
       "geometry": {
         "type": "Point",
