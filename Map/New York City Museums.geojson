@@ -6,11 +6,12 @@
       "properties": {
         "city": "New York",
         "name": "Alexander Hamilton U.S. Custom House",
-        "tel": "(212) 514-3700",
-        "zip": "10004.0",
+        "tel": "(212) 668-2363",
+        "zip": "10004",
         "url": "http://www.oldnycustomhouse.gov/",
         "address2": "",
-        "address1": "1 Bowling Grn"
+        "address1": "1 Bowling Green",
+        "summary": "Home of the George Gustav Heye Center museum, the United States Bankruptcy Court for the Southern District of New York, and the New York regional offices of the National Archives"
       },
       "geometry": {
         "type": "Point",
@@ -26,10 +27,11 @@
         "city": "Staten Island",
         "name": "Alice Austen House Museum",
         "tel": "(718) 816-4506",
-        "zip": "10305.0",
+        "zip": "10305",
         "url": "http://www.aliceausten.org/",
         "address2": "",
-        "address1": "2 Hylan Blvd"
+        "address1": "2 Hylan Blvd",
+        "summary": "This is the former home of photographer, Alice Austen."
       },
       "geometry": {
         "type": "Point",
@@ -44,11 +46,12 @@
       "properties": {
         "city": "New York",
         "name": "American Folk Art Museum",
-        "tel": "(212) 265-1040",
-        "zip": "10019.0",
+        "tel": "(212) 595-9533",
+        "zip": "10023",
         "url": "http://www.folkartmuseum.org/",
         "address2": "",
-        "address1": "45 West 53rd Street"
+        "address1": "2 Lincoln Square",
+        "summary": "Features aesthetic appreciation of folk art and creative expressions of contemporary self-taught artists"
       },
       "geometry": {
         "type": "Point",
@@ -62,12 +65,13 @@
       "type": "Feature",
       "properties": {
         "city": "New York",
-        "name": "American Immigration History Center",
+        "name": "American Family Immigration History Center",
         "tel": "(212) 363-3200",
         "zip": "0.0",
         "url": "http://www.ellisisland.org/",
         "address2": "",
-        "address1": "Ellis Island"
+        "address1": "Ellis Island",
+        "summary": "You can search the collection of immigrant arrival records in the Ellis Island Archives"
       },
       "geometry": {
         "type": "Point",
@@ -83,10 +87,11 @@
         "city": "New York",
         "name": "American Museum of Natural History",
         "tel": "(212) 769-5100",
-        "zip": "10024.0",
+        "zip": "10024",
         "url": "http://www.amnh.org/",
         "address2": "",
-        "address1": "Central Park West at 79th Street"
+        "address1": "Central Park West at 79th Street",
+        "summary": "Contains about 35 million specimens of plants, animals, fungi, fossils, minerals, rocks, meteorites, human remains, and human cultural artifacts, as well as specialized collections for frozen tissue and genomic and astrophysical data"
       },
       "geometry": {
         "type": "Point",
@@ -102,10 +107,11 @@
         "city": "New York",
         "name": "American Numismatic Society",
         "tel": "(212) 571-4470",
-        "zip": "10013.0",
+        "zip": "10013",
         "url": "http://www.numismatics.org/",
         "address2": "11th Floor",
-        "address1": "75 Varick St"
+        "address1": "75 Varick St",
+        "summary": "Dedicated to the study and appreciation of numismatics and has assembled a permanent collection of more than 800,000 coins, monetary objects, medals, and other related items dating back to 2000 BCE"
       },
       "geometry": {
         "type": "Point",
@@ -121,10 +127,11 @@
         "city": "New York",
         "name": "Americas Society",
         "tel": "(212) 249-8950",
-        "zip": "10021.0",
+        "zip": "10021",
         "url": "http://as.americas-society.org/",
         "address2": "",
-        "address1": "680 Park Ave."
+        "address1": "680 Park Ave.",
+        "summary": "Dedicated to education, debate, and dialogue on the Americas"
       },
       "geometry": {
         "type": "Point",
@@ -140,10 +147,11 @@
         "city": "New York",
         "name": "Anne Frank Center USA",
         "tel": "(212) 431-7993",
-        "zip": "10012.0",
+        "zip": "10001",
         "url": "http://www.annefrank.com/",
-        "address2": "5th Floor",
-        "address1": "38 Crosby Street"
+        "address2": "Suite J220",
+        "address1": "244 Fifth Ave",
+        "summary": "Operates programs across the country, empowering emerging adults to build the informed and compassionate world Anne imagined in the pages of her diary" 
       },
       "geometry": {
         "type": "Point",
@@ -157,12 +165,13 @@
       "type": "Feature",
       "properties": {
         "city": "New York",
-        "name": "Asia Society",
+        "name": "Asia Society and Museum",
         "tel": "(212) 288-6400",
-        "zip": "10021.0",
+        "zip": "10021",
         "url": "http://www.asiasociety.org/",
         "address2": "",
-        "address1": "725 Park Avenue"
+        "address1": "725 Park Avenue",
+        "summary": "Dedicated to understanding Asia and its role in the world"
       },
       "geometry": {
         "type": "Point",
@@ -178,10 +187,11 @@
         "city": "New York",
         "name": "Audubon Terrace",
         "tel": "",
-        "zip": "10032.0",
+        "zip": "10032",
         "url": "http://www.washington-heights.us/history/archives/audubon_terrace_museum_group_102.html",
         "address2": "",
-        "address1": "Broadway at 155 Street"
+        "address1": "Broadway at 155 Street",
+        "summary": "Named for naturalist and artist John James Audubon, on whose former land the complex sits, Audubon Terrace was commissioned in 1907 by Archer Milton Huntington, the heir to the Southern Pacific Railroad fortune, a philanthropist and a Spanish scholar"
       },
       "geometry": {
         "type": "Point",
@@ -197,10 +207,11 @@
         "city": "Bronx",
         "name": "Bartow-Pell Mansion",
         "tel": "(718) 885-1461",
-        "zip": "10464.0",
+        "zip": "10464",
         "url": "http://bartowpellmansionmuseum.org/index.php",
         "address2": "Pelham Bay Park",
-        "address1": "895 Shore Road"
+        "address1": "895 Shore Road",
+        "summary": "Offers programs, exhibitions, and special events that speak to contemporary life, connect the past to the present, and cultivate an appreciation for the area’s historical, natural, and cultural resources."
       },
       "geometry": {
         "type": "Point",
