@@ -447,10 +447,11 @@
         "city": "New York",
         "name": "Dahesh Museum",
         "tel": "(212) 759-0606",
-        "zip": "10022.0",
+        "zip": "10013",
         "url": "http://www.daheshmuseum.org",
         "address2": "",
-        "address1": "580 Madison Avenue"
+        "address1": "145 6th Ave",
+        "summary": "Only museum in the USs devoted to the collection and exhibition of European academic art of the 19th and 20th century"
       },
       "geometry": {
         "type": "Point",
@@ -466,10 +467,11 @@
         "city": "New York",
         "name": "Dia at the Hispanic Society",
         "tel": "(845) 440-0100",
-        "zip": "10032.0",
-        "url": "http://www.diabeacon.org/",
+        "zip": "10032",
+        "url": "https://www.diaart.org/",
         "address2": "",
-        "address1": "613 West 155th Street"
+        "address1": "613 West 155th Street",
+        "summary": "Internationally renowned for initiating, supporting, presenting, and preserving art projects"
       },
       "geometry": {
         "type": "Point",
@@ -485,10 +487,11 @@
         "city": "New York",
         "name": "Dia Art Foundation",
         "tel": "(212) 989 5566",
-        "zip": "10011.0",
+        "zip": "10011",
         "url": "http://www.diacenter.org/",
         "address2": "",
-        "address1": "535 W 22nd Street"
+        "address1": "537 W 22nd Street",
+        "summary": "Dia maintains and operates a constellation of commissions, long-term installations, site-specific projects, and Land art, nationally and internationally. Free admission"
       },
       "geometry": {
         "type": "Point",
@@ -504,10 +507,11 @@
         "city": "New York",
         "name": "Drawing Center",
         "tel": "(212) 219-2166",
-        "zip": "10013.0",
-        "url": "http://www.drawingcenter.org/about_visit.cfm",
+        "zip": "10013",
+        "url": "http://www.drawingcenter.org/",
         "address2": "",
-        "address1": "35 Wooster St."
+        "address1": "35 Wooster St.",
+        "summary": "Explores the medium of drawing as primary, dynamic, and relevant to contemporary culture, the future of art, and creative thought."
       },
       "geometry": {
         "type": "Point",
@@ -523,10 +527,11 @@
         "city": "New York",
         "name": "Dyckman Farmhouse",
         "tel": "(212) 304-9422",
-        "zip": "10034.0",
+        "zip": "10034",
         "url": "http://www.dyckmanfarmhouse.org/",
         "address2": "",
-        "address1": "4881 Broadway"
+        "address1": "4881 Broadway",
+        "summary": "Built by William Dyckman in 1785, this is the oldest remaining farmhouse on Manhattan island, a vestige of New York City's rural past."
       },
       "geometry": {
         "type": "Point",
@@ -541,11 +546,12 @@
       "properties": {
         "city": "New York",
         "name": "East Village History Project",
-        "tel": "(212) 614-8702",
-        "zip": "10012.0",
+        "tel": "(347) 465-7767",
+        "zip": "10003",
         "url": "http://leshp.org/",
         "address2": "",
-        "address1": "308 Bowery"
+        "address1": "232 E 11th St",
+        "summary": "Provides educational programming to K-12 and university level students, public walking tours, media consultation, research services, and special events, lectures and presentations"
       },
       "geometry": {
         "type": "Point",
@@ -561,10 +567,11 @@
         "city": "New York",
         "name": "El Museo del Barrio",
         "tel": "(212) 831-7272",
-        "zip": "10029.0",
+        "zip": "10029",
         "url": "http://www.elmuseo.org/",
         "address2": "",
-        "address1": "1230 Fifth Ave"
+        "address1": "1230 Fifth Ave",
+        "summary": "Collects, preserves, exhibits and interprets the art and artifacts of Caribbean and Latin American cultures for posterity"
       },
       "geometry": {
         "type": "Point",
@@ -583,7 +590,8 @@
         "zip": "0.0",
         "url": "http://www.ellisisland.org/",
         "address2": "",
-        "address1": "Ellis Island"
+        "address1": "Ellis Island",
+        "summary": "Documents the rich story of American immigration through a carefully curated collection of photographs, heirlooms, and searchable historic records"
       },
       "geometry": {
         "type": "Point",
@@ -599,10 +607,11 @@
         "city": "New York",
         "name": "Fraunces Tavern Museum",
         "tel": "(212) 425-1778",
-        "zip": "10004.0",
+        "zip": "10004",
         "url": "http://www.frauncestavernmuseum.org/",
-        "address2": "",
-        "address1": "54 Pearl Street"
+        "address2": "2nd floor",
+        "address1": "54 Pearl Street",
+        "summary": "Preserves and interprets the history of the American Revolutionary era via the interpretation and preservation of the Museum's collections, landmarked buildings, and varied public programs that serve the community"
       },
       "geometry": {
         "type": "Point",
@@ -618,10 +627,11 @@
         "city": "New York",
         "name": "Frick Collection",
         "tel": "(212) 288-0700",
-        "zip": "10021.0",
+        "zip": "10021",
         "url": "http://www.frick.org/",
         "address2": "",
-        "address1": "1 E. 70th Street"
+        "address1": "945 Madison Avenue",
+        "summary": "Main location on 70th street is under renovation - A sequence of gallery spaces at Frick Madison that reflects the museum’s traditional emphasis on intimate encounters with both art and architecture and allows direct access to objects without the interference of vitrines or stanchions"
       },
       "geometry": {
         "type": "Point",
@@ -637,10 +647,11 @@
         "city": "Staten Island",
         "name": "Garibaldi-Meucci Museum",
         "tel": "(718) 442-1608",
-        "zip": "10305.0",
+        "zip": "10305",
         "url": "http://statenislandusa.com/pages/garibaldi.html",
         "address2": "",
-        "address1": "420 Tompkins Avenue"
+        "address1": "420 Tompkins Avenue",
+        "summary": "Former home to inventor and candle maker Antonio Meucci and later Italian revolutionary and political leader Giuseppe Garibaldi"
       },
       "geometry": {
         "type": "Point",
@@ -656,10 +667,11 @@
         "city": "New York",
         "name": "Goethe-Institut New York",
         "tel": "(212) 439-8700",
-        "zip": "10028.0",
+        "zip": "10003",
         "url": "http://www.goethe.de/ins/us/ney/deindex.htm",
         "address2": "",
-        "address1": "1014 Fifth Avenue"
+        "address1": "30 Irving Place",
+        "summary": "Germany's cultural institute that promotes knowledge of the German language and fosters international cultural cooperation"
       },
       "geometry": {
         "type": "Point",
@@ -675,10 +687,11 @@
         "city": "New York",
         "name": "Gracie Mansion",
         "tel": "(212)-570-4751",
-        "zip": "10128.0",
+        "zip": "10128",
         "url": "http://www.nyc.gov/html/om/html/gracie.html",
         "address2": "Carl Schurz Park",
-        "address1": "89th Street at East End Avenue"
+        "address1": "89th Street at East End Avenue",
+        "summary": "Official residence of NYC mayor"
       },
       "geometry": {
         "type": "Point",
