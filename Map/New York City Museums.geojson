@@ -227,10 +227,11 @@
         "city": "Queens",
         "name": "Bowne House",
         "tel": "(718) 359-0528",
-        "zip": "11354.0",
+        "zip": "11354",
         "url": "http://www.bownehouse.org/",
         "address2": "",
-        "address1": "37-01 Bowne Street"
+        "address1": "37-01 Bowne Street",
+        "summary": "Known for its role in establishing religious tolerance"
       },
       "geometry": {
         "type": "Point",
@@ -244,12 +245,13 @@
       "type": "Feature",
       "properties": {
         "city": "Bronx",
-        "name": "Bronx Historical Society & Musem",
+        "name": "Bronx County Historical Society",
         "tel": "(718) 881-8900",
-        "zip": "10467.0",
+        "zip": "10467",
         "url": "http://www.bronxhistoricalsociety.org/",
         "address2": "",
-        "address1": "3309 Bainbridge Ave"
+        "address1": "3309 Bainbridge Ave",
+        "summary": "Dedicated to the collection, preservation, documentation, and public interpretation of the history of The Bronx and lower Westchester County from its earliest human habitation by indigenous peoples through the present"
       },
       "geometry": {
         "type": "Point",
@@ -265,10 +267,11 @@
         "city": "Bronx",
         "name": "Bronx Museum of the Arts (BXMA)",
         "tel": "(718) 681-6000",
-        "zip": "10456.0",
+        "zip": "10456",
         "url": "http://www.bronxmuseum.org/",
         "address2": "",
-        "address1": "1040 Grand Concourse"
+        "address1": "1040 Grand Concourse",
+        "summary": "Contemporary art museum that connects diverse audiences to the urban experience through its permanent collection, special exhibitions, and education programs that strive to reflect the borough’s dynamic communities"
       },
       "geometry": {
         "type": "Point",
@@ -284,10 +287,11 @@
         "city": "Brooklyn",
         "name": "Brooklyn Children's Museum",
         "tel": "(718) 735-4400",
-        "zip": "11213.0",
+        "zip": "11213",
         "url": "http://www.brooklynkids.org/",
         "address2": "",
-        "address1": "145 Brooklyn Avenue"
+        "address1": "145 Brooklyn Avenue",
+        "summary": "Founded in 1899 as the world's first children's museum, Brooklyn Children's Museum (BCM) is New York City's largest cultural institution designed especially for families."
       },
       "geometry": {
         "type": "Point",
@@ -301,12 +305,13 @@
       "type": "Feature",
       "properties": {
         "city": "Brooklyn",
-        "name": "Brooklyn Historical Society",
+        "name": "Center for Brooklyn History",
         "tel": "(718) 222-4111",
-        "zip": "11201.0",
-        "url": "http://www.brooklynhistory.org/default/index.html",
+        "zip": "11201",
+        "url": "https://www.bklynlibrary.org/center-for-brooklyn-history",
         "address2": "",
-        "address1": "128 Pierrepont Street"
+        "address1": "128 Pierrepont Street",
+        "summary": "A trove of special collections, archives, ephemera, art exhibits and programs that bring the borough's rich history to all"
       },
       "geometry": {
         "type": "Point",
@@ -322,10 +327,11 @@
         "city": "Brooklyn",
         "name": "Brooklyn Museum",
         "tel": "(718) 638-5000",
-        "zip": "11238.0",
+        "zip": "11238",
         "url": "http://www.brooklynmuseum.org/",
         "address2": "",
-        "address1": "200 Eastern Parkway"
+        "address1": "200 Eastern Parkway",
+        "summary": "New York City's second largest art museum and contains an art collection with about 500,000 objects"
       },
       "geometry": {
         "type": "Point",
