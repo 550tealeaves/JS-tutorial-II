@@ -707,10 +707,11 @@
         "city": "Brooklyn",
         "name": "Harbor Defense Museum of Fort Hamilton",
         "tel": "(718) 630-4349",
-        "zip": "11252.0",
+        "zip": "11252",
         "url": "http://www.harbordefensemuseum.com/",
         "address2": "",
-        "address1": "230 Sheridan Loop"
+        "address1": "230 Sheridan Loop",
+        "summary": "Also known as The Caponier and located within the grounds of Fort Hamilton in Bay Ridge Brooklyn, this 19th-century fort is New York City's only military museum and one of only seventy military museums in the United States that is funded and operated by the Defense Department"
       },
       "geometry": {
         "type": "Point",
@@ -726,10 +727,11 @@
         "city": "New York",
         "name": "Hispanic Society of America Museum",
         "tel": "(212) 926-2234",
-        "zip": "10032.0",
+        "zip": "10032",
         "url": "http://www.hispanicsociety.org/",
         "address2": "",
-        "address1": "613 West 155th Street"
+        "address1": "613 West 155th Street",
+        "summary": "Hispanic Society of America operates a museum and reference library for the study of the arts and cultures of Spain and Portugal and their former colonies in Latin America, the Spanish East Indies, and Portuguese India" 
       },
       "geometry": {
         "type": "Point",
@@ -745,10 +747,11 @@
         "city": "Bronx",
         "name": "Holocaust Museum & Studies Center",
         "tel": "(718) 817-7700",
-        "zip": "10468.0",
+        "zip": "10468",
         "url": "http://www.holocauststudies.org/",
         "address2": "",
-        "address1": "75 W 205th St"
+        "address1": "75 W 205th St",
+        "summary": "Located in the Bronx High School of Science, this museum was inspired by the late Stuart Elenko, a teacher who brought an unusual level of passion to his course on the Holocaust "
       },
       "geometry": {
         "type": "Point",
@@ -764,10 +767,11 @@
         "city": "Brooklyn",
         "name": "Hudson Waterfront Museum and Showboat Barge",
         "tel": "(718) 624-4719",
-        "zip": "11231.0",
+        "zip": "11231",
         "url": "http://www.waterfrontmuseum.org/",
         "address2": "",
-        "address1": "290 Conover St."
+        "address1": "290 Conover St.",
+        "summary": "Founded in 1986 to provide programs in education and culture aboard an historic vessel and to advocate for and expand public waterfront access in the NY Metropolitan area"
       },
       "geometry": {
         "type": "Point",
@@ -783,10 +787,11 @@
         "city": "New York",
         "name": "International Center of Photography",
         "tel": "(212) 857-0000",
-        "zip": "10036.0",
+        "zip": "10002",
         "url": "http://www.icp.org/",
         "address2": "",
-        "address1": "1133 Avenue Of The Americas"
+        "address1": "79 Essex St",
+        "summary": " The world's leading institution dedicated to photography and visual culture. ICP offers an open forum for dialogue about the power of the image."
       },
       "geometry": {
         "type": "Point",
@@ -802,10 +807,11 @@
         "city": "New York",
         "name": "Intrepid Sea-Air-Space Museum",
         "tel": "(212) 245-0072",
-        "zip": "10036.0",
+        "zip": "10036",
         "url": "http://www.intrepidmuseum.org/",
         "address2": "",
-        "address1": "Pier 86 12th Ave. & 46th Street"
+        "address1": "Pier 86 12th Ave. & 46th Street",
+        "summary": "Experience the world's first space shuttle, a nuclear weapons-carrying submarine, dozens of military aircraft, a supersonic spy plane, and the world's fastest commercial airliner displayed in and around the legendary aircraft carrier, Intrepid"
       },
       "geometry": {
         "type": "Point",
@@ -821,10 +827,11 @@
         "city": "Long Island City",
         "name": "Isamu Noguchi Garden Museum",
         "tel": "(718) 204-7088",
-        "zip": "11106.0",
+        "zip": "11106",
         "url": "http://www.noguchi.org/",
         "address2": "",
-        "address1": "32-37 Vernon Boulevard"
+        "address1": "9-01 33rd Road (at Vernon Boulevard)",
+        "summary": "Esablished and designed in 1985 by famed sculptor, Isamu Noguchi, this museum has a serene outdoor sculpture garden, and many galleries that display Noguchi's work, along with photographs, drawings, and models from his career"
       },
       "geometry": {
         "type": "Point",
@@ -839,11 +846,12 @@
       "properties": {
         "city": "New York",
         "name": "Jackie Robinson Museum",
-        "tel": "(212) 290-8600",
-        "zip": "10013.0",
+        "tel": "(866) 454-3772",
+        "zip": "10013",
         "url": "http://www.jackierobinson.org/",
         "address2": "75 Varick Street 2nd Floor",
-        "address1": "1 Hudson Square"
+        "address1": "1 Hudson Square",
+        "summary": "Celebrates the enduring legacy of one of the most important Americans of the 20th century, chronicling his trailblazing achievements against the backdrop of US history"
       },
       "geometry": {
         "type": "Point",
@@ -859,10 +867,11 @@
         "city": "Staten Island",
         "name": "Jacques Marchais Center Museum of Tibetan Art",
         "tel": "(718) 987-3500",
-        "zip": "10306.0",
+        "zip": "10306",
         "url": "http://www.tibetanmuseum.org/",
         "address2": "",
-        "address1": "338 Lighthouse Avenue"
+        "address1": "338 Lighthouse Avenue",
+        "summary": "Museum built in the style of a hillside Tibetan monastery with 15th- to 20th-century Buddhist art."
       },
       "geometry": {
         "type": "Point",
@@ -877,11 +886,12 @@
       "properties": {
         "city": "New York",
         "name": "Jeffrey's Hook lighthouse (Little Red Lighthouse)",
-        "tel": "(212) 304-2365",
-        "zip": "10033.0",
+        "tel": "(212) 628-2345",
+        "zip": "10032",
         "url": "http://www.nycgovparks.org/sub_about/parks_divisions/historic_houses/hh_little_red_light.html",
         "address2": "",
-        "address1": "178th Street at the Hudson River"
+        "address1": "Fort Washington Park, Hudson River Greenway,",
+        "summary": "Made famous by the 1942 children's book The Little Red Lighthouse and The Great Gray Bridge, written by Hildegarde Swift and illustrated by Lynd Ward"
       },
       "geometry": {
         "type": "Point",
@@ -897,10 +907,11 @@
         "city": "New York",
         "name": "Jewish Museum",
         "tel": "(212) 423-3200",
-        "zip": "10128.0",
-        "url": "http://www.thejewishmuseum.org/index.php",
+        "zip": "10128",
+        "url": "http://www.thejewishmuseum.org/",
         "address2": "",
-        "address1": "1109 Fifth Ave"
+        "address1": "1109 Fifth Ave",
+        "summary": "Museum at the intersection of art and Jewish culture for people of all backgrounds"
       },
       "geometry": {
         "type": "Point",
@@ -916,10 +927,11 @@
         "city": "New York",
         "name": "John J. Harvey Fireboat",
         "tel": "",
-        "zip": "10001.0",
+        "zip": "10001",
         "url": "http://www.fireboat.org/",
         "address2": "",
-        "address1": "Pier 66 at West 26th Street"
+        "address1": "Pier 66 at West 26th Street",
+        "summary": "a fireboat formerly of the New York City Fire Department (FDNY) in New York City, famed for returning to service following the September 11, 2001 attacks.[2][3] She is one of the most powerful fireboats ever built, capable of pumping up to 18,000 gallons of water a minute."
       },
       "geometry": {
         "type": "Point",
@@ -935,10 +947,11 @@
         "city": "Queens",
         "name": "King Manor Museum",
         "tel": "(718) 206-0545",
-        "zip": "11432.0",
+        "zip": "11432",
         "url": "http://www.kingmanor.org/",
         "address2": "",
-        "address1": "152-01 Jamaica Avenue"
+        "address1": "150-03 Jamaica Ave",
+        "summary": "Interprets founding father Rufus King’s political legacy and antislavery history to teach critical thinking for a healthier democracy."
       },
       "geometry": {
         "type": "Point",
@@ -951,13 +964,14 @@
     {
       "type": "Feature",
       "properties": {
-        "city": "Queens",
+        "city": "Flushing",
         "name": "Kingsland Homestead",
         "tel": "(718) 206-0545",
-        "zip": "11354.0",
+        "zip": "11354",
         "url": "http://www.queenshistoricalsociety.org/kingsland.html",
         "address2": "",
-        "address1": "143-35 37th Avenue"
+        "address1": "143-35 37th Avenue",
+        "summary": "Built between 1774 and 1785, the Kingsland Homestead is one of the earliest surviving examples of residential style construction common throughout Long Island, specifically Queens, in the late 18th and 19th centuries. The design exhibits a blend of Dutch and English features"
       },
       "geometry": {
         "type": "Point",
@@ -970,13 +984,14 @@
     {
       "type": "Feature",
       "properties": {
-        "city": "Queens",
+        "city": "Long Island City",
         "name": "LaGuardia and Wagner Archives",
         "tel": "(718) 482-5065",
-        "zip": "11101.0",
-        "url": "http://www.laguardiawagnerarchive.lagcc.cuny.edu/defaultc.htm",
+        "zip": "11101",
+        "url": "https://www.laguardiawagnerarchive.lagcc.cuny.edu/pages/about.aspx",
         "address2": "Fiorello H. LaGuardia Community College/CUNY Room E-238",
-        "address1": "31-10 Thomson Ave."
+        "address1": "31-10 Thomson Ave",
+        "summary": "Established in 1982 to collect, preserve, and make available primary materials documenting the social and political history of New York City, with an emphasis on the mayoralty and the borough of Queens."
       },
       "geometry": {
         "type": "Point",
@@ -992,10 +1007,11 @@
         "city": "Brooklyn",
         "name": "Lefferts Historic House",
         "tel": "(718) 789-2822",
-        "zip": "11215.0",
-        "url": "http://www.prospectpark.org/visit/places/lefferts",
+        "zip": "11225",
+        "url": "https://www.prospectpark.org/visit-the-park/places-to-go/lefferts-historic-house/",
         "address2": "Flatbush and Ocean Avenues and Empire Boulevard",
-        "address1": "Prospect Park Willink Entrance"
+        "address1": "452 Flatbush Ave (Prospect Park Willink Entrance)",
+        "summary": "18th-century Flatbush farmhouse where visitors explore stories of resistance and resilience by the Indigenous people of Lenapehoking and Africans enslaved by the Lefferts and their relevance to diverse communities today "
       },
       "geometry": {
         "type": "Point",
