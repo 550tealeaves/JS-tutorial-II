@@ -1746,11 +1746,12 @@
       "properties": {
         "city": "Staten Island",
         "name": "Sandy Ground Historical Society",
-        "tel": "(718) 317-5796",
-        "zip": "0.0",
-        "url": "http://statenislandusa.com/pages/sandy_ground.html",
+        "tel": "(347) 983-2231",
+        "zip": "10309",
+        "url": "https://thesandygroundhistoricalsociety.org/",
         "address2": "",
-        "address1": "1538 Woodrow Road"
+        "address1": "1538 Woodrow Road",
+        "summary": "As one of the stops on the Underground Railroad Sandy Ground is the oldest free black settlement in the nation with the descendants of the founding settlers still living in the community."
       },
       "geometry": {
         "type": "Point",
@@ -1765,11 +1766,12 @@
       "properties": {
         "city": "New York",
         "name": "Scandinavia House: The Nordic Center in America",
-        "tel": "(212) 879-9779",
-        "zip": "10016.0",
+        "tel": "(212) 779-3587",
+        "zip": "10016",
         "url": "http://www.scandinaviahouse.org/",
         "address2": "",
-        "address1": "58 Park Ave."
+        "address1": "58 Park Ave.",
+        "summary": "As the leading center for Nordic culture in the US, it offers a wide range of programs that illuminate the culture and vitality of Denmark, Finland, Iceland, Norway, and Sweden."
       },
       "geometry": {
         "type": "Point",
@@ -1784,11 +1786,12 @@
       "properties": {
         "city": "New York",
         "name": "Schomburg Center for Research in Black Culture",
-        "tel": "(212) 491-2200",
-        "zip": "10037.0",
-        "url": "http://www.nypl.org/research/sc/sc.html",
+        "tel": "(212) 491-2265",
+        "zip": "10037",
+        "url": "https://www.nypl.org/locations/schomburg",
         "address2": "",
-        "address1": "515 Malcolm X Boulevard"
+        "address1": "515 Malcolm X Boulevard",
+        "summary": "This is a research library of the New York Public Library (NYPL) and an archive repository for information on people of African descent worldwide."
       },
       "geometry": {
         "type": "Point",
@@ -1804,10 +1807,11 @@
         "city": "New York",
         "name": "School of Visual Arts Museum",
         "tel": "(212) 592-2145",
-        "zip": "10010.0",
-        "url": "http://www.schoolofvisualarts.edu/sa/index.jsp?sid0=201&page_id=482&event_id=865",
+        "zip": "10010",
+        "url": "http://www.sva.edu/about/exhibitions",
         "address2": "",
-        "address1": "209 E. 23rd St."
+        "address1": "601 W 26th St.",
+        "summary": "SVA has been a leader in the education of artists, designers and creative professionals for more than seven decades"
       },
       "geometry": {
         "type": "Point",
