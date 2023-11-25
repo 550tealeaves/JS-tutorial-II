@@ -1385,12 +1385,13 @@
       "type": "Feature",
       "properties": {
         "city": "New York",
-        "name": "National Academy Museum",
+        "name": "National Academy of Design",
         "tel": "(212) 369-4880",
-        "zip": "10128.0",
-        "url": "https://nationalacademy.org/index.asp",
-        "address2": "",
-        "address1": "1083 5th Avenue"
+        "zip": "10001",
+        "url": "https://nationalacademy.org/",
+        "address2": "Floor 2",
+        "address1": "519 West 26th Street",
+        "summary": "Founded in 1825, the National Academy is the leading honorary society for visual artists and architects in the US."
       },
       "geometry": {
         "type": "Point",
@@ -1405,11 +1406,12 @@
       "properties": {
         "city": "Staten Island",
         "name": "National Lighthouse Museum",
-        "tel": "(718) 556-1681",
-        "zip": "10301.0",
-        "url": "http://statenislandusa.com/pages/lighthouse.html",
+        "tel": "(718) 390-0040",
+        "zip": "10301",
+        "url": "https://lighthousemuseum.org/",
         "address2": "",
-        "address1": "1 Lighthouse Plaza"
+        "address1": "200 The Promenade at Lighthouse Point",
+        "summary": "Located on the former site of the United States Lighthouse Service’s (USLHS) General Depot in St. George, Staten Island, the National Lighthouse Museum educates visitors about the history and technology of the nation’s lighthouses."
       },
       "geometry": {
         "type": "Point",
@@ -1425,10 +1427,11 @@
         "city": "New York",
         "name": "National Museum of the American Indian",
         "tel": "(212) 514-3700",
-        "zip": "10004.0",
-        "url": "http://www.nmai.si.edu/",
+        "zip": "10004",
+        "url": "https://americanindian.si.edu/",
         "address2": "",
-        "address1": "1 Bowling Green"
+        "address1": "1 Bowling Green",
+        "summary": "Part of the Smithsonian Institution, the NMAI cares for one of the world's most expansive collections of Native artifacts, including objects, photographs, archives, and media covering the entire Western Hemisphere, from the Arctic Circle to Tierra del Fuego."
       },
       "geometry": {
         "type": "Point",
@@ -1442,12 +1445,13 @@
       "type": "Feature",
       "properties": {
         "city": "New York",
-        "name": "National September 11 Memorial & Museum at the World Trade Center",
-        "tel": "(212) 227-7722",
-        "zip": "10006.0",
+        "name": "National September 11 Memorial & Museum",
+        "tel": "(212) 312-8800",
+        "zip": "10007",
         "url": "http://www.911memorial.org/",
-        "address2": "20th Floor",
-        "address1": "1 Liberty Plaza"
+        "address2": "",
+        "address1": "180 Greenwich St,",
+        "summary": "Through commemoration, exhibitions, and educational programs, the National September 11 Memorial & Museum remembers and honors the 2,983 people killed in the horrific attacks of September 11, 2001 and February 26, 1993, as well as those who risked their lives to save others and all who demonstrated extraordinary compassion in the aftermath of the attacks."
       },
       "geometry": {
         "type": "Point",
