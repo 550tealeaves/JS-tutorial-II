@@ -1207,10 +1207,11 @@
         "city": "New York",
         "name": "Museum of American Illustration",
         "tel": "(212) 838-2560",
-        "zip": "10021.0",
-        "url": "http://societyillustrators.org/museum/index.cms",
+        "zip": "10065",
+        "url": "http://societyillustrators.org/",
         "address2": "",
-        "address1": "128 E. 63d St."
+        "address1": "128 E. 63d St.",
+        "summary": "Founded in 1901, the Society of Illustrators is the oldest nonprofit organization dedicated to the art of illustration in America."
       },
       "geometry": {
         "type": "Point",
@@ -1226,10 +1227,11 @@
         "city": "New York",
         "name": "Museum of Arts & Design (MAD)",
         "tel": "(212) 299-7777",
-        "zip": "10019.0",
+        "zip": "10019",
         "url": "http://www.madmuseum.org/",
         "address2": "",
-        "address1": "2 Columbus Circle"
+        "address1": "2 Columbus Circle",
+        "summary": "MAD collects, displays, and interprets objects that document contemporary and historic innovation in craft, art, and design."
       },
       "geometry": {
         "type": "Point",
@@ -1245,10 +1247,11 @@
         "city": "New York",
         "name": "Museum Of Chinese In America",
         "tel": "(212) 619-4785",
-        "zip": "10013.0",
+        "zip": "10013",
         "url": "http://www.mocanyc.org/",
         "address2": "",
-        "address1": "215 Centre Street"
+        "address1": "215 Centre Street",
+        "summary": "Since its founding in 1980, MOCA has celebrated the living history of the Chinese experience in America by preserving and presenting the 200-year history, heritage, culture, and diverse experiences of American communities of Chinese descent"
       },
       "geometry": {
         "type": "Point",
@@ -1263,11 +1266,12 @@
       "properties": {
         "city": "New York",
         "name": "Museum of Comic and Cartoon Art (MoCCA)",
-        "tel": "(212) 254 3511",
-        "zip": "10012.0",
+        "tel": "(212) 838-2560",
+        "zip": "10065",
         "url": "http://www.moccany.org/",
-        "address2": "Suite 401",
-        "address1": "594 Broadway"
+        "address2": "",
+        "address1": "128 E 63rd St",
+        "summary": "This museum is devoted to comic books, comic strips and other forms of cartoon art"
       },
       "geometry": {
         "type": "Point",
@@ -1283,10 +1287,11 @@
         "city": "Brooklyn",
         "name": "Museum of Contemporary African Diasporan Arts (MoCADA)",
         "tel": "(718) 230-0492",
-        "zip": "11217.0",
+        "zip": "11217",
         "url": "http://www.mocada.org/",
         "address2": "",
-        "address1": "80 Hanson Place"
+        "address1": "80 Hanson Place",
+        "summary": "The MoCADA uses art, education and advocacy as tools to celebrate the breadth of African culture, while fostering dialogue about the socioeconomic issues Black communities face to transform people and neighborhoods."
       },
       "geometry": {
         "type": "Point",
@@ -1301,11 +1306,12 @@
       "properties": {
         "city": "New York",
         "name": "Museum of Jewish Heritage",
-        "tel": "(646) 437-4200",
-        "zip": "10280.0",
-        "url": "http://www.mjhnyc.org/index.htm",
+        "tel": "(646) 437-4202",
+        "zip": "10280",
+        "url": "http://www.mjhnyc.org/",
         "address2": "",
-        "address1": "36 Battery Place"
+        "address1": "36 Battery Place",
+        "summary": "New York's contribution to the global responsibility to never forget. The Museum is committed to the crucial mission of educating diverse visitors about Jewish life before, during, and after the Holocaust."
       },
       "geometry": {
         "type": "Point",
@@ -1321,10 +1327,11 @@
         "city": "New York",
         "name": "Museum of Modern Art (MoMA)",
         "tel": "(212) 708-9400",
-        "zip": "10019.0",
+        "zip": "10019",
         "url": "http://www.moma.org/",
         "address2": "",
-        "address1": "11 West 53rd Street"
+        "address1": "11 West 53rd Street",
+        "summary":"MoMA connects people from around the world to the art of our time. It aspires to be a catalyst for experimentation, learning, and creativity, a gathering place for all, and a home for artists and their ideas"
       },
       "geometry": {
         "type": "Point",
@@ -1340,10 +1347,11 @@
         "city": "New York",
         "name": "Museum of the City of New York",
         "tel": "(212) 534-1672",
-        "zip": "10029.0",
+        "zip": "10029",
         "url": "http://www.mcny.org",
         "address2": "",
-        "address1": "1220 Fifth Avenue"
+        "address1": "1220 Fifth Avenue",
+        "summary": "MCNY fosters understanding of the distinctive nature of urban life in the world's most influential metropolis. It engages visitors by celebrating, documenting, and interpreting the city's past, present, and future."
       },
       "geometry": {
         "type": "Point",
@@ -1358,11 +1366,12 @@
       "properties": {
         "city": "Queens",
         "name": "Museum of the Moving Image",
-        "tel": "(718) 784-4520",
-        "zip": "11106.0",
-        "url": "http://www.movingimage.us/site/site.php",
+        "tel": "(718) 777-6800",
+        "zip": "11106",
+        "url": "https://movingimage.us/",
         "address2": "",
-        "address1": "35 Avenue at 36 Street"
+        "address1": "36-01 35th Ave",
+        "summary": "Mission is to advance the understanding, enjoyment, and appreciation of the art, history, technique, and technology of film, television, and digital media"
       },
       "geometry": {
         "type": "Point",
