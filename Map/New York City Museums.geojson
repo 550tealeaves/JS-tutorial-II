@@ -1467,10 +1467,11 @@
         "city": "New York",
         "name": "Neue Galerie New York",
         "tel": "(212) 628-6200",
-        "zip": "10028.0",
+        "zip": "10028",
         "url": "http://www.neuegalerie.org/",
         "address2": "",
-        "address1": "1048 Fifth Avenue"
+        "address1": "1048 Fifth Avenue",
+        "summary": "Neue Galerie New York is a museum devoted to early twentieth-century German and Austrian art and design."
       },
       "geometry": {
         "type": "Point",
@@ -1486,10 +1487,11 @@
         "city": "New York",
         "name": "New Museum of Contemporary Art",
         "tel": "(212) 219-1222",
-        "zip": "10002.0",
-        "url": "http://www.newmuseum.org/",
+        "zip": "10002",
+        "url": "https://www.newmuseum.org/",
         "address2": "",
-        "address1": "235 Bowery"
+        "address1": "235 Bowery",
+        "summary": "The New Museum believes that contemporary art is a vital social force that advances questioning, learning, and working towards a better society."
       },
       "geometry": {
         "type": "Point",
@@ -1505,10 +1507,11 @@
         "city": "New York",
         "name": "New York City Fire Museum",
         "tel": "(212) 691-1303",
-        "zip": "10012.0",
+        "zip": "10013",
         "url": "http://www.nycfiremuseum.org/",
         "address2": "",
-        "address1": "278 Spring Street"
+        "address1": "278 Spring Street",
+        "summary": "The New York City Fire Museum houses and displays one of the nation's most important collections of fire-related art and artifacts from the late 18th century onward and also provides fire prevention and safety education."
       },
       "geometry": {
         "type": "Point",
@@ -1524,10 +1527,11 @@
         "city": "Queens",
         "name": "New York Hall of Science",
         "tel": "(718) 699-0005",
-        "zip": "11368.0",
+        "zip": "11368",
         "url": "http://www.nysci.org/",
         "address2": "",
-        "address1": "47-01 111th Street"
+        "address1": "47-01 111th Street",
+        "summary": "NYC's only hands-on science and technology center, with over 400 hands-on exhibits focusing on biology, chemistry, and physics"
       },
       "geometry": {
         "type": "Point",
@@ -1543,10 +1547,11 @@
         "city": "New York",
         "name": "New York Historical Society",
         "tel": "(212) 873-3400",
-        "zip": "10024.0",
-        "url": "https://www.nyhistory.org/web/",
+        "zip": "10024",
+        "url": "https://www.nyhistory.org/",
         "address2": "",
-        "address1": "2 West 77th Street"
+        "address1": "170 Central Park West",
+        "summary": "New York's first museum. A great destination for history since 1804, the Museum and the Patricia D. Klingenstein Library convey the stories of the city and nation's diverse populations, expanding our understanding of who we are as Americans and how we came to be."
       },
       "geometry": {
         "type": "Point",
