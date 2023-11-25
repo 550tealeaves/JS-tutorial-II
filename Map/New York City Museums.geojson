@@ -1564,32 +1564,14 @@
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
-        "name": "New York Tolerance Center",
-        "tel": "(212) 697-1180",
-        "zip": "10017.0",
-        "url": "http://www.kintera.org/site/pp.asp?c=fwLYKnN8LzH&b=242506",
-        "address2": "",
-        "address1": "50 E 42nd St"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -73.9791241123914,
-          40.752422920262084
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "city": "Brooklyn",
         "name": "New York Transit Museum",
-        "tel": "(718) 694-4915",
-        "zip": "0.0",
-        "url": "http://www.mta.info/mta/museum/",
+        "tel": "(718) 694-1600",
+        "zip": "11201",
+        "url": "https://www.nytransitmuseum.org/",
         "address2": "",
-        "address1": "Boerum Pl. & Schermenhorn Street"
+        "address1": "99 Schermerhorn Street",
+        "summary": "Founded in 1976, the New York Transit Museum is dedicated to telling and preserving the stories of mass transportation – extraordinary engineering feats, workers who labored in the tunnels over 100 years ago, communities that were drastically transformed, and the ever-evolving technology, design, and ridership of a system that runs 24 hours a day, every day of the year."
       },
       "geometry": {
         "type": "Point",
@@ -1605,10 +1587,11 @@
         "city": "New York",
         "name": "Nicholas Roerich Museum",
         "tel": "(212) 864-7752",
-        "zip": "10025.0",
+        "zip": "10025",
         "url": "http://www.roerich.org/",
         "address2": "",
-        "address1": "319 West 107 Street"
+        "address1": "319 West 107 Street",
+        "summary": "Nicholas Roerich was a Russian-born artist who created thousands of paintings that explore the mythic origins, the natural beauty, and the spiritual strivings of humanity and of the world. The Museum contains approximately two hundred of these works."
       },
       "geometry": {
         "type": "Point",
@@ -1624,10 +1607,11 @@
         "city": "Staten Island",
         "name": "Noble Maritime Collection",
         "tel": "(718) 447-6490",
-        "zip": "10301.0",
+        "zip": "10301",
         "url": "http://www.noblemaritime.org/",
-        "address2": "",
-        "address1": "1000 Richmond Terrace"
+        "address2": "Building D",
+        "address1": "1000 Richmond Terrace",
+        "summary": "The mission is to present exhibitions and programs that celebrate the working waterfront of New York Harbor in the tradition of distinguished artist John A. Noble (1913-1983), and to preserve Robbins Reef Lighthouse and the history of Sailors' Snug Harbor."
       },
       "geometry": {
         "type": "Point",
@@ -1643,10 +1627,11 @@
         "city": "Brooklyn",
         "name": "Old Stone House",
         "tel": "(718) 768-3195",
-        "zip": "11215.0",
+        "zip": "11215",
         "url": "http://www.theoldstonehouse.org/",
         "address2": "",
-        "address1": "326 5th Avenue"
+        "address1": "336 3rd St",
+        "summary": "The Old Stone House building is a reconstruction of the 1699 Vechte-Cortelyou House on land taken from the Lenape as early as 1639. It marks the place where the original Dutch farmstead stood and the culminating engagement of the 1776 Battle of Brooklyn took place. It also commemorates the birthplace of the Brooklyn Dodgers."
       },
       "geometry": {
         "type": "Point",
@@ -1660,12 +1645,13 @@
       "type": "Feature",
       "properties": {
         "city": "Queens",
-        "name": "P.S. 1 Contemporary Art Center",
-        "tel": "(718) 784-2084",
-        "zip": "11101.0",
-        "url": "http://www.ps1.org/",
+        "name": "PS1 Contemporary Art Center",
+        "tel": "(718) 784-2086",
+        "zip": "11101",
+        "url": "https://www.momaps1.org/",
         "address2": "",
-        "address1": "22-25 Jackson Ave."
+        "address1": "22-25 Jackson Ave.",
+        "summary": "Artist-centered and community-driven, MoMA PS1 embraces boundary-breaking ideas and experimental practices."
       },
       "geometry": {
         "type": "Point",
@@ -1679,12 +1665,13 @@
       "type": "Feature",
       "properties": {
         "city": "New York",
-        "name": "Paley Center For Media (formerly Museum Of Television & Radio)",
-        "tel": "(212) 621-6800",
-        "zip": "10019.0",
+        "name": "Paley Center For Media",
+        "tel": "(212) 621-6600",
+        "zip": "10019",
         "url": "http://www.paleycenter.org/",
         "address2": "",
-        "address1": "25 West 52 Street"
+        "address1": "25 West 52 Street",
+        "summary": "Drawing upon its curators, collection, and relationships with the media community, The Paley Center for Media examines the intersections between media and society"
       },
       "geometry": {
         "type": "Point",
@@ -1697,32 +1684,14 @@
     {
       "type": "Feature",
       "properties": {
-        "city": "Jackson Heights",
-        "name": "Queens Art Museum - Bulova Corporate Center",
-        "tel": "(516) 624-1910",
-        "zip": "11386.0",
-        "url": "http://www.bdg.net/properties/1/",
-        "address2": "",
-        "address1": "75-20 Astoria Blvd."
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -73.89314845618621,
-          40.76460725545623
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "city": "Queens",
         "name": "Queens County Farm Museum",
         "tel": "(718) 347-3276",
-        "zip": "11004.0",
+        "zip": "11004",
         "url": "http://www.queensfarm.org/",
         "address2": "",
-        "address1": "73-50 Little Neck Parkway"
+        "address1": "73-50 Little Neck Parkway",
+        "summary": "Queens Farm connects visitors to agriculture and the environment through the lens of its 47-acre historic site, providing learning opportunities and creating conversations about biodiversity, nutrition, health and wellness, climate change and preserving local history."
       },
       "geometry": {
         "type": "Point",
@@ -1738,10 +1707,11 @@
         "city": "Queens",
         "name": "Queens Museum of Art",
         "tel": "(718) 592-9700",
-        "zip": "11368.0",
+        "zip": "11368",
         "url": "http://www.queensmuseum.org/",
         "address2": "Flushing Meadows Corona Park",
-        "address1": "Queens Museum of Art"
+        "address1": "Queens Museum of Art",
+        "summary": "The Queens Museum is dedicated to presenting high quality arts and educational programming for the people of New York, and particularly the residents of Queens, a uniquely diverse ethnic, cultural, and international community"
       },
       "geometry": {
         "type": "Point",
@@ -1755,31 +1725,13 @@
       "type": "Feature",
       "properties": {
         "city": "New York",
-        "name": "Rose Center for Earth and Space (Hayden Planetarium)",
-        "tel": "(212) 769-5100",
-        "zip": "10024.0",
-        "url": "http://www.haydenplanetarium.org/index.php",
-        "address2": "",
-        "address1": "15 West 81st Street"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -73.97257491067647,
-          40.78285983221266
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "city": "New York",
         "name": "Rubin Museum of Art",
         "tel": "(212) 620-5000",
-        "zip": "10011.0",
-        "url": "http://www.rmanyc.org/",
+        "zip": "10011",
+        "url": "https://rubinmuseum.org/",
         "address2": "",
-        "address1": "150 West 17th Street"
+        "address1": "150 West 17th Street",
+        "summary": "The Rubin Museum of Art is a dynamic environment that stimulates learning, promotes understanding, and inspires personal connections to the ideas, cultures, and art of Himalayan regions."
       },
       "geometry": {
         "type": "Point",
