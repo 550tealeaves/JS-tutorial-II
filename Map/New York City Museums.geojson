@@ -1026,11 +1026,12 @@
       "properties": {
         "city": "New York",
         "name": "Madame Tussauds Wax Museum",
-        "tel": "(800) 246-8872",
-        "zip": "10036.0",
-        "url": "http://www.madametussauds.com/NewYork/",
+        "tel": "(212) 512-9600",
+        "zip": "10036",
+        "url": "http://www.madametussauds.com/new-york/",
         "address2": "",
-        "address1": "234 W. 42nd Street"
+        "address1": "234 W. 42nd Street",
+        "summary": "World's greatest wax museum"
       },
       "geometry": {
         "type": "Point",
@@ -1046,10 +1047,11 @@
         "city": "New York",
         "name": "Merchant's House Museum",
         "tel": "(212) 777-1089",
-        "zip": "10003.0",
-        "url": "http://www.merchantshouse.com/",
+        "zip": "10003",
+        "url": "http://www.merchantshouse.org/",
         "address2": "",
-        "address1": "29 East Fourth Street"
+        "address1": "29 East Fourth Street",
+        "summary": "This museum tells the story of the domestic life of a wealthy merchant family and their four Irish servants, 1835-1865, when the mercantile seaport of New York City emerged as a growing metropolis and the commercial emporium of America."
       },
       "geometry": {
         "type": "Point",
@@ -1065,10 +1067,11 @@
         "city": "New York",
         "name": "Metropolitan Museum of Art (MET)",
         "tel": "(212) 535-7710",
-        "zip": "10028.0",
+        "zip": "10028",
         "url": "http://www.metmuseum.org/",
         "address2": "",
-        "address1": "1000 Fifth Avenue"
+        "address1": "1000 Fifth Avenue",
+        "summary": "Founded in 1870, this is the largest art museum in the Americas, boasting over two million works, divided among 17 curatorial departments."
       },
       "geometry": {
         "type": "Point",
@@ -1084,10 +1087,11 @@
         "city": "New York",
         "name": "Mexican Cultural Institute of New York",
         "tel": "(212) 217-6422",
-        "zip": "10016.0",
-        "url": "http://www.lavitrina.com/",
-        "address2": "",
-        "address1": "27 E. 39th St."
+        "zip": "10016",
+        "url": "https://www.mciny.org/",
+        "address2": "4th Floor",
+        "address1": "27 E. 39th St.",
+        "summary": "Established in 1991, The Mexican Cultural Institute is the cultural department of the Consulate General of Mexico in New York and, an American non-profit organization."
       },
       "geometry": {
         "type": "Point",
@@ -1103,10 +1107,11 @@
         "city": "New York",
         "name": "Morgan Library and Museum",
         "tel": "(212) 685-0008",
-        "zip": "10016.0",
-        "url": "http://www.themorgan.org/home.asp",
+        "zip": "10016",
+        "url": "http://www.themorgan.org/",
         "address2": "",
-        "address1": "225 Madison Avenue"
+        "address1": "225 Madison Avenue",
+        "summary": "Built between 1902 and 1906, the Morgan Library & Museum began as the personal library of financier, collector, and cultural benefactor Pierpont Morgan."
       },
       "geometry": {
         "type": "Point",
@@ -1122,10 +1127,11 @@
         "city": "New York",
         "name": "Morris-Jumel Mansion",
         "tel": "(212) 923-8008",
-        "zip": "10032.0",
+        "zip": "10032",
         "url": "http://www.morrisjumel.org/",
         "address2": "",
-        "address1": "65 Jumel Terrace"
+        "address1": "65 Jumel Terrace",
+        "summary": "As Manhattan's oldest surviving residence, the Morris-Jumel Mansion, built in 1765, preserves, collects, and interprets history, culture, and the arts to explore inclusive narratives that engage and inspire diverse audiences."
       },
       "geometry": {
         "type": "Point",
@@ -1141,10 +1147,11 @@
         "city": "New York",
         "name": "Mount Vernon Hotel Museum & Garden",
         "tel": "(212) 838-6878",
-        "zip": "10021.0",
+        "zip": "10065",
         "url": "http://www.mvhm.org/",
         "address2": "",
-        "address1": "421 East 61 Street"
+        "address1": "421 East 61 Street",
+        "summary": "Constructed in 1799 as a carriage house for a 23-acre estate, and converted into the Mount Vernon Hotel in 1826, this stone building sits on land originally owned by Colonel William Stephens Smith, and his wife Abigail Adams Smith, daughter of John Adams."
       },
       "geometry": {
         "type": "Point",
@@ -1160,10 +1167,11 @@
         "city": "New York",
         "name": "Municipal Art Society",
         "tel": "(212) 935-3960",
-        "zip": "10022.0",
+        "zip": "10022",
         "url": "http://mas.org/",
-        "address2": "",
-        "address1": "457 Madison Avenue"
+        "address2": "#1900",
+        "address1": "488 Madison Avenue",
+        "summary": "MAS lifts up the voices of the people in the debates that shape New York's built environment and leads the way toward a more livable city from sidewalk to skyline"
       },
       "geometry": {
         "type": "Point",
@@ -1176,13 +1184,14 @@
     {
       "type": "Feature",
       "properties": {
-        "city": "Queens",
-        "name": "Museum for African Art",
-        "tel": "(718) 784-7700",
-        "zip": "11101.0",
+        "city": "New York",
+        "name": "The Africa Center",
+        "tel": "(212) 444-9795",
+        "zip": "10029",
         "url": "http://www.africanart.org/",
         "address2": "3rd Floor",
-        "address1": "36-01 43rd Avenue"
+        "address1": "1280 Fifth Avenue",
+        "summary": "The Africa Center is transforming the world’s understanding of Africa, its Diaspora, and the role of people of African descent in the world."
       },
       "geometry": {
         "type": "Point",
