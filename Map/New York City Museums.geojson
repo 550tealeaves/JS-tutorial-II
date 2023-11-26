@@ -824,7 +824,7 @@
     {
       "type": "Feature",
       "properties": {
-        "city": "Long Island City",
+        "city": "Queens",
         "name": "Isamu Noguchi Garden Museum",
         "tel": "(718) 204-7088",
         "zip": "11106",
@@ -964,7 +964,7 @@
     {
       "type": "Feature",
       "properties": {
-        "city": "Flushing",
+        "city": "Queens",
         "name": "Kingsland Homestead",
         "tel": "(718) 206-0545",
         "zip": "11354",
@@ -984,7 +984,7 @@
     {
       "type": "Feature",
       "properties": {
-        "city": "Long Island City",
+        "city": "Queens",
         "name": "LaGuardia and Wagner Archives",
         "tel": "(718) 482-5065",
         "zip": "11101",
@@ -1709,7 +1709,7 @@
         "tel": "(718) 592-9700",
         "zip": "11368",
         "url": "http://www.queensmuseum.org/",
-        "address2": "Flushing Meadows Corona Park",
+        "address2": "Queens Meadows Corona Park",
         "address1": "Queens Museum of Art",
         "summary": "The Queens Museum is dedicated to presenting high quality arts and educational programming for the people of New York, and particularly the residents of Queens, a uniquely diverse ethnic, cultural, and international community"
       },
@@ -1966,11 +1966,12 @@
       "properties": {
         "city": "New York",
         "name": "Tenement Museum",
-        "tel": "(212) 431-0233",
-        "zip": "10002.0",
+        "tel": "(877) 975-3786",
+        "zip": "10002",
         "url": "http://www.tenement.org/",
         "address2": "",
-        "address1": "108 Orchard Street"
+        "address1": "103 Orchard Street",
+        "summary": "The two historic tenement buildings offer visitors a chance to explore the historically recreated homes of immigrant, migrant, and refugee families who lived in city tenements between the 1860s and the 1980s through interactive guided building tours, as well as walking tours of the iconic Lower East Side neighborhood of Manhattan."
       },
       "geometry": {
         "type": "Point",
@@ -1984,12 +1985,13 @@
       "type": "Feature",
       "properties": {
         "city": "New York",
-        "name": "The Jazz Museum in Harlem",
+        "name": "The National Jazz Museum in Harlem",
         "tel": "(212) 348-8300",
-        "zip": "10035.0",
-        "url": "http://www.jazzmuseuminharlem.org/",
-        "address2": "Suite 2D",
-        "address1": "104 E. 126th Street"
+        "zip": "10027",
+        "url": "https://jmih.org/",
+        "address2": "Ground Floor",
+        "address1": "58 W 129th Street",
+        "summary": "The mission of the National Jazz Museum in Harlem (NJMH) is to preserve, promote and present jazz by inspiring knowledge, appreciation and the celebration of jazz locally, nationally and internationally."
       },
       "geometry": {
         "type": "Point",
@@ -2005,10 +2007,11 @@
         "city": "Brooklyn",
         "name": "The Jewish Children's Museum",
         "tel": "(718) 467-0600",
-        "zip": "11213.0",
-        "url": "http://www.jcmonline.org/",
+        "zip": "11213",
+        "url": "https://www.jcm.museum/",
         "address2": "",
-        "address1": "792 Eastern Pkwy"
+        "address1": "792 Eastern Pkwy",
+        "summary": "The Jewish Children's Museum provides exhibitions and programs for all children in an educational and entertaining format."
       },
       "geometry": {
         "type": "Point",
@@ -2023,11 +2026,12 @@
       "properties": {
         "city": "New York",
         "name": "The Museum at FIT",
-        "tel": "(212) 217-5800",
-        "zip": "10001.0",
-        "url": "http://www.fitnyc.edu/306.asp",
+        "tel": "(212) 217-4558",
+        "zip": "10001",
+        "url": "https://www.fitnyc.edu/museum/index.php",
         "address2": "",
-        "address1": "7th Avenue at West 27th Street"
+        "address1": "227 W 27th St",
+        "summary": "Founded in 1969 by the Fashion Institute of Technology of the State University of New York, The Museum at FIT is a specialized fashion museum that fulfills the educational mission of the college and university by promoting original research, creative thinking, and lifelong learning among diverse and inclusive audiences."
       },
       "geometry": {
         "type": "Point",
@@ -2043,10 +2047,11 @@
         "city": "New York",
         "name": "Theodore Roosevelt Birthplace",
         "tel": "(212) 260-1616",
-        "zip": "10003.0",
+        "zip": "10003",
         "url": "http://www.nps.gov/thrb/index.htm",
         "address2": "",
-        "address1": "28 East 20th Street"
+        "address1": "28 East 20th Street",
+        "summary": "It is a replica of the birthplace and childhood home, the original being demolished in 1916, of the 26th US president, Theodore Roosevelt."
       },
       "geometry": {
         "type": "Point",
@@ -2062,10 +2067,11 @@
         "city": "New York",
         "name": "Ukrainian Museum",
         "tel": "(212) 228-0110",
-        "zip": "10003.0",
+        "zip": "10003",
         "url": "http://www.ukrainianmuseum.org/",
         "address2": "",
-        "address1": "222 East 6th Street"
+        "address1": "222 East 6th Street",
+        "summary": "The Ukrainian Museum is the largest museum in North America committed to acquiring, preserving, exhibiting, and interpreting articles of artistic or historic significance to the rich cultural heritage of Ukrainians."
       },
       "geometry": {
         "type": "Point",
@@ -2081,10 +2087,11 @@
         "city": "Bronx",
         "name": "Valentine-Varian House",
         "tel": "(718) 881-8900",
-        "zip": "10467.0",
-        "url": "http://www.museumregister.com/US/NewYork/Bronx/ValentineVarianHouse/Info.html",
+        "zip": "10467",
+        "url": "https://historichousetrust.org/houses/valentine-varian-house/",
         "address2": "",
-        "address1": "3266 Bainbridge Ave."
+        "address1": "3266 Bainbridge Ave.",
+        "summary": "Built in 1758, Valentine-Varian House is the last of the farmhouses that once lined the Boston Post Road."
       },
       "geometry": {
         "type": "Point",
@@ -2100,10 +2107,11 @@
         "city": "Bronx",
         "name": "Van Cortlandt House Museum",
         "tel": "(718) 543-3344",
-        "zip": "10471.0",
-        "url": "http://www.vancortlandthouse.org/",
-        "address2": "Broadway at West 246th Street",
-        "address1": "VAN CRTLANDT MANSION"
+        "zip": "10471",
+        "url": "https://www.vchm.org/",
+        "address2": "",
+        "address1": "6036 Broadway, Van Cortlandt Park",
+        "summary": "This 18th century plantation has a museum whose research and interpretation focuses on the historical inhabitants of the house from 1749-1823; the social history of those who lived and worked on the property; and the study of decorative arts."
       },
       "geometry": {
         "type": "Point",
@@ -2117,12 +2125,13 @@
       "type": "Feature",
       "properties": {
         "city": "Bronx",
-        "name": "Wave Hill",
+        "name": "Wave Hill Public Garden & Cultural Center",
         "tel": "(718) 549-3200",
-        "zip": "10471.0",
-        "url": "http://wavehill.org/visit/",
+        "zip": "10471",
+        "url": "https://www.wavehill.org/",
         "address2": "",
-        "address1": "West 249th Street & Independence Avenue"
+        "address1": "4900 Independence Ave",
+        "summary": "Located in Riverdale, the 28-acre estate consists of public horticultural gardens and a cultural center, sitting on the slopes overlooking the Hudson River, with expansive views across the river to the New Jersey Palisades."
       },
       "geometry": {
         "type": "Point",
@@ -2137,11 +2146,12 @@
       "properties": {
         "city": "New York",
         "name": "Whitney Museum of American Art",
-        "tel": "1 (800) WHITNEY",
-        "zip": "10021.0",
+        "tel": "(212) 570-3600",
+        "zip": "10014",
         "url": "http://www.whitney.org/",
         "address2": "",
-        "address1": "945 Madison Ave."
+        "address1": "99 Gansevoort St",
+        "summary": "Whitney Museum of American Art presents the full range of twentieth-century and contemporary American art, with a special focus on works by living artists."
       },
       "geometry": {
         "type": "Point",
@@ -2155,12 +2165,13 @@
       "type": "Feature",
       "properties": {
         "city": "Brooklyn",
-        "name": "Wyckoff Farmhouse Museum",
+        "name": "Wyckoff House Museum",
         "tel": "(718) 629-5400",
-        "zip": "11203.0",
-        "url": "http://www.wyckoffassociation.org/",
+        "zip": "11203",
+        "url": "https://wyckoffmuseum.org/",
         "address2": "",
-        "address1": "5816 Clarendon Ave"
+        "address1": "5816 Clarendon Rd",
+        "summary": "Wyckoff House Museum's primary mission is to preserve, interpret, and operate New York's oldest building—a home built in between 1636 and 1640—and the surrounding one-and-a-half acres of park."
       },
       "geometry": {
         "type": "Point",
@@ -2176,10 +2187,11 @@
         "city": "New York",
         "name": "Leo Baeck Institute",
         "tel": "(212) 744-6400",
-        "zip": "10011.0",
-        "url": "http://www.lbi.org/",
+        "zip": "10011",
+        "url": "https://www.lbi.org/",
         "address2": "",
-        "address1": "15 W. 16th St."
+        "address1": "15 W. 16th St.",
+        "summary": "Its extensive library, archival, and art collections comprise one of the most significant repositories of primary source material and scholarship on the centuries of Jewish life in Central Europe before the Holocaust."
       },
       "geometry": {
         "type": "Point",
@@ -2195,10 +2207,11 @@
         "city": "New York",
         "name": "American Sephardi Federation / Sephardic House",
         "tel": "(212) 294-8350",
-        "zip": "10011.0",
-        "url": "http://www.americansephardifederation.org/",
+        "zip": "10011",
+        "url": "https://sephardi.house/",
         "address2": "",
-        "address1": "15 W. 16th St."
+        "address1": "15 W. 16th St.",
+        "summary": "ASF aims to preserve and support the rich cultural traditions, spirit and history of all Sephardic communities as an integral part of Jewish experience and heritage."
       },
       "geometry": {
         "type": "Point",
@@ -2213,11 +2226,12 @@
       "properties": {
         "city": "New York",
         "name": "YIVO Institute for Jewish Research",
-        "tel": "(212) 246-6860",
-        "zip": "10011.0",
-        "url": "http://www.yivoinstitute.org/",
-        "address2": "",
-        "address1": "15 W. 16th St."
+        "tel": "(212) 246-6080",
+        "zip": "10011",
+        "url": "https://www.yivo.org/",
+        "address2": "#6301",
+        "address1": "15 W. 16th St.",
+        "summary": "The mission is to preserve, study, share, and perpetuate knowledge of the history and culture of East European Jewry worldwide."
       },
       "geometry": {
         "type": "Point",
@@ -2233,10 +2247,11 @@
         "city": "New York",
         "name": "American Jewish Historical Society",
         "tel": "(212) 294-6160",
-        "zip": "10011.0",
+        "zip": "10011",
         "url": "http://www.ajhs.org/",
         "address2": "",
-        "address1": "15 W. 16th St."
+        "address1": "15 W. 16th St.",
+        "summary": "Established in 1892, AJHS is the oldest ethnic, cultural archive in the United States."
       },
       "geometry": {
         "type": "Point",
@@ -2252,10 +2267,11 @@
         "city": "New York",
         "name": "Yeshiva University Museum",
         "tel": "(212) 294-8330",
-        "zip": "10011.0",
+        "zip": "10011",
         "url": "http://www.yumuseum.org/",
         "address2": "",
-        "address1": "15 W. 16th St."
+        "address1": "15 W. 16th St.",
+        "summary": "YUM's collection of more than 10,000 artifacts, exhibitions, installations and programs provide a window into Jewish culture around the world and throughout history."
       },
       "geometry": {
         "type": "Point",
@@ -2271,10 +2287,11 @@
         "city": "New York",
         "name": "Center For Jewish History",
         "tel": "(212) 294-8301",
-        "zip": "10011.0",
+        "zip": "10011",
         "url": "http://www.cjh.org",
         "address2": "",
-        "address1": "15 W. 16th St."
+        "address1": "15 W. 16th St.",
+        "summary": "The Center for Jewish History in New York City illuminates history, culture, and heritage."
       },
       "geometry": {
         "type": "Point",
