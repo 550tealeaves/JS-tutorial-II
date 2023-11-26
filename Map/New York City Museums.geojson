@@ -1887,10 +1887,11 @@
         "city": "New York",
         "name": "South Street Seaport Museum",
         "tel": "(212) 748-8600",
-        "zip": "10038.0",
+        "zip": "10038",
         "url": "http://www.southstreetseaportmuseum.org/",
         "address2": "",
-        "address1": "12 Fulton Street"
+        "address1": "12 Fulton Street",
+        "summary": "The South Street Seaport Museum inspires exploration of New York City by preserving and interpreting the ​origins and growth of New York as a world port, a place where goods, labor, and cultures are exchanged through work, commerce, and the interaction of diverse communities."
       },
       "geometry": {
         "type": "Point",
@@ -1906,10 +1907,11 @@
         "city": "Staten Island",
         "name": "Staten Island Children's Museum",
         "tel": "(718) 273-2060",
-        "zip": "10301.0",
-        "url": "http://www.statenislandkids.org/",
-        "address2": "",
-        "address1": "1000 Richmond Terr."
+        "zip": "10301",
+        "url": "https://www.sichildrensmuseum.org/",
+        "address2": "Building M",
+        "address1": "1000 Richmond Terrace.",
+        "summary": "Enjoy imaginative, creative, and cultural hands-on experiences for children ages 1 and up. With 12 indoor and outdoor exhibits, dance and art workshops, science and story times, as well as after-school, school break and summer camps, there is something for every child."
       },
       "geometry": {
         "type": "Point",
@@ -1923,12 +1925,13 @@
       "type": "Feature",
       "properties": {
         "city": "Staten Island",
-        "name": "Staten Island Museum / Staten Island Institute of Arts & Sciences",
+        "name": "Staten Island Museum",
         "tel": "(718) 727-1135",
-        "zip": "10301.0",
+        "zip": "10301",
         "url": "http://www.statenislandmuseum.org/",
-        "address2": "",
-        "address1": "75 Stuyvesant Pl."
+        "address2": "Building A",
+        "address1": "1000 Richmond Terrace",
+        "summary": "Founded in 1881, the Staten Island Museum engages visitors with interdisciplinary exhibitions, public programs, and educational activities for all ages."
       },
       "geometry": {
         "type": "Point",
@@ -1944,10 +1947,11 @@
         "city": "New York",
         "name": "Studio Museum in Harlem",
         "tel": "(212) 864-4500",
-        "zip": "10027.0",
+        "zip": "10027",
         "url": "http://www.studiomuseum.org",
         "address2": "",
-        "address1": "144 West 125th Street"
+        "address1": "144 West 125th Street",
+        "summary": "The Studio Museum in Harlem is the nexus for artists of African descent locally, nationally, and internationally and for work that has been inspired and influenced by Black culture."
       },
       "geometry": {
         "type": "Point",
