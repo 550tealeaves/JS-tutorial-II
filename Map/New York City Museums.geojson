@@ -1827,10 +1827,11 @@
         "city": "Staten Island",
         "name": "Seguine Mansion",
         "tel": "(718) 667-6042",
-        "zip": "10307.0",
-        "url": "http://www.historichousetrust.org/item.php?i_id=38",
+        "zip": "10309",
+        "url": "http://seguinemansion.org/",
         "address2": "",
-        "address1": "440 Seguine Avenue"
+        "address1": "440 Seguine Avenue",
+        "summary": "This house was originally built by one of the founders of the Staten Island Railroad Company, the Staten Island Oil and Candle-making Company, and owner of extensive farmland, Joseph Seguine around 1840."
       },
       "geometry": {
         "type": "Point",
@@ -1846,10 +1847,11 @@
         "city": "New York",
         "name": "Skyscraper Museum",
         "tel": "(212) 968-1961",
-        "zip": "10280.0",
-        "url": "http://www.skyscraper.org/home.htm",
+        "zip": "10280",
+        "url": "http://www.skyscraper.org/",
         "address2": "",
-        "address1": "39 Battery Place"
+        "address1": "39 Battery Place",
+        "summary": "Through exhibitions, programs, and publications, the Museum explores tall buildings as objects of design, products of technology, sites of construction, investments in real estate, and places of work and residence."
       },
       "geometry": {
         "type": "Point",
@@ -1865,10 +1867,11 @@
         "city": "New York",
         "name": "Solomon R. Guggenheim Museum",
         "tel": "(212) 423-3500",
-        "zip": "10128.0",
+        "zip": "10128",
         "url": "http://www.guggenheim.org/",
         "address2": "",
-        "address1": "1071 Fifth Avenue"
+        "address1": "1071 Fifth Avenue",
+        "summary": "Committed to innovation, the Solomon R. Guggenheim Foundation collects, preserves, and interprets modern and contemporary art, and explores ideas across cultures through dynamic curatorial and educational initiatives and collaborations."
       },
       "geometry": {
         "type": "Point",
