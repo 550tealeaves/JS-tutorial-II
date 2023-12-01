@@ -1,4 +1,4 @@
-{
+const museums = {
   "type": "FeatureCollection",
   "features": [
     {
