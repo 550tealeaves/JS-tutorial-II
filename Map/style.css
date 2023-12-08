@@ -12,10 +12,12 @@
 section{
     display: flex;
     flex-direction: row;
-    
+    /* align-items: center; */
 }
 
 #info{
-    margin-left: 25px;
+    margin: 50px;
 }
+
+
 
