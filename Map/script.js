@@ -39,9 +39,10 @@ L.geoJSON(museums, {
     //(3) Use HTML to display the names in the popup - access feature > properties, then access url OR city w/in the properties
     //(4) Add <hr> horiz tag to separate names
     //(5) Assign variable to feature.properties.url and create a <a href=" + feature.properties.url + ">" + feature.properties.link + "</a>";
+    //(6) Add target='_blank' so link opens in new tab
     onEachFeature: function (feature, layer) {
         let link = feature.properties.url; //got the link to show up
-        layer.bindPopup("<h3>" + feature.properties.name + "</h3> <hr> <a href=" + link + ">" + link + "</a>");
+        layer.bindPopup("<h3>" + feature.properties.name + "</h3> <hr> <a href=" + link + " + target='_blank' " + ">" + link + "</a>");
     }
 }).addTo(museumMap);
 
@@ -57,3 +58,5 @@ $('#selectBorough').on('change', function(){
     console.log('borough', borough);
     
 })
+
+$("h1").hide(500).delay(1500).show(300);
