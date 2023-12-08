@@ -4,7 +4,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Alexander Hamilton U.S. Custom House",
         "tel": "(212) 668-2363",
         "zip": "10004",
@@ -44,7 +44,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "American Folk Art Museum",
         "tel": "(212) 595-9533",
         "zip": "10023",
@@ -64,7 +64,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "American Family Immigration History Center",
         "tel": "(212) 363-3200",
         "zip": "0.0",
@@ -84,7 +84,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "American Museum of Natural History",
         "tel": "(212) 769-5100",
         "zip": "10024",
@@ -104,7 +104,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "American Numismatic Society",
         "tel": "(212) 571-4470",
         "zip": "10013",
@@ -124,7 +124,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Americas Society",
         "tel": "(212) 249-8950",
         "zip": "10021",
@@ -144,7 +144,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Anne Frank Center USA",
         "tel": "(212) 431-7993",
         "zip": "10001",
@@ -164,7 +164,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Asia Society and Museum",
         "tel": "(212) 288-6400",
         "zip": "10021",
@@ -184,7 +184,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Audubon Terrace",
         "tel": "",
         "zip": "10032",
@@ -344,7 +344,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Children's Museum of Manhattan",
         "tel": "(212) 721-1223",
         "zip": "10024",
@@ -364,7 +364,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Children's Museum of the Arts",
         "tel": "(212) 274-0986",
         "zip": "10012",
@@ -384,7 +384,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Cloisters",
         "tel": "(212) 923-3700",
         "zip": "10040",
@@ -424,7 +424,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Cooper-Hewitt, Smithsonian Design Museum",
         "tel": "(212) 849-8400",
         "zip": "10128",
@@ -444,7 +444,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Dahesh Museum",
         "tel": "(212) 759-0606",
         "zip": "10013",
@@ -464,7 +464,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Dia at the Hispanic Society",
         "tel": "(845) 440-0100",
         "zip": "10032",
@@ -484,7 +484,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Dia Art Foundation",
         "tel": "(212) 989 5566",
         "zip": "10011",
@@ -504,7 +504,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Drawing Center",
         "tel": "(212) 219-2166",
         "zip": "10013",
@@ -524,7 +524,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Dyckman Farmhouse",
         "tel": "(212) 304-9422",
         "zip": "10034",
@@ -544,7 +544,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "East Village History Project",
         "tel": "(347) 465-7767",
         "zip": "10003",
@@ -564,7 +564,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "El Museo del Barrio",
         "tel": "(212) 831-7272",
         "zip": "10029",
@@ -584,7 +584,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Ellis Island Museum",
         "tel": "(212) 363-3200",
         "zip": "0.0",
@@ -604,7 +604,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Fraunces Tavern Museum",
         "tel": "(212) 425-1778",
         "zip": "10004",
@@ -624,7 +624,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Frick Collection",
         "tel": "(212) 288-0700",
         "zip": "10021",
@@ -664,7 +664,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Goethe-Institut New York",
         "tel": "(212) 439-8700",
         "zip": "10003",
@@ -684,7 +684,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Gracie Mansion",
         "tel": "(212)-570-4751",
         "zip": "10128",
@@ -724,7 +724,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Hispanic Society of America Museum",
         "tel": "(212) 926-2234",
         "zip": "10032",
@@ -784,7 +784,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "International Center of Photography",
         "tel": "(212) 857-0000",
         "zip": "10002",
@@ -804,7 +804,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Intrepid Sea-Air-Space Museum",
         "tel": "(212) 245-0072",
         "zip": "10036",
@@ -844,7 +844,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Jackie Robinson Museum",
         "tel": "(866) 454-3772",
         "zip": "10013",
@@ -884,7 +884,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Jeffrey's Hook lighthouse (Little Red Lighthouse)",
         "tel": "(212) 628-2345",
         "zip": "10032",
@@ -904,7 +904,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Jewish Museum",
         "tel": "(212) 423-3200",
         "zip": "10128",
@@ -924,7 +924,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "John J. Harvey Fireboat",
         "tel": "",
         "zip": "10001",
@@ -1024,7 +1024,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Madame Tussauds Wax Museum",
         "tel": "(212) 512-9600",
         "zip": "10036",
@@ -1044,7 +1044,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Merchant's House Museum",
         "tel": "(212) 777-1089",
         "zip": "10003",
@@ -1064,7 +1064,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Metropolitan Museum of Art (MET)",
         "tel": "(212) 535-7710",
         "zip": "10028",
@@ -1084,7 +1084,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Mexican Cultural Institute of New York",
         "tel": "(212) 217-6422",
         "zip": "10016",
@@ -1104,7 +1104,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Morgan Library and Museum",
         "tel": "(212) 685-0008",
         "zip": "10016",
@@ -1124,7 +1124,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Morris-Jumel Mansion",
         "tel": "(212) 923-8008",
         "zip": "10032",
@@ -1144,7 +1144,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Mount Vernon Hotel Museum & Garden",
         "tel": "(212) 838-6878",
         "zip": "10065",
@@ -1164,7 +1164,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Municipal Art Society",
         "tel": "(212) 935-3960",
         "zip": "10022",
@@ -1184,7 +1184,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "The Africa Center",
         "tel": "(212) 444-9795",
         "zip": "10029",
@@ -1204,7 +1204,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Museum of American Illustration",
         "tel": "(212) 838-2560",
         "zip": "10065",
@@ -1224,7 +1224,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Museum of Arts & Design (MAD)",
         "tel": "(212) 299-7777",
         "zip": "10019",
@@ -1244,7 +1244,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Museum Of Chinese In America",
         "tel": "(212) 619-4785",
         "zip": "10013",
@@ -1264,7 +1264,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Museum of Comic and Cartoon Art (MoCCA)",
         "tel": "(212) 838-2560",
         "zip": "10065",
@@ -1304,7 +1304,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Museum of Jewish Heritage",
         "tel": "(646) 437-4202",
         "zip": "10280",
@@ -1324,7 +1324,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Museum of Modern Art (MoMA)",
         "tel": "(212) 708-9400",
         "zip": "10019",
@@ -1344,7 +1344,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Museum of the City of New York",
         "tel": "(212) 534-1672",
         "zip": "10029",
@@ -1384,7 +1384,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "National Academy of Design",
         "tel": "(212) 369-4880",
         "zip": "10001",
@@ -1424,7 +1424,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "National Museum of the American Indian",
         "tel": "(212) 514-3700",
         "zip": "10004",
@@ -1444,7 +1444,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "National September 11 Memorial & Museum",
         "tel": "(212) 312-8800",
         "zip": "10007",
@@ -1464,7 +1464,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Neue Galerie New York",
         "tel": "(212) 628-6200",
         "zip": "10028",
@@ -1484,7 +1484,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "New Museum of Contemporary Art",
         "tel": "(212) 219-1222",
         "zip": "10002",
@@ -1504,7 +1504,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "New York City Fire Museum",
         "tel": "(212) 691-1303",
         "zip": "10013",
@@ -1544,7 +1544,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "New York Historical Society",
         "tel": "(212) 873-3400",
         "zip": "10024",
@@ -1584,7 +1584,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Nicholas Roerich Museum",
         "tel": "(212) 864-7752",
         "zip": "10025",
@@ -1664,7 +1664,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Paley Center For Media",
         "tel": "(212) 621-6600",
         "zip": "10019",
@@ -1724,7 +1724,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Rubin Museum of Art",
         "tel": "(212) 620-5000",
         "zip": "10011",
@@ -1764,7 +1764,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Scandinavia House: The Nordic Center in America",
         "tel": "(212) 779-3587",
         "zip": "10016",
@@ -1784,7 +1784,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Schomburg Center for Research in Black Culture",
         "tel": "(212) 491-2265",
         "zip": "10037",
@@ -1804,7 +1804,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "School of Visual Arts Museum",
         "tel": "(212) 592-2145",
         "zip": "10010",
@@ -1844,7 +1844,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Skyscraper Museum",
         "tel": "(212) 968-1961",
         "zip": "10280",
@@ -1864,7 +1864,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Solomon R. Guggenheim Museum",
         "tel": "(212) 423-3500",
         "zip": "10128",
@@ -1884,7 +1884,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "South Street Seaport Museum",
         "tel": "(212) 748-8600",
         "zip": "10038",
@@ -1944,7 +1944,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Studio Museum in Harlem",
         "tel": "(212) 864-4500",
         "zip": "10027",
@@ -1964,7 +1964,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Tenement Museum",
         "tel": "(877) 975-3786",
         "zip": "10002",
@@ -1984,7 +1984,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "The National Jazz Museum in Harlem",
         "tel": "(212) 348-8300",
         "zip": "10027",
@@ -2024,7 +2024,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "The Museum at FIT",
         "tel": "(212) 217-4558",
         "zip": "10001",
@@ -2044,7 +2044,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Theodore Roosevelt Birthplace",
         "tel": "(212) 260-1616",
         "zip": "10003",
@@ -2064,7 +2064,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Ukrainian Museum",
         "tel": "(212) 228-0110",
         "zip": "10003",
@@ -2144,7 +2144,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Whitney Museum of American Art",
         "tel": "(212) 570-3600",
         "zip": "10014",
@@ -2184,7 +2184,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Leo Baeck Institute",
         "tel": "(212) 744-6400",
         "zip": "10011",
@@ -2204,7 +2204,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "American Sephardi Federation / Sephardic House",
         "tel": "(212) 294-8350",
         "zip": "10011",
@@ -2224,7 +2224,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "YIVO Institute for Jewish Research",
         "tel": "(212) 246-6080",
         "zip": "10011",
@@ -2244,7 +2244,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "American Jewish Historical Society",
         "tel": "(212) 294-6160",
         "zip": "10011",
@@ -2264,7 +2264,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Yeshiva University Museum",
         "tel": "(212) 294-8330",
         "zip": "10011",
@@ -2284,7 +2284,7 @@ const museums = {
     {
       "type": "Feature",
       "properties": {
-        "city": "New York",
+        "city": "Manhattan",
         "name": "Center For Jewish History",
         "tel": "(212) 294-8301",
         "zip": "10011",

@@ -2,3 +2,9 @@
     height: 600px;
     width: 75%;
 }
+
+#selectBorough{
+    position: relative;
+    width: 150px;
+    background: rgb(248, 214, 214);
+}

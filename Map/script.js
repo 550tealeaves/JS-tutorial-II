@@ -38,8 +38,10 @@ L.geoJSON(museums, {
     //(2) onEachFeature has 2 arguments (feature (url), layer (add to map & bindPop()))
     //(3) Use HTML to display the names in the popup - access feature > properties, then access url OR city w/in the properties
     //(4) Add <hr> horiz tag to separate names
+    //(5) Assign variable to feature.properties.url and create a <a href=" + feature.properties.url + ">" + feature.properties.link + "</a>";
     onEachFeature: function (feature, layer) {
-        layer.bindPopup("<h3>" + feature.properties.name + "</h3> <hr> </h3>" + feature.properties.url + "</h3>");
+        let link = feature.properties.url; //got the link to show up
+        layer.bindPopup("<h3>" + feature.properties.name + "</h3> <hr> <a href=" + link + ">" + link + "</a>");
     }
 }).addTo(museumMap);
 
@@ -47,4 +49,11 @@ L.geoJSON(museums, {
 //find the marker object and iterate based on city name - change color
 //look up tutorial https://www.tutorialspoint.com/leafletjs/leafletjs_markers.htm
 
+//CREATE THE FILTER DROPDOWN 
+//https://learn.jquery.com/using-jquery-core/faq/how-do-i-get-the-text-value-of-a-selected-option/
 
+$('#selectBorough').on('change', function(){
+    let borough = $('#selectBorough');
+    console.log('borough', borough);
+    
+})
