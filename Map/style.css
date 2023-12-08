@@ -1,6 +1,6 @@
 #map{
     height: 600px;
-    width: 75%;
+    width: 60%;
 }
 
 #selectBorough{
@@ -8,3 +8,14 @@
     width: 150px;
     background: rgb(248, 214, 214);
 }
+
+section{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#info{
+    margin-left: 25px;
+}
+
