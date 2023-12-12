@@ -49,12 +49,6 @@ L.geoJSON(museums, {
             let summary = document.getElementById('info');
             summary.innerHTML = feature.properties.summary;
         });
-        let myIcon = L.icon({
-            iconUrl: 'museum.png',
-            iconSize: [140, 86],
-            iconAnchor: [25, 70],
-            popupAnchor: [-3, -76]
-        }); 
     }
 }).addTo(museumMap);
 
@@ -80,6 +74,14 @@ museumMap.setMaxBounds(boundaries);
 museumMap.on('drag', function () { 
     museumMap.panInsideBounds(boundaries, {animate: false})
 });
+
+
+let myIcon = L.icon({
+    iconUrl: 'museum.png',
+    iconSize: [140, 86],
+    iconAnchor: [25, 70],
+    popupAnchor: [-3, -76]
+}); 
 
 
 //find the marker object and iterate based on city name - change color
