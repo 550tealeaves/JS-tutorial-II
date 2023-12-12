@@ -45,9 +45,13 @@ L.geoJSON(museums, {
         let link = feature.properties.url; //got the link to show up
         layer.bindPopup("<h3>" + feature.properties.name + "</h3> <hr> <a href=" + link + " + target='_blank' " + ">" + link + "</a>");
         //Add the summary of the places 
-        layer.on('click', function () {
+        layer.on('mouseover', function () { //will show the summary when you mouseover icon
             let summary = document.getElementById('info');
             summary.innerHTML = feature.properties.summary;
+        });
+        layer.on('mouseout', function(){ //will hide the summary when mouse leaves icon
+            let hideSummary = document.getElementById('info');
+            hideSummary.innerHTML = null;
         });
     }
 }).addTo(museumMap);
@@ -93,18 +97,22 @@ let myIcon = L.icon({
 //loop through the data using the .map() method
 let museumList = museums.features.map(function (feature){ //loop through the features in dataset
     return feature.properties.name; //returns array of museum names 
-}).filter(function (name) { //.filter() removes blank names (even though there are none)
-    return name !== "";
-}).sort(); //sorts the names alphabetically
-console.log('list', museumList);
+// }).filter(function (name) { //.filter() removes blank names (even though there are none)
+//     return name !== "";
+}).sort(function(name){ //sorts the names alphabetically
+    return name;
+}); //sorts the names alphabetically
 
 //SHOW ALL THE MUSEUM LISTINGS IN THE DIV
 museumList.forEach(function(name){ //loops through the array of cities
-    $("#museum-list").append("<a href='#'> <li>" + name + "</li></a>"); //append each name to the div w/ id #neighborhoods and surround them w/ a href & li = clickable list
-    if(museumList.indexOf(name) % 1 === 0) {
-        $('#museum-list').append("<br>");
+    $("#museum-list").append("<a href='#'> <li>" + name + "</li></a>"); //append each museum name to the div w/ id #neighborhoods and surround them w/ a href & li = clickable list
+    if(museumList.indexOf(name) % 1 === 0) { //groups the names by 1 (1 space - if it was higher than it would be groups of 2, 3, 4 etc)
+        $('#museum-list').append("<br>"); //add a break b/w each name
     }
 });
+
+
+
 
 
 

@@ -42,8 +42,9 @@ section{
 }
 
 #museum-list{
-    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
+    font-weight: 100;
     columns: 70px 4;
     margin-top: 50px;
 }
@@ -55,7 +56,7 @@ section{
 
 /*created <a></a> in JS - can include it in css to style it*/
 #museum-list,a{
-    color: blanchedalmond;
+    color: floralwhite;
     text-decoration: none;
     line-height: 1.5;
 }
