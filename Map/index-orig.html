@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Original Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+        integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+        crossorigin="" />
+    <link rel="stylesheet" href="style-orig.css">
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+        integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+        crossorigin=""></script>
+    <script src="New York City Museums.js"></script>
+</head>
+<body>
+    <h1>All Open NYC Museums</h1>
+      <div>
+        <form action="" id="dropdown">
+            <select name="boroughs" id="selectBorough">
+                <option value="" selected>--Select a Borough</option>
+                <option value="bronx">Bronx</option>
+                <option value="brooklyn">Brooklyn</option>
+                <option value="manhattan">Manhattan</option>
+                <option value="queens">Queens</option>
+                <option value="staten-island">Staten Island</option>
+            </select>
+        </form>
+    </div>
+    <br>
+    <section>
+        <div id="map">
+
+        </div>
+        <div id="info">
+            <!-- <p>This will be where the summary for each place goes.</p> -->
+        </div>  
+    </section>
+    <br>
+    <div id="museum-list">
+        <!-- This will be where all museum results for borough show -->
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script-orig.js"></script>
+</body>
+</html>
