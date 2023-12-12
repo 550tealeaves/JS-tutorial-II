@@ -49,8 +49,17 @@ L.geoJSON(museums, {
             let summary = document.getElementById('info');
             summary.innerHTML = feature.properties.summary;
         });
+        let myIcon = L.icon({
+            iconUrl: 'museum.png',
+            iconSize: [140, 86],
+            iconAnchor: [25, 70],
+            popupAnchor: [-3, -76]
+        }); 
     }
 }).addTo(museumMap);
+
+
+
 
 //FIND THE COORDINATES USING CONSOLE LOG
 museumMap.on('click', function (e) {  //click on map, .on() method calls function
