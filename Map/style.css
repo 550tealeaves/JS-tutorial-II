@@ -41,5 +41,32 @@ section{
     font-family: 'Jomhuria', serif;
 }
 
+#museum-list{
+    color: white;
+    font-size: 18px;
+    columns: 70px 4;
+    margin-top: 50px;
+}
+
+/*created li in JS - can include it in css to style it*/
+#museum-list,li{
+    list-style: none;
+}
+
+/*created <a></a> in JS - can include it in css to style it*/
+#museum-list,a{
+    color: blanchedalmond;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+#museum-list,a:hover{
+    color: limegreen;
+}
+
+
+#museum-list,a:active{
+    color: lightsalmon;
+}
 
 

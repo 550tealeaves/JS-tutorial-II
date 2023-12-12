@@ -88,20 +88,32 @@ let myIcon = L.icon({
 // ], {icon: myIcon}).addTo(museumMap);
 
 
-$('#pan-to-borough').click(function () {
-    //find Manhattan city property in data
-    let findBorough = museum.features.find(function (feature) {  //use find() method to find the city - takes  a function that's called for each feature (city)
-        return feature.properties.city === "Staten Island"; //returns the first city that matches the function
-    });
-    console.log('findBorough', findBorough);
-    //find the coordinates of the Staten Island borough
-    //need to access feature.geometry.coordinates
-    let coordinates = nyc.features.find(function (feature) {
-        return feature.properties.city === "Staten Island";
-    }).geometry.coordinates;
-    console.log('coords', coordinates); //coordinates = array of arrays
-    museumMap.panTo(new L.LatLng(coordinates[0][0][1], coordinates[0][0][0]));
+//GOAL
+//LIST ALL THE MUSEUMS
+//loop through the data using the .map() method
+let museumList = museums.features.map(function (feature){ //loop through the features in dataset
+    return feature.properties.name; //returns array of museum names 
+}).filter(function (name) { //.filter() removes blank names (even though there are none)
+    return name !== "";
+}).sort(); //sorts the names alphabetically
+console.log('list', museumList);
+
+//SHOW ALL THE MUSEUM LISTINGS IN THE DIV
+museumList.forEach(function(name){ //loops through the array of cities
+    $("#museum-list").append("<a href='#'> <li>" + name + "</li></a>"); //append each name to the div w/ id #neighborhoods and surround them w/ a href & li = clickable list
+    if(museumList.indexOf(name) % 1 === 0) {
+        $('#museum-list').append("<br>");
+    }
 });
+
+
+
+
+
+//Create list of all sites per borough
+//Pan to the site when you click the link 
+
+
 
 
 //find the marker object and iterate based on city name - change color
