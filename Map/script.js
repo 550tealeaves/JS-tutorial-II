@@ -16,6 +16,7 @@ museumMap.setView([40.7128, -74.0060], 10.4);
 L.geoJSON(museums).addTo(museumMap); //map displays with markers for all places
 
 L.geoJSON(museums, {
+    
     //Challenge (3) - Change color of Manhattan to red - error feature is undefined
     style: function (feature) {
         if (feature.properties.city === "Manhattan") { //if city = Manhattan, outline, add color & transparency
@@ -43,6 +44,11 @@ L.geoJSON(museums, {
     onEachFeature: function (feature, layer) {
         let link = feature.properties.url; //got the link to show up
         layer.bindPopup("<h3>" + feature.properties.name + "</h3> <hr> <a href=" + link + " + target='_blank' " + ">" + link + "</a>");
+        //Add the summary of the places 
+        layer.on('click', function () {
+            let summary = document.getElementById('info');
+            summary.innerHTML = feature.properties.summary;
+        });
     }
 }).addTo(museumMap);
 

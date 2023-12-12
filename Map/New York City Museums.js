@@ -988,7 +988,7 @@ const museums = {
         "name": "LaGuardia and Wagner Archives",
         "tel": "(718) 482-5065",
         "zip": "11101",
-        "url": "https://www.laguardiawagnerarchive.lagcc.cuny.edu/pages/about.aspx",
+        "url": "https://www.laguardiawagnerarchive.lagcc.cuny.edu/",
         "address2": "Fiorello H. LaGuardia Community College/CUNY Room E-238",
         "address1": "31-10 Thomson Ave",
         "summary": "Established in 1982 to collect, preserve, and make available primary materials documenting the social and political history of New York City, with an emphasis on the mayoralty and the borough of Queens."
