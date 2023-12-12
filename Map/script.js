@@ -10,7 +10,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 console.log('museums', museums);
 //Can chain the different methods - could do L.tilelayer(.....{}).addTo(museumMap).setView([lat, lng], zoom);
 
-museumMap.setView([40.7128, -74.0060], 13);
+museumMap.setView([40.7128, -74.0060], 10.4);
 
 //Add the data
 L.geoJSON(museums).addTo(museumMap); //map displays with markers for all places
@@ -45,6 +45,26 @@ L.geoJSON(museums, {
         layer.bindPopup("<h3>" + feature.properties.name + "</h3> <hr> <a href=" + link + " + target='_blank' " + ">" + link + "</a>");
     }
 }).addTo(museumMap);
+
+//FIND THE COORDINATES USING CONSOLE LOG
+museumMap.on('click', function (e) {  //click on map, .on() method calls function
+    const latLng = e.latlng; // Get the coordinates w/ the latlng property of the e object
+    console.log(latLng.lat); //get the lat value of the new .latLng object
+    console.log(latLng.lng);//get the lon value of the new .latLng object
+});
+
+//Map boundaries
+//Sets bounds but can click outside bounds and it will drag you back 
+let westBoundary = L.latLng(40.4752, -74.3087);
+let eastBoundary = L.latLng(40.9571, -73.5436);
+let boundaries = L.latLngBounds(westBoundary, eastBoundary);
+
+
+//Stop user from dragging map outside of bounds
+museumMap.setMaxBounds(boundaries);
+museumMap.on('drag', function () { 
+    museumMap.panInsideBounds(boundaries, {animate: false})
+});
 
 
 //find the marker object and iterate based on city name - change color
