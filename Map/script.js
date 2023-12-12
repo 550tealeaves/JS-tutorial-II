@@ -79,9 +79,29 @@ museumMap.on('drag', function () {
 let myIcon = L.icon({
     iconUrl: 'museum.png',
     iconSize: [140, 86],
-    iconAnchor: [25, 70],
+    iconAnchor: [22, 94],
     popupAnchor: [-3, -76]
 }); 
+
+// L.marker([
+//     geometry.coordinates
+// ], {icon: myIcon}).addTo(museumMap);
+
+
+$('#pan-to-borough').click(function () {
+    //find Manhattan city property in data
+    let findBorough = museum.features.find(function (feature) {  //use find() method to find the city - takes  a function that's called for each feature (city)
+        return feature.properties.city === "Staten Island"; //returns the first city that matches the function
+    });
+    console.log('findBorough', findBorough);
+    //find the coordinates of the Staten Island borough
+    //need to access feature.geometry.coordinates
+    let coordinates = nyc.features.find(function (feature) {
+        return feature.properties.city === "Staten Island";
+    }).geometry.coordinates;
+    console.log('coords', coordinates); //coordinates = array of arrays
+    museumMap.panTo(new L.LatLng(coordinates[0][0][1], coordinates[0][0][0]));
+});
 
 
 //find the marker object and iterate based on city name - change color
