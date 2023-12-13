@@ -155,18 +155,23 @@ $('#museum-list').on("click", "li", function (){ //target museum-list ID when li
 
 
 //Used chatGPT to find a code on how to update the map using dropdown
-$(document).ready(function (event){ 
+$(document).ready(function (event) {
     //function to update the map based on the selected option
-    function updateMap(pickBorough) { 
-        if (museums.features.find(function (feature) {
-            $('#museum-list').filter(feature.properties.city === pickBorough);
-        } ));
+    function updateMap(pickBorough) {
+        let museumFilter = museums.features.filter(
+            function (museum) {
+                var normalizedMuseum = museum.properties.city.toLowerCase();
+                var normalizedPickBorough = pickBorough.toLowerCase();
+                return normalizedMuseum === normalizedPickBorough;
+            }
+        );
+        console.log('filter', museumFilter);
         //$('#map').filter(museums.feature.properties.city); // doesn't work - says properties is undefined
         // $('#museum-list').hide(); //this works - when option selected from dropdown, museum list hides
         console.log('pick', pickBorough);
     }
     //Event handler for dropdown change
-    $('#selectBorough').on('change', function (){
+    $('#selectBorough').on('change', function () {
         //Get the selected option value
         pickBorough = $(this).val();
         //Call the function to update the map
