@@ -18,20 +18,22 @@ L.geoJSON(museums).addTo(museumMap); //map displays with markers for all places
 L.geoJSON(museums, {
     
     //Challenge (3) - Change color of Manhattan to red - error feature is undefined
-    style: function (feature, layer) {
-        if (feature.properties.city === "Manhattan") { //if city = Manhattan, outline, add color & transparency
-            return {
-                color: "red",
-                fillColor: "gold",
-                fillOpacity: 0.4
-            };
-        } else { //if not Manhattan, then outline, color, and transparency
-            return {
-                color: 'indigo',
-                fillColor: 'pink',
-                fillOpacity: 0.5
-            };
-        }
+    style: function (feature) {
+        
+        
+        // if (feature.properties.city === "Manhattan") { //if city = Manhattan, outline, add color & transparency
+        //     return {
+        //         color: "red",
+        //         fillColor: "gold",
+        //         fillOpacity: 0.4
+        //     };
+        // } else { //if not Manhattan, then outline, color, and transparency
+        //     return {
+        //         color: 'indigo',
+        //         fillColor: 'pink',
+        //         fillOpacity: 0.5
+        //     };
+        // }
 
     },
     //ADD POPUPS TO SHOW url/city NAMES
@@ -174,13 +176,13 @@ $(document).ready(function (event){
     });
 });
 
-// $('#selectBorough').on("change", function(event){
-//     console.log(event);
-//     let borough = $('#selectBorough'); //console logs event
-//     console.log('borough', borough); //will show borough selected in console
-// })
-
-
-
-
-$("h1").hide(500).delay(1500).show(300);
+//Style the h1
+$("h1").hide(500).delay(1500).show(300).css({
+    "text-decoration": "underline",
+    "font-style": "italic",
+    "border": "6px solid pink",
+    "border-style": "dashed",
+    "border-radius": "20px",
+    "font-size": "44px",
+    "color": "rgb(129, 234, 144)"
+});
