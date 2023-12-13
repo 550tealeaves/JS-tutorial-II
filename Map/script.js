@@ -154,7 +154,6 @@ $(document).ready(function (event) {
             },
         );
         console.log('filter', museumFilter);
-        //$('#map').filter(museums.feature.properties.city); // doesn't work - says properties is undefined
         // $('#museum-list').hide(); //this works - when option selected from dropdown, museum list hides
         console.log('pick', pickBorough);
     }
