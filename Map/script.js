@@ -43,7 +43,7 @@ L.geoJSON(museums, {
     //(6) Add target='_blank' so link opens in new tab
     onEachFeature: function (feature, layer) {
         let link = feature.properties.url; //got the link to show up
-        layer.bindPopup("<h3>" + feature.properties.name + "</h3> <hr> <a href=" + link + " + target='_blank' " + ">" + link + "</a>");
+        layer.bindPopup("<h3>" + feature.properties.name + "</h3> <hr> <a href=" + link + " + target='_blank' " + ">" + link + "</a>").on('mouseover');
         //Add the summary of the places 
         layer.on('mouseover', function () { //will show the summary when you mouseover icon
             let summary = document.getElementById('info');
@@ -97,8 +97,6 @@ let myIcon = L.icon({
 //loop through the data using the .map() method
 let museumList = museums.features.map(function (feature){ //loop through the features in dataset
     return feature.properties.name; //returns array of museum names 
-// }).filter(function (name) { //.filter() removes blank names (even though there are none)
-//     return name !== "";
 }).sort(function(name){ //sorts the names alphabetically
     return name;
 }); //sorts the names alphabetically
@@ -111,6 +109,16 @@ museumList.forEach(function(name){ //loops through the array of cities
     }
 });
 
+//ADD CLICK EVENT TO PAN TO THE MARKER WHEN THE NAME IS SELECTED FROM THE LIST
+$('#museum-list').on("click", "li", function (){ //target museum-list ID when li element is clicked
+    let nameText = $(this).text(); //get the text of the museum name
+    let coordinates = museums.features.find(function (feature){
+        return feature.properties.name === nameText; //check if the text matches the museum name from dataset
+    }).geometry.coordinates; //get the coordinates for the museum name
+    museumMap.panTo(new L.LatLng(coordinates[1], coordinates[0])); //will pan to these coordinates from the dataset for the name
+    museumMap.setZoom(18); //zooms in this amount when clicked
+    // L.marker(new L.LatLng(coordinates[1], coordinates[0])).bindPopup("<h3>" + nameText + "</h3> <hr> <a href=" + feature.properties.url + " + target='_blank' " + ">" + feature.properties.url + "</a>").addTo(museumMap);
+});
 
 
 
