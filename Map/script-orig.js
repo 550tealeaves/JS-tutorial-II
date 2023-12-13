@@ -134,9 +134,14 @@ museumList.forEach(function(name){ //loops through the array of cities
 $(document).ready(function (event) {
     //function to update the map based on the selected option
     function updateMap(pickBorough) {
-        if (museums.features.find(function (feature) {
-            $('#museum-list').filter(feature.properties.city === pickBorough);
-        }));
+        let museumFilter = museums.features.filter( //must reference the orig dataset(museums).features.filter
+            function (museum) { //create function to make sure dropdown selection matches the item with city
+                var normalizedMuseum = museum.properties.city.toLowerCase(); //makes everything lowercase
+                var normalizedPickBorough = pickBorough.toLowerCase(); //makes everything lowercase
+                return normalizedMuseum === normalizedPickBorough; //set dropdown = to items that had same city
+            }
+        );
+        console.log('filter', museumFilter);
         //$('#map').filter(museums.feature.properties.city); // doesn't work - says properties is undefined
         // $('#museum-list').hide(); //this works - when option selected from dropdown, museum list hides
         console.log('pick', pickBorough);
@@ -152,5 +157,13 @@ $(document).ready(function (event) {
     });
 });
 
-
-$("h1").hide(500).delay(1500).show(300);
+//Style the h1
+$("h1").hide(500).delay(1500).show(300).css({
+    "text-decoration": "underline",
+    "font-style": "italic",
+    "border": "6px solid pink",
+    "border-style": "dashed",
+    "border-radius": "20px",
+    "font-size": "44px",
+    "color": "rgb(129, 234, 144)"
+});

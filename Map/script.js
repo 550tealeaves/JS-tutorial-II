@@ -132,17 +132,6 @@ $('#museum-list').on("click", "li", function (){ //target museum-list ID when li
 });
 
 
-
-
-
-
-
-//Create list of all sites per borough
-//Pan to the site when you click the link 
-
-
-
-
 //find the marker object and iterate based on city name - change color
 //look up tutorial https://www.tutorialspoint.com/leafletjs/leafletjs_markers.htm
 
@@ -151,19 +140,18 @@ $('#museum-list').on("click", "li", function (){ //target museum-list ID when li
 
 
 //https://stackoverflow.com/questions/4864620/how-to-use-jquery-to-select-a-dropdown-option
-// $('select').val('option-value'); //will show the default option as blank
 
 
 //Used chatGPT to find a code on how to update the map using dropdown
 $(document).ready(function (event) {
     //function to update the map based on the selected option
     function updateMap(pickBorough) {
-        let museumFilter = museums.features.filter(
-            function (museum) {
-                var normalizedMuseum = museum.properties.city.toLowerCase();
-                var normalizedPickBorough = pickBorough.toLowerCase();
-                return normalizedMuseum === normalizedPickBorough;
-            }
+        let museumFilter = museums.features.filter( //must reference the orig dataset(museums).features.filter
+            function (museum) { //create function to make sure dropdown selection matches the item with city
+                var normalizedMuseum = museum.properties.city.toLowerCase(); //makes everything lowercase
+                var normalizedPickBorough = pickBorough.toLowerCase(); //makes everything lowercase
+                return normalizedMuseum === normalizedPickBorough; //set dropdown = to items that had same city
+            },
         );
         console.log('filter', museumFilter);
         //$('#map').filter(museums.feature.properties.city); // doesn't work - says properties is undefined
