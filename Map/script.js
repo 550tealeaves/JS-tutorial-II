@@ -42,14 +42,23 @@ L.geoJSON(museums, {
     //(5) Assign variable to feature.properties.url and create a <a href=" + feature.properties.url + ">" + feature.properties.link + "</a>";
     //(6) Add target='_blank' so link opens in new tab
     onEachFeature: function (feature, layer) {
-        let link = feature.properties.url; //got the link to show up
+        let link = feature.properties.url; //store path to urls in variable
+        // layer.on('mouseover', function(){
+        //     $('#map').append("<h3>" + feature.properties.name + "</h3> <hr> <a href=" + link + " + target='_blank' " + ">" + link + "</a>");
+        // }) //tried to create way to mouseover and show the name and link but didn't work
+        // $('#map').hover(function (){
+        //     $('#info').show(feature.properties.summary);
+        // },
+        // function(){
+        //     $('#info').hide(feature.properties.summary);
+        // });
         layer.bindPopup("<h3>" + feature.properties.name + "</h3> <hr> <a href=" + link + " + target='_blank' " + ">" + link + "</a>");
         //Add the summary of the places 
         layer.on('mouseover', function () { //will show the summary when you mouseover icon
             let summary = document.getElementById('info');
             summary.innerHTML = feature.properties.summary;
         });
-        layer.on('mouseout', function(){ //will hide the summary when mouse leaves icon
+        layer.on('mouseout', function () { //will hide the summary when mouse leaves icon
             let hideSummary = document.getElementById('info');
             hideSummary.innerHTML = null;
         });
@@ -142,18 +151,36 @@ $('#museum-list').on("click", "li", function (){ //target museum-list ID when li
 //https://stackoverflow.com/questions/4864620/how-to-use-jquery-to-select-a-dropdown-option
 // $('select').val('option-value'); //will show the default option as blank
 
-$('select option:selected').text();
 
+//Used chatGPT to find a code on how to update the map using dropdown
+$(document).ready(function (event){ 
+    //function to update the map based on the selected option
+    function updateMap(pickBorough) { 
+        if (museums.features.find(function (feature) {
+            $('#museum-list').filter(feature.properties.city === pickBorough);
+        } ));
+        //$('#map').filter(museums.feature.properties.city); // doesn't work - says properties is undefined
+        // $('#museum-list').hide(); //this works - when option selected from dropdown, museum list hides
+        console.log('pick', pickBorough);
+    }
+    //Event handler for dropdown change
+    $('#selectBorough').on('change', function (){
+        //Get the selected option value
+        pickBorough = $(this).val();
+        //Call the function to update the map
+        updateMap(pickBorough);
+        let borough = $('#selectBorough');
+        console.log('borough', borough); //shows borough selected in console
+    });
+});
 
-
-
-
-
-
-// $('#selectBorough').on('change', function(){
-//     let borough = $('#selectBorough');
+// $('#selectBorough').on("change", function(event){
+//     console.log(event);
+//     let borough = $('#selectBorough'); //console logs event
 //     console.log('borough', borough); //will show borough selected in console
-    
 // })
+
+
+
 
 $("h1").hide(500).delay(1500).show(300);
