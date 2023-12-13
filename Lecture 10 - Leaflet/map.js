@@ -83,8 +83,8 @@ console.log('lon', latLng.lng);//shows longitude
 
 
 //Use .panTo() method to shift map's view (pan) to Times Square
-poemMap.panTo(timesSquare.getLatLng()); 
-//poemMap.panTo(latLng); - shorter way to write the above code
+poemMap.panTo(latLng); //shorter way to write the below code
+//poemMap.panTo(timesSquare.getLatLng()); //longer way to write the above code
 
 
 //CLICK EVENT

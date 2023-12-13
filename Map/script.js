@@ -43,7 +43,7 @@ L.geoJSON(museums, {
     //(6) Add target='_blank' so link opens in new tab
     onEachFeature: function (feature, layer) {
         let link = feature.properties.url; //got the link to show up
-        layer.bindPopup("<h3>" + feature.properties.name + "</h3> <hr> <a href=" + link + " + target='_blank' " + ">" + link + "</a>").on('mouseover');
+        layer.bindPopup("<h3>" + feature.properties.name + "</h3> <hr> <a href=" + link + " + target='_blank' " + ">" + link + "</a>");
         //Add the summary of the places 
         layer.on('mouseover', function () { //will show the summary when you mouseover icon
             let summary = document.getElementById('info');
@@ -138,10 +138,22 @@ $('#museum-list').on("click", "li", function (){ //target museum-list ID when li
 //CREATE THE FILTER DROPDOWN 
 //https://learn.jquery.com/using-jquery-core/faq/how-do-i-get-the-text-value-of-a-selected-option/
 
-$('#selectBorough').on('change', function(){
-    let borough = $('#selectBorough');
-    console.log('borough', borough);
+
+//https://stackoverflow.com/questions/4864620/how-to-use-jquery-to-select-a-dropdown-option
+// $('select').val('option-value'); //will show the default option as blank
+
+$('select option:selected').text();
+
+
+
+
+
+
+
+// $('#selectBorough').on('change', function(){
+//     let borough = $('#selectBorough');
+//     console.log('borough', borough); //will show borough selected in console
     
-})
+// })
 
 $("h1").hide(500).delay(1500).show(300);
