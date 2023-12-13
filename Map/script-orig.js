@@ -130,10 +130,27 @@ museumList.forEach(function(name){ //loops through the array of cities
 //CREATE THE FILTER DROPDOWN 
 //https://learn.jquery.com/using-jquery-core/faq/how-do-i-get-the-text-value-of-a-selected-option/
 
-$('#selectBorough').on('change', function(){
-    let borough = $('#selectBorough');
-    console.log('borough', borough);
-    
-})
+//Used chatGPT to find a code on how to update the map using dropdown
+$(document).ready(function (event) {
+    //function to update the map based on the selected option
+    function updateMap(pickBorough) {
+        if (museums.features.find(function (feature) {
+            $('#museum-list').filter(feature.properties.city === pickBorough);
+        }));
+        //$('#map').filter(museums.feature.properties.city); // doesn't work - says properties is undefined
+        // $('#museum-list').hide(); //this works - when option selected from dropdown, museum list hides
+        console.log('pick', pickBorough);
+    }
+    //Event handler for dropdown change
+    $('#selectBorough').on('change', function () {
+        //Get the selected option value
+        pickBorough = $(this).val();
+        //Call the function to update the map
+        updateMap(pickBorough);
+        let borough = $('#selectBorough');
+        console.log('borough', borough); //shows borough selected in console
+    });
+});
+
 
 $("h1").hide(500).delay(1500).show(300);

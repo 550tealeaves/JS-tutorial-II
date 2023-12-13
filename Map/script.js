@@ -18,7 +18,7 @@ L.geoJSON(museums).addTo(museumMap); //map displays with markers for all places
 L.geoJSON(museums, {
     
     //Challenge (3) - Change color of Manhattan to red - error feature is undefined
-    style: function (feature) {
+    style: function (feature, layer) {
         if (feature.properties.city === "Manhattan") { //if city = Manhattan, outline, add color & transparency
             return {
                 color: "red",
