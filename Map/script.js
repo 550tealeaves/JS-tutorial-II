@@ -143,6 +143,8 @@ $(document).ready(function (event) {
         console.log('filter', museumFilter);
         // $('#museum-list').hide(); //this works - when option selected from dropdown, museum list hides
         console.log('pick', pickBorough);
+    
+    
     }
     //Event handler for dropdown change
     $('#selectBorough').on('change', function () {
@@ -150,21 +152,65 @@ $(document).ready(function (event) {
         pickBorough = $(this).val();
         //Call the function to update the map
         updateMap(pickBorough);
-        let borough = $('#selectBorough');
-        console.log('borough', borough); //shows borough selected in console
+        //let borough = $('#selectBorough');
+        //console.log('borough', borough); //shows borough selected in console
     });
+
+    function reinitializeMap() {
+        // Get the current map container
+        var mapContainer = document.getElementById('map');
+
+        // Remove the existing map instance and its content
+        mapContainer.innerHTML = '';
+
+        // Create a new map instance
+        newMap = L.map('map').setView([40.7128, -74.0060], 10.4);
+        console.log('new', newMap);
+
+        // Add any initial layers, markers, etc. to the new map
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 18,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors and <a href = "https://data.cityofnewyork.us/Recreation/New-York-City-Museums/ekax-ky3z">NYC Open Data</a>'
+        }).addTo(newMap)};
+        
+        L.geoJSON(museums).addTo(newMap);
+
+        L.geoJSON(museums), {
+        onEachFeature: function (feature, layer) {
+            let link = feature.properties.url; //store path to urls in variable
+            layer.bindPopup("<h3>" + feature.properties.name + "</h3> <hr> <a href=" + link + " + target='_blank' " + ">" + link + "</a>");
+            //Add the summary of the places 
+            layer.on('mouseover', function () { //will show the summary when you mouseover icon
+                let summary = document.getElementById('info');
+                summary.innerHTML = feature.properties.summary;
+            });
+            layer.on('mouseout', function () { //will hide the summary when mouse leaves icon
+                let hideSummary = document.getElementById('info');
+                hideSummary.innerHTML = null;
+            });
+        }}.addTo(newMap);
+
+        reinitializeMap();
 });
 
 
-function filter(feature, layer) {
-    if (feature.properties) {
-        if (feature.properties.city === normalizedPickBorough) {
-            return true
-        } else {
-            return false
-        }
-    }
-}
+
+
+
+//RE-LOAD THE DATA TO ONLY INCLUDE THE FEATURES FROM THE DROPDOWN SELECTION
+
+
+
+
+// function filter(feature, layer) {
+//     if (feature.properties) {
+//         if (feature.properties.city === normalizedPickBorough) {
+//             return true
+//         } else {
+//             return false
+//         }
+//     }
+// }
 
 //RE-LOAD THE DATA TO ONLY INCLUDE THE FEATURES FROM THE DROPDOWN SELECTION
 //not working - and stops the summary and the popup from showing
