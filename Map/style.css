@@ -18,6 +18,7 @@ body{
 /*did rest of h1 styling in JS*/
 h1{
     font-family: 'Grand Hotel', cursive;
+    border-width: 20px 30px 10px 15px;
 }
 
 #selectBorough{
@@ -67,6 +68,10 @@ section{
 
 #museum-list,a:active{
     color: lightsalmon;
+}
+
+#box{
+    margin-top: 60px;
 }
 
 

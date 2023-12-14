@@ -171,10 +171,17 @@ $(document).ready(function (event) {
 //Style the h1
 $("h1").hide(500).delay(1500).show(300).css({
     "text-decoration": "underline",
+    "color": "rgb(129, 234, 144)",
+    "text-align": "center",
     "font-style": "italic",
-    "border": "6px solid pink",
-    "border-style": "dashed",
-    "border-radius": "20px",
     "font-size": "44px",
-    "color": "rgb(129, 234, 144)"
+    "border": "0.5rem outset pink",
+    "border-style": "dashed",
+    "border-radius": "16px",
+    "border-width": "6px",
+    "box-shadow": "0 0 0 1.5rem navy",
+    "outline": "0.5rem solid gold",
+    "outline-offset": "1rem",
+    "padding": "40px",
+    "width": "30%"
 });
