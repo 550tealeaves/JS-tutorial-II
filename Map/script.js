@@ -166,15 +166,22 @@ $(document).ready(function (event) {
     
     
     }
-    //Event handler for dropdown change
-    $('#selectBorough').on('change', function () {
-        //Get the selected option value
+    //Plain JS Event handler for dropdown change
+    let borough = document.querySelector('#selectBorough');
+    borough.addEventListener('change', function (){
         pickBorough = $(this).val();
-        //Call the function to update the map
         updateMap(pickBorough);
-        //let borough = $('#selectBorough');
-        //console.log('borough', borough); //shows borough selected in console
     });
+
+    //jQuery event handler for dropdown change
+    // $('#selectBorough').on('change', function () {
+    //     //Get the selected option value
+    //     pickBorough = $(this).val();
+    //     //Call the function to update the map
+    //     updateMap(pickBorough);
+    //     //let borough = $('#selectBorough');
+    //     //console.log('borough', borough); //shows borough selected in console
+    // });
 
     // function reinitializeMap() {
     //     // Get the current map container
