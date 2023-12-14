@@ -77,7 +77,8 @@ museumMap.on('click', function (e) {  //click on map, .on() method calls functio
     console.log(latLng.lng);//get the lon value of the new .latLng object
 });
 
-//Map boundaries
+
+//MAP BOUNDARIES
 //Sets bounds but can click outside bounds and it will drag you back 
 let westBoundary = L.latLng(40.4752, -74.3087);
 let eastBoundary = L.latLng(40.9571, -73.5436);
@@ -103,7 +104,7 @@ let myIcon = L.icon({
 // ], {icon: myIcon}).addTo(museumMap);
 
 
-//GOAL
+
 //LIST ALL THE MUSEUMS
 //loop through the data using the .map() method
 let museumList = museums.features.map(function (feature){ //loop through the features in dataset
@@ -135,14 +136,11 @@ $('#museum-list').on("click", "li", function (){ //target museum-list ID when li
 //find the marker object and iterate based on city name - change color
 //look up tutorial https://www.tutorialspoint.com/leafletjs/leafletjs_markers.htm
 
-//CREATE THE FILTER DROPDOWN 
-//https://learn.jquery.com/using-jquery-core/faq/how-do-i-get-the-text-value-of-a-selected-option/
-
 
 //https://stackoverflow.com/questions/4864620/how-to-use-jquery-to-select-a-dropdown-option
 
 
-//Used chatGPT to find a code on how to update the map using dropdown
+//CREATE The FILTER FROM THE DROPDOWN SELECTION
 $(document).ready(function (event) {
     //function to update the map based on the selected option
     function updateMap(pickBorough) {
@@ -168,7 +166,7 @@ $(document).ready(function (event) {
     });
 });
 
-//Style the h1
+//STYLE THE H1
 $("h1").hide(500).delay(1500).show(300).css({
     "text-decoration": "underline",
     "color": "rgb(129, 234, 144)",
