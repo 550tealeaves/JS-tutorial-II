@@ -15,25 +15,47 @@ museumMap.setView([40.7128, -74.0060], 10.4);
 //Add the data
 L.geoJSON(museums).addTo(museumMap); //map displays with markers for all places
 
+
+
+
 L.geoJSON(museums, {
     
-    //Challenge (3) - Change color of Manhattan to red - error feature is undefined
-    style: function (feature) {
-        if (updateMap = true) { //if city = Manhattan, outline, add color & transparency
-            return {
-                color: "red",
-                fillColor: "gold",
-                fillOpacity: 0.4
-            };
-        } else { //if not Manhattan, then outline, color, and transparency
-            return {
-                color: 'indigo',
-                fillColor: 'pink',
-                fillOpacity: 0.5
-            };
-        }
+    
+    // filter: function (feature, layer) {
+    //     let museumFilter = museums.features.filter( //must reference the orig dataset(museums).features.filter
+    //         function (museum) { //create function to make sure dropdown selection matches the item with city
+    //             var normalizedMuseum = museum.properties.city.toLowerCase(); //makes everything lowercase
+    //             var normalizedPickBorough = pickBorough.toLowerCase(); //makes everything lowercase
+    //             return normalizedMuseum === normalizedPickBorough; //set dropdown = to items that had same city
+    //         },
+    //     );
+    //     console.log('filter', museumFilter),
+    //         // $('#museum-list').hide(); //this works - when option selected from dropdown, museum list hides
+    //     console.log('pick', pickBorough);
 
-    },
+    // },
+
+    
+    
+    
+
+    // //Challenge (3) - Change color of Manhattan to red - error feature is undefined
+    // style: function (feature) {
+    //     if (updateMap = true) { //if city = Manhattan, outline, add color & transparency
+    //         return {
+    //             color: "red",
+    //             fillColor: "gold",
+    //             fillOpacity: 0.4
+    //         };
+    //     } else { //if not Manhattan, then outline, color, and transparency
+    //         return {
+    //             color: 'indigo',
+    //             fillColor: 'pink',
+    //             fillOpacity: 0.5
+    //         };
+    //     }
+
+    // },
     //ADD POPUPS TO SHOW url/city NAMES
     //(1) Add new property to object: onEachFeature (separate them by commas)
     //(2) onEachFeature has 2 arguments (feature (url), layer (add to map & bindPop()))
@@ -55,8 +77,6 @@ L.geoJSON(museums, {
         });
     }
 }).addTo(museumMap);
-
-
 
 
 //FIND THE COORDINATES USING CONSOLE LOG
@@ -129,14 +149,14 @@ $('#museum-list').on("click", "li", function (){ //target museum-list ID when li
 //https://stackoverflow.com/questions/4864620/how-to-use-jquery-to-select-a-dropdown-option
 
 
-//CREATE The FILTER FROM THE DROPDOWN SELECTION
+// //CREATE The FILTER FROM THE DROPDOWN SELECTION
 $(document).ready(function (event) {
     //function to update the map based on the selected option
     function updateMap(pickBorough) {
         let museumFilter = museums.features.filter( //must reference the orig dataset(museums).features.filter
             function (museum) { //create function to make sure dropdown selection matches the item with city
-                var normalizedMuseum = museum.properties.city.toLowerCase(); //makes everything lowercase
-                var normalizedPickBorough = pickBorough.toLowerCase(); //makes everything lowercase
+                var normalizedMuseum = museum.properties.city; //makes everything lowercase
+                var normalizedPickBorough = pickBorough; //makes everything lowercase
                 return normalizedMuseum === normalizedPickBorough; //set dropdown = to items that had same city
             },
         );
@@ -156,41 +176,41 @@ $(document).ready(function (event) {
         //console.log('borough', borough); //shows borough selected in console
     });
 
-    function reinitializeMap() {
-        // Get the current map container
-        var mapContainer = document.getElementById('map');
+    // function reinitializeMap() {
+    //     // Get the current map container
+    //     var mapContainer = document.getElementById('map');
 
-        // Remove the existing map instance and its content
-        mapContainer.innerHTML = '';
+    //     // Remove the existing map instance and its content
+    //     mapContainer.innerHTML = '';
 
-        // Create a new map instance
-        newMap = L.map('map').setView([40.7128, -74.0060], 10.4);
-        console.log('new', newMap);
+    //     // Create a new map instance
+    //     newMap = L.map('map').setView([40.7128, -74.0060], 10.4);
+    //     console.log('new', newMap);
 
-        // Add any initial layers, markers, etc. to the new map
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 18,
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors and <a href = "https://data.cityofnewyork.us/Recreation/New-York-City-Museums/ekax-ky3z">NYC Open Data</a>'
-        }).addTo(newMap)};
+    //     // Add any initial layers, markers, etc. to the new map
+    //     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    //         maxZoom: 18,
+    //         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors and <a href = "https://data.cityofnewyork.us/Recreation/New-York-City-Museums/ekax-ky3z">NYC Open Data</a>'
+    //     }).addTo(newMap)};
         
-        L.geoJSON(museums).addTo(newMap);
+    //     L.geoJSON(museums).addTo(newMap);
 
-        L.geoJSON(museums), {
-        onEachFeature: function (feature, layer) {
-            let link = feature.properties.url; //store path to urls in variable
-            layer.bindPopup("<h3>" + feature.properties.name + "</h3> <hr> <a href=" + link + " + target='_blank' " + ">" + link + "</a>");
-            //Add the summary of the places 
-            layer.on('mouseover', function () { //will show the summary when you mouseover icon
-                let summary = document.getElementById('info');
-                summary.innerHTML = feature.properties.summary;
-            });
-            layer.on('mouseout', function () { //will hide the summary when mouse leaves icon
-                let hideSummary = document.getElementById('info');
-                hideSummary.innerHTML = null;
-            });
-        }}.addTo(newMap);
+    //     L.geoJSON(museums), {
+    //     onEachFeature: function (feature, layer) {
+    //         let link = feature.properties.url; //store path to urls in variable
+    //         layer.bindPopup("<h3>" + feature.properties.name + "</h3> <hr> <a href=" + link + " + target='_blank' " + ">" + link + "</a>");
+    //         //Add the summary of the places 
+    //         layer.on('mouseover', function () { //will show the summary when you mouseover icon
+    //             let summary = document.getElementById('info');
+    //             summary.innerHTML = feature.properties.summary;
+    //         });
+    //         layer.on('mouseout', function () { //will hide the summary when mouse leaves icon
+    //             let hideSummary = document.getElementById('info');
+    //             hideSummary.innerHTML = null;
+    //         });
+    //     }}.addTo(newMap);
 
-        reinitializeMap();
+    //     reinitializeMap();
 });
 
 
