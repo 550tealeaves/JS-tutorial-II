@@ -23,88 +23,88 @@ let myIcon = L.icon({
 L.geoJSON(museums).addTo(museumMap); //map displays with markers for all places
 
 
-L.geoJSON(museums, {
+// L.geoJSON(museums, {
 
-    //Challenge (3) - Change color of Manhattan to red - error feature is undefined
-    // style: function (feature) {
-    //     if (feature.properties.city === pickBorough) { //if city = Manhattan, outline, add color & transparency
-    //         return {
-    //             color: "red",
-    //             fillColor: "gold",
-    //             fillOpacity: 0.4
-    //         };
-    //     } else { //if not Manhattan, then outline, color, and transparency
-    //         return {
-    //             color: 'indigo',
-    //             fillColor: 'pink',
-    //             fillOpacity: 0.5
-    //         };
-    //     }
+//     //Challenge (3) - Change color of Manhattan to red - error feature is undefined
+//     // style: function (feature) {
+//     //     if (feature.properties.city === pickBorough) { //if city = Manhattan, outline, add color & transparency
+//     //         return {
+//     //             color: "red",
+//     //             fillColor: "gold",
+//     //             fillOpacity: 0.4
+//     //         };
+//     //     } else { //if not Manhattan, then outline, color, and transparency
+//     //         return {
+//     //             color: 'indigo',
+//     //             fillColor: 'pink',
+//     //             fillOpacity: 0.5
+//     //         };
+//     //     }
 
-    // },
-    onEachFeature: function (feature, layer) {
-        let link = feature.properties.url; //got the link to show up
-        layer.bindPopup("<h3>" + feature.properties.name + "</h3> <hr> <a href=" + link + " + target='_blank' " + ">" + link + "</a>");
-        //Add the summary of the places 
-        layer.on('mouseover', function () { //will show the summary when you mouseover icon
-            let summary = document.getElementById('info');
-            summary.innerHTML = "<h4>" + "<b>" + feature.properties.name + "</b>" + "</h4>" + "<br> " + feature.properties.summary;
-            summary.style.textAlign = "center"; //centers the text
-        });
-        layer.on('mouseout', function () { //will hide the summary when mouse leaves icon
-            let hideSummary = document.getElementById('info');
-            hideSummary.innerHTML = null;
-        });
-    }
-}).addTo(museumMap);
+//     // },
+//     onEachFeature: function (feature, layer) {
+//         let link = feature.properties.url; //got the link to show up
+//         layer.bindPopup("<h3>" + feature.properties.name + "</h3> <hr> <a href=" + link + " + target='_blank' " + ">" + link + "</a>");
+//         //Add the summary of the places 
+//         layer.on('mouseover', function () { //will show the summary when you mouseover icon
+//             let summary = document.getElementById('info');
+//             summary.innerHTML = "<h4>" + "<b>" + feature.properties.name + "</b>" + "</h4>" + "<br> " + feature.properties.summary;
+//             summary.style.textAlign = "center"; //centers the text
+//         });
+//         layer.on('mouseout', function () { //will hide the summary when mouse leaves icon
+//             let hideSummary = document.getElementById('info');
+//             hideSummary.innerHTML = null;
+//         });
+//     }
+// }).addTo(museumMap);
 
 
 //THIS ONLY SHOWS THE COORDINATES IN CONSOLE, DOESN'T SHOW THE SUMMARY OR THE MARKER POPUPS
 
-// function filterResults() {
-//     return L.geoJSON(museums, {
-//         onEachFeature: function (feature, layer) {
-//                 let link = feature.properties.url; //store path to urls in variable
-//                 layer.bindPopup("<h3>" + feature.properties.name + "</h3> <hr> <a href=" + link + " + target='_blank' " + ">" + link + "</a>");
-//                 //Add the summary of the places 
-//                 layer.on('mouseover', function () { //will show the summary when you mouseover icon
-//                     let summary = document.getElementById('info');
-//                     summary.innerHTML = "<h4>" + "<b>" + feature.properties.name + "</b>" + "</h4>" + "<br> " + feature.properties.summary;
-//                     summary.style.textAlign = "center"; //centers the text
-//                 });
-//                 layer.on('mouseout', function () { //will hide the summary when mouse leaves icon
-//                     let hideSummary = document.getElementById('info');
-//                     hideSummary.innerHTML = null;
-//                 });
-//             console.log('feature', feature);
-//             },
-//         filter: function(feature, layer) {
-//             let borough = document.querySelector('#selectBorough');
-//                 borough.addEventListener('change', function () {
-//                     pickBorough = $(this).val();
-//                     updateMap(pickBorough);
-//                 });
-//             let museumFilter = museums.features.filter( //must reference the orig dataset(museums).features.filter
-//                 function (museum) { //create function to make sure dropdown selection matches the item with city
-//                     var normalizedMuseum = museum.properties.city; //makes everything lowercase
-//                     var normalizedPickBorough = pickBorough; //makes everything lowercase
-//                     return normalizedMuseum === normalizedPickBorough; //set dropdown = to items that had same city
-//                 },
-//             );
-//             console.log('filter', museumFilter),
-//                 // $('#museum-list').hide(); //this works - when option selected from dropdown, museum list hides
-//             console.log('pick', pickBorough);
+function filterResults(filters, labels) {
+    return L.geoJSON(museums, {
+        onEachFeature: function (feature, layer) {
+                let link = feature.properties.url; //store path to urls in variable
+                layer.bindPopup("<h3>" + feature.properties.name + "</h3> <hr> <a href=" + link + " + target='_blank' " + ">" + link + "</a>");
+                //Add the summary of the places 
+                layer.on('mouseover', function () { //will show the summary when you mouseover icon
+                    let summary = document.getElementById('info');
+                    summary.innerHTML = "<h4>" + "<b>" + feature.properties.name + "</b>" + "</h4>" + "<br> " + feature.properties.summary;
+                    summary.style.textAlign = "center"; //centers the text
+                });
+                layer.on('mouseout', function () { //will hide the summary when mouse leaves icon
+                    let hideSummary = document.getElementById('info');
+                    hideSummary.innerHTML = null;
+                });
+            console.log('feature', feature);
+            },
+        filter: function(feature, layer) {
+            let borough = document.querySelector('#selectBorough');
+                borough.addEventListener('change', function () {
+                    pickBorough = $(this).val();
+                    updateMap(pickBorough);
+                });
+            let museumFilter = museums.features.filter( //must reference the orig dataset(museums).features.filter
+                function (museum) { //create function to make sure dropdown selection matches the item with city
+                    var normalizedMuseum = museum.properties.city; //makes everything lowercase
+                    var normalizedPickBorough = pickBorough; //makes everything lowercase
+                    return normalizedMuseum === normalizedPickBorough; //set dropdown = to items that had same city
+                },
+            );
+            console.log('filter', museumFilter),
+                // $('#museum-list').hide(); //this works - when option selected from dropdown, museum list hides
+            console.log('pick', pickBorough);
             
-//         },
-//         // pointToLayer: function (feature, LatLng) {
-//         //     return L.marker(LatLng, {
-//         //         icon: myIcon
-//         //     });
-//         // },
+        },
+        // pointToLayer: function (feature, LatLng) {
+        //     return L.marker(LatLng, {
+        //         icon: myIcon
+        //     });
+        // },
         
-//         }).addTo(museumMap);
+        }).addTo(museumMap)
 
-//     }
+    };
 
 
 //FIND THE COORDINATES USING CONSOLE LOG
