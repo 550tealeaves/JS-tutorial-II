@@ -12,11 +12,10 @@ console.log('museums', museums);
 
 museumMap.setView([40.7128, -74.0060], 10.4);
 
-let myIcon = L.icon({
+var myIcon = L.icon({
     iconUrl: 'museum.png',
-    iconSize: [140, 86],
-    iconAnchor: [22, 94],
-    popupAnchor: [-3, -76]
+    iconSize: [40, 86],
+    iconAnchor: [22, 94]
 }); 
 
 //THIS DOES NOT WORK - MAP LOADS OBJECT BUT SHOWS NO MARKERS AND THE FILTER DOES NOT WORK
@@ -65,8 +64,7 @@ function filterResults(museumPlace) {
                 hideSummary.innerHTML = null;
             });
         }
-    }).addTo(museumMap);
-}
+    }).addTo(museumMap)};
 
 //THE COORDINATES, ZOOM, and MUSEUM LIST WORK
 //FIND THE COORDINATES USING CONSOLE LOG
