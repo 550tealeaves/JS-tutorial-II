@@ -58,7 +58,7 @@ L.geoJSON(museums, {
     //     }
 
     // },
-    //ADD POPUPS TO SHOW url/city NAMES
+    //ADD POPUPS TO SHOW url/museum names
     //(1) Add new property to object: onEachFeature (separate them by commas)
     //(2) onEachFeature has 2 arguments (feature (url), layer (add to map & bindPop()))
     //(3) Use HTML to display the names in the popup - access feature > properties, then access url OR city w/in the properties
@@ -71,7 +71,7 @@ L.geoJSON(museums, {
         //Add the summary of the places 
         layer.on('mouseover', function () { //will show the summary when you mouseover icon
             let summary = document.getElementById('info');
-            summary.innerHTML = feature.properties.summary;
+            summary.innerHTML = "<h4>" + "<b>" + feature.properties.name + "</b>" + "</h4>" + "<br> " + feature.properties.summary;
         });
         layer.on('mouseout', function () { //will hide the summary when mouse leaves icon
             let hideSummary = document.getElementById('info');
@@ -111,7 +111,7 @@ let myIcon = L.icon({
 }); 
 
 // L.marker([
-//     geometry.coordinates
+//     feature.geometry.coordinates
 // ], {icon: myIcon}).addTo(museumMap);
 
 

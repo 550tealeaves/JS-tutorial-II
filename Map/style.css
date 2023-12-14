@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Pattaya&family=Yuji+Mai&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Jomhuria&family=Pattaya&family=Yuji+Mai&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Jomhuria&family=Nunito:wght@300&family=Pattaya&family=Yuji+Mai&display=swap');
 
 #map{
     height: 600px;
@@ -34,11 +34,13 @@ section{
 }
 
 #info{
-    margin: 50px;
+    margin: 40px;
     width: 20%;
     color: gold;
-    font-size: 30px;
-    font-family: 'Jomhuria', serif;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    font-weight: 400;
 }
 
 #museum-list{
