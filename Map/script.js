@@ -22,22 +22,24 @@ L.geoJSON(museums, {
     
     
     // filter: function (feature, layer) {
+    //     let borough = document.querySelector('#selectBorough');
+    //         borough.addEventListener('change', function () {
+    //             pickBorough = $(this).val();
+    //             updateMap(pickBorough);
+    //         });
     //     let museumFilter = museums.features.filter( //must reference the orig dataset(museums).features.filter
     //         function (museum) { //create function to make sure dropdown selection matches the item with city
-    //             var normalizedMuseum = museum.properties.city.toLowerCase(); //makes everything lowercase
-    //             var normalizedPickBorough = pickBorough.toLowerCase(); //makes everything lowercase
+    //             var normalizedMuseum = museum.properties.city; //makes everything lowercase
+    //             var normalizedPickBorough = pickBorough; //makes everything lowercase
     //             return normalizedMuseum === normalizedPickBorough; //set dropdown = to items that had same city
     //         },
     //     );
     //     console.log('filter', museumFilter),
     //         // $('#museum-list').hide(); //this works - when option selected from dropdown, museum list hides
     //     console.log('pick', pickBorough);
-
+        
     // },
 
-    
-    
-    
 
     // //Challenge (3) - Change color of Manhattan to red - error feature is undefined
     // style: function (feature) {
@@ -173,51 +175,51 @@ $(document).ready(function (event) {
         updateMap(pickBorough);
     });
 
-    //jQuery event handler for dropdown change
-    // $('#selectBorough').on('change', function () {
-    //     //Get the selected option value
-    //     pickBorough = $(this).val();
-    //     //Call the function to update the map
-    //     updateMap(pickBorough);
-    //     //let borough = $('#selectBorough');
-    //     //console.log('borough', borough); //shows borough selected in console
-    // });
+//     //jQuery event handler for dropdown change
+//     // $('#selectBorough').on('change', function () {
+//     //     //Get the selected option value
+//     //     pickBorough = $(this).val();
+//     //     //Call the function to update the map
+//     //     updateMap(pickBorough);
+//     //     //let borough = $('#selectBorough');
+//     //     //console.log('borough', borough); //shows borough selected in console
+//     // });
 
-    // function reinitializeMap() {
-    //     // Get the current map container
-    //     var mapContainer = document.getElementById('map');
+//     // function reinitializeMap() {
+//     //     // Get the current map container
+//     //     var mapContainer = document.getElementById('map');
 
-    //     // Remove the existing map instance and its content
-    //     mapContainer.innerHTML = '';
+//     //     // Remove the existing map instance and its content
+//     //     mapContainer.innerHTML = '';
 
-    //     // Create a new map instance
-    //     newMap = L.map('map').setView([40.7128, -74.0060], 10.4);
-    //     console.log('new', newMap);
+//     //     // Create a new map instance
+//     //     newMap = L.map('map').setView([40.7128, -74.0060], 10.4);
+//     //     console.log('new', newMap);
 
-    //     // Add any initial layers, markers, etc. to the new map
-    //     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    //         maxZoom: 18,
-    //         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors and <a href = "https://data.cityofnewyork.us/Recreation/New-York-City-Museums/ekax-ky3z">NYC Open Data</a>'
-    //     }).addTo(newMap)};
+//     //     // Add any initial layers, markers, etc. to the new map
+//     //     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+//     //         maxZoom: 18,
+//     //         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors and <a href = "https://data.cityofnewyork.us/Recreation/New-York-City-Museums/ekax-ky3z">NYC Open Data</a>'
+//     //     }).addTo(newMap)};
         
-    //     L.geoJSON(museums).addTo(newMap);
+//     //     L.geoJSON(museums).addTo(newMap);
 
-    //     L.geoJSON(museums), {
-    //     onEachFeature: function (feature, layer) {
-    //         let link = feature.properties.url; //store path to urls in variable
-    //         layer.bindPopup("<h3>" + feature.properties.name + "</h3> <hr> <a href=" + link + " + target='_blank' " + ">" + link + "</a>");
-    //         //Add the summary of the places 
-    //         layer.on('mouseover', function () { //will show the summary when you mouseover icon
-    //             let summary = document.getElementById('info');
-    //             summary.innerHTML = feature.properties.summary;
-    //         });
-    //         layer.on('mouseout', function () { //will hide the summary when mouse leaves icon
-    //             let hideSummary = document.getElementById('info');
-    //             hideSummary.innerHTML = null;
-    //         });
-    //     }}.addTo(newMap);
+//     //     L.geoJSON(museums), {
+//     //     onEachFeature: function (feature, layer) {
+//     //         let link = feature.properties.url; //store path to urls in variable
+//     //         layer.bindPopup("<h3>" + feature.properties.name + "</h3> <hr> <a href=" + link + " + target='_blank' " + ">" + link + "</a>");
+//     //         //Add the summary of the places 
+//     //         layer.on('mouseover', function () { //will show the summary when you mouseover icon
+//     //             let summary = document.getElementById('info');
+//     //             summary.innerHTML = feature.properties.summary;
+//     //         });
+//     //         layer.on('mouseout', function () { //will hide the summary when mouse leaves icon
+//     //             let hideSummary = document.getElementById('info');
+//     //             hideSummary.innerHTML = null;
+//     //         });
+//     //     }}.addTo(newMap);
 
-    //     reinitializeMap();
+//     //     reinitializeMap();
 });
 
 
