@@ -48,6 +48,7 @@ L.geoJSON(museums, {
         layer.on('mouseover', function () { //will show the summary when you mouseover icon
             let summary = document.getElementById('info');
             summary.innerHTML = "<h4>" + "<b>" + feature.properties.name + "</b>" + "</h4>" + "<br> " + feature.properties.summary;
+            summary.style.textAlign = "center"; //centers the text
         });
         layer.on('mouseout', function(){ //will hide the summary when mouse leaves icon
             let hideSummary = document.getElementById('info');

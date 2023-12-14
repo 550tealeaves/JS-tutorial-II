@@ -12,38 +12,22 @@ console.log('museums', museums);
 
 museumMap.setView([40.7128, -74.0060], 10.4);
 
+let myIcon = L.icon({
+    iconUrl: 'museum.png',
+    iconSize: [140, 86],
+    iconAnchor: [22, 94],
+    popupAnchor: [-3, -76]
+}); 
+
 //Add the data
 L.geoJSON(museums).addTo(museumMap); //map displays with markers for all places
 
 
-
-
 L.geoJSON(museums, {
-    
-    
-    // filter: function (feature, layer) {
-    //     let borough = document.querySelector('#selectBorough');
-    //         borough.addEventListener('change', function () {
-    //             pickBorough = $(this).val();
-    //             updateMap(pickBorough);
-    //         });
-    //     let museumFilter = museums.features.filter( //must reference the orig dataset(museums).features.filter
-    //         function (museum) { //create function to make sure dropdown selection matches the item with city
-    //             var normalizedMuseum = museum.properties.city; //makes everything lowercase
-    //             var normalizedPickBorough = pickBorough; //makes everything lowercase
-    //             return normalizedMuseum === normalizedPickBorough; //set dropdown = to items that had same city
-    //         },
-    //     );
-    //     console.log('filter', museumFilter),
-    //         // $('#museum-list').hide(); //this works - when option selected from dropdown, museum list hides
-    //     console.log('pick', pickBorough);
-        
-    // },
 
-
-    // //Challenge (3) - Change color of Manhattan to red - error feature is undefined
+    //Challenge (3) - Change color of Manhattan to red - error feature is undefined
     // style: function (feature) {
-    //     if (updateMap = true) { //if city = Manhattan, outline, add color & transparency
+    //     if (feature.properties.city === pickBorough) { //if city = Manhattan, outline, add color & transparency
     //         return {
     //             color: "red",
     //             fillColor: "gold",
@@ -58,15 +42,8 @@ L.geoJSON(museums, {
     //     }
 
     // },
-    //ADD POPUPS TO SHOW url/museum names
-    //(1) Add new property to object: onEachFeature (separate them by commas)
-    //(2) onEachFeature has 2 arguments (feature (url), layer (add to map & bindPop()))
-    //(3) Use HTML to display the names in the popup - access feature > properties, then access url OR city w/in the properties
-    //(4) Add <hr> horiz tag to separate names
-    //(5) Assign variable to feature.properties.url and create a <a href=" + feature.properties.url + ">" + feature.properties.link + "</a>";
-    //(6) Add target='_blank' so link opens in new tab
     onEachFeature: function (feature, layer) {
-        let link = feature.properties.url; //store path to urls in variable
+        let link = feature.properties.url; //got the link to show up
         layer.bindPopup("<h3>" + feature.properties.name + "</h3> <hr> <a href=" + link + " + target='_blank' " + ">" + link + "</a>");
         //Add the summary of the places 
         layer.on('mouseover', function () { //will show the summary when you mouseover icon
@@ -80,6 +57,54 @@ L.geoJSON(museums, {
         });
     }
 }).addTo(museumMap);
+
+
+//THIS ONLY SHOWS THE COORDINATES IN CONSOLE, DOESN'T SHOW THE SUMMARY OR THE MARKER POPUPS
+
+// function filterResults() {
+//     return L.geoJSON(museums, {
+//         onEachFeature: function (feature, layer) {
+//                 let link = feature.properties.url; //store path to urls in variable
+//                 layer.bindPopup("<h3>" + feature.properties.name + "</h3> <hr> <a href=" + link + " + target='_blank' " + ">" + link + "</a>");
+//                 //Add the summary of the places 
+//                 layer.on('mouseover', function () { //will show the summary when you mouseover icon
+//                     let summary = document.getElementById('info');
+//                     summary.innerHTML = "<h4>" + "<b>" + feature.properties.name + "</b>" + "</h4>" + "<br> " + feature.properties.summary;
+//                     summary.style.textAlign = "center"; //centers the text
+//                 });
+//                 layer.on('mouseout', function () { //will hide the summary when mouse leaves icon
+//                     let hideSummary = document.getElementById('info');
+//                     hideSummary.innerHTML = null;
+//                 });
+//             console.log('feature', feature);
+//             },
+//         filter: function(feature, layer) {
+//             let borough = document.querySelector('#selectBorough');
+//                 borough.addEventListener('change', function () {
+//                     pickBorough = $(this).val();
+//                     updateMap(pickBorough);
+//                 });
+//             let museumFilter = museums.features.filter( //must reference the orig dataset(museums).features.filter
+//                 function (museum) { //create function to make sure dropdown selection matches the item with city
+//                     var normalizedMuseum = museum.properties.city; //makes everything lowercase
+//                     var normalizedPickBorough = pickBorough; //makes everything lowercase
+//                     return normalizedMuseum === normalizedPickBorough; //set dropdown = to items that had same city
+//                 },
+//             );
+//             console.log('filter', museumFilter),
+//                 // $('#museum-list').hide(); //this works - when option selected from dropdown, museum list hides
+//             console.log('pick', pickBorough);
+            
+//         },
+//         // pointToLayer: function (feature, LatLng) {
+//         //     return L.marker(LatLng, {
+//         //         icon: myIcon
+//         //     });
+//         // },
+        
+//         }).addTo(museumMap);
+
+//     }
 
 
 //FIND THE COORDINATES USING CONSOLE LOG
@@ -104,12 +129,7 @@ museumMap.on('drag', function () {
 });
 
 
-let myIcon = L.icon({
-    iconUrl: 'museum.png',
-    iconSize: [140, 86],
-    iconAnchor: [22, 94],
-    popupAnchor: [-3, -76]
-}); 
+
 
 // L.marker([
 //     feature.geometry.coordinates
@@ -149,7 +169,6 @@ $('#museum-list').on("click", "li", function (){ //target museum-list ID when li
 //look up tutorial https://www.tutorialspoint.com/leafletjs/leafletjs_markers.htm
 
 
-//https://stackoverflow.com/questions/4864620/how-to-use-jquery-to-select-a-dropdown-option
 
 
 // //CREATE The FILTER FROM THE DROPDOWN SELECTION
