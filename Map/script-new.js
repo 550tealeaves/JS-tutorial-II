@@ -19,7 +19,7 @@ var myIcon = L.icon({
 }); 
 
 //THIS DOES NOT WORK - MAP LOADS OBJECT BUT SHOWS NO MARKERS AND THE FILTER DOES NOT WORK
-function filterResults(museumPlace) {
+function filterResults(filters, labels) {
     return L.geoJSON(museums, {
         filter: function(feature, layer) {
             let borough = document.querySelector('#selectBorough');
