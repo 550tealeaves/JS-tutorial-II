@@ -1,4 +1,4 @@
-
+//https://gis.stackexchange.com/questions/426874/filtering-and-adding-geojson-features-using-function-in-leaflet
 
 var myGeoJson = [{
     "type": "FeatureCollection",
