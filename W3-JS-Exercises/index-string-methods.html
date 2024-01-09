@@ -34,6 +34,25 @@
     <div id="before"></div>
     <div id="string"></div>
     <br>
+    <div id="orig"></div>
+    <br>
+    <div id="replace-orig"></div>
+    <br>
+    <br>
+    <div id="replace-global-orig"></div>
+    <br>
+    <div id="replace-global-final"></div>
+    <br>
+    <br>
+    <div id="replace-all-orig"></div>
+    <br>
+    <div id="replace-all-final"></div>
+    <br>
+    <br>
+    <div id="replace-all-orig2"></div>
+    <br>
+    <div id="replace-all-final2"></div>
+    <br>
     <br>
     <h3>Extracting String Characters</h3>
     <div id="character"></div>
@@ -62,6 +81,47 @@
     <div id="substr"></div>
     <br>
     <div id="substr-two"></div>
+    <br>
+    <br>
+    <div id="trim"></div>
+    <br>
+    <div id="trim-start"></div>
+    <br>
+    <div id="trim-end"></div>
+    <br>
+    <br>
+    <h3>String Padding</h3>
+    <div id="pad-start"></div>
+    <br>
+    <div id="pad-two"></div>
+    <br>
+    <div id="pad-num"></div>
+    <br>
+    <div id="pad-end"></div>
+    <br>
+    <div id="pad-three"></div>
+    <br>
+    <div id="pad-four"></div>
+    <br>
+    <br>
+    <div id="repeat"></div>
+    <br>
+    <br>
+    <h3>Splits</h3>
+    <div id="split"></div>
+    <br>
+    <div id="split-one"></div>
+    <br>
+    <br>
+    <div id="split-orig"></div>
+    <br>
+    <div id="split-two"></div>
+    <br>
+    <br>
+    <div id="split-orig-two"></div>
+    <br>
+    <div id="split-three"></div>
+
 
     <script>
         //UPPERCASE - .toUpperCase() will capitalize entire string
@@ -74,20 +134,45 @@
         feel = feel.toLowerCase();
         document.getElementById("lower").innerHTML = (feel); //the man exclaimed, you have no balls!
 
-        //REPLACE - .replace() method - replaces word "buying" with "eating"
+        //REPLACE - .replace() method - replaces 1st match replaces word "buying" with "eating"
         let newTxt = "I love buying cheese.";
         document.getElementById("before").innerHTML = (newTxt); //I love buying cheese
         newTxt = newTxt.replace("buying", "eating");
         document.getElementById("string").innerHTML = (newTxt); //I love eating cheese 
 
+        //replace() method is case sensitive - to ignore that - use regular expression w/ an /i flag for insensitive
+        //regular expression DO NOT use quotes
+        let newTextTwo = "Please visit MicRoSoft to learn more about JS";
+        document.getElementById("orig").innerHTML = (newTextTwo + " --- orig string that will be replaced w/ insensitive match");
+        let newTextThree = newTextTwo.replace(/MICROSOFT/i, "W3Schools"); //will search for THE FIRST MATCH of Microsoft, regardless of case spelling
+        document.getElementById("replace-orig").innerHTML = (newTextThree + " --- used regular expression w/ /i flag - /MICROSOFT/i so it would replace the word regardless of case"); 
+
+        //To replace ALL matches, ues regular express w/ /g flag (global match)
+        let replaceText = "Please visit Microsoft and Microsoft!";
+        document.getElementById("replace-global-orig").innerHTML = (replaceText + " --- this is orig text that will be replaced using global match");
+        let global = replaceText.replace(/Microsoft/g, "W3Schools"); //use global match to replace ALL case spelling of Microsoft
+        document.getElementById("replace-global-final").innerHTML = (global + " --- used global match to find all matches");
+
+
+        //REPLACEALL() method - lets you replace all instances of the string (case sensitive)
+        let newTextFour = "How much wood could a wood chuck chuck if a woodchuck could chuck wood?";
+        document.getElementById("replace-all-orig").innerHTML = (newTextFour + " --- orig string where all 'wood' will be replaced");
+        let replaceThis = newTextFour.replaceAll("wood", "WooD");
+        document.getElementById("replace-all-final").innerHTML = (replaceThis); //How much WooD could a WooD chuck chuck if a WooDchuck could chuck WooD?
+
+        let newTextFive = "How much wood could a wood CHuck chuCK if a woodchuck could Chuck wood?"
+        document.getElementById("replace-all-orig2").innerHTML = (newTextFive + " --- orig string where all 'chuck' will be replaced using global replaceAll()");
+        let replaceAllThis = newTextFour.replaceAll(/chuck/g, "CHucK");
+        document.getElementById("replace-all-final2").innerHTML = (replaceAllThis); //How much wood could a wood CHucK CHucK if a woodCHucK could CHucK wood?
+
 
         //EXTRACTING STRING CHARACTERS - 3 methods -charAt(), charCodeAt(), name.at()
-        //charAt() - returns character at a specified index (position) in string
+        //CHARAT() - returns character at a specified index (position) in string
         let text = "Welcome Globe"
         let char = text.charAt(8);
         document.getElementById("character").innerHTML = (char + " -- is the character that has index of 8"); //shows 8th character (includes space) - G
 
-        //charCodeAt() method returns code fo character at specified index in string - returns a UTF-16 code (int b/w 0-65535)
+        //CHARCODEAT() method returns code fo character at specified index in string - returns a UTF-16 code (int b/w 0-65535)
         let charText = "HELLO WORLD";
         let code = text.charCodeAt(6); //101
         document.getElementById("char-code").innerHTML = (code); //returns 101
@@ -141,8 +226,78 @@
         //if you omit 2nd parameter, substr() slices out the rest of the string
         let strThree = "Apple, Banana, Kiwi!";
         let partThree = strThree.substr(3); //returns everything starting at 3rd index (l)
-        document.getElementById("substr-two").innerHTML = (partThree); //le, Banana, Kiwi! 
+        document.getElementById("substr-two").innerHTML = (partThree); //le, Banana, Kiwi!
 
+        //TRIM() method - removes whitespace from both sides of string
+        let text1 = "     Portugal would be a great place to visit in summer     ";
+        let text2 = text1.trim();
+        document.getElementById("trim").innerHTML = (text2); 
+
+        //TRIMSTART() method removes whitespace from start of string 
+        let textTrim =  "     Portugal would be a great place to visit in summer     ";     
+        let textTwoTrim = textTrim.trimStart();
+        document.getElementById("trim-start").innerHTML = (textTwoTrim + " trimStart() only removes whitespace at start of string");  //doesn't really show it well on HTML
+
+        //TRIMEND() method removes whitespace from end of string
+        let textEnd = "     Portugal would be a great place to visit in summer         ";
+        let textEndTwo = textEnd.trimEnd();
+        document.getElementById("trim-end").innerHTML = (textEndTwo); //doesn't show well on HTML
+        
+
+        //STRING PADDING
+        //PADStart() method - pads string from start w/ another string until given length reached
+        let textThree = "5";
+        let padded = textThree.padStart(4, "0"); //pads string w/ 0 until reaches length 4 - string has to be 4 characters long - add 3 0s at START of string
+        document.getElementById('pad-start').innerHTML = (padded + " --- from padStart() that pads string from start w/ another string until given length reached"); //0005
+
+        let textFour = "7";
+        let paddedOne = textFour.padStart(10, "a"); //string is 10 characters long - add 9 a's at start, then 7
+        document.getElementById("pad-two").innerHTML = (paddedOne + " --- uses padStart() to create string that's 10 characters long"); //aaaaaaaaa7
+
+        //PADStart() with numbers - must convert number to string first
+        let numb = 14;
+        let textFive = numb.toString(); //converts 14 to "14"
+        let paddedTwo = textFive.padStart(23, "Umi"); //will repeat Umi for 21 characters - and then add "14" as last 2 - 21+2 = 23
+        document.getElementById("pad-num").innerHTML = (paddedTwo + " --- had to convert integer to string first and then use padStart()"); //UmiUmiUmiUmiUmiUmiUmi14
+
+        //PADEND() pads string at the end w/ another repeated string until reaches length
+        let textSix = "10";
+        let paddedThree = textSix.padEnd(12, "Fox"); //total 12 characters (1st 2 = 10, so 10 characters of repeating Fox)
+        document.getElementById("pad-end").innerHTML = (paddedThree + " --- padEnd() adds repeating string to end of another string"); //10FoxFoxFoxF
+
+        let textSeven = "stunning";
+        let paddedFour = textSeven.padEnd(28, 'beautiful gowns');
+        document.getElementById("pad-three").innerHTML = (paddedFour); // returns stunningbeautiful gownsbeaut
+
+        let numbTwo = 884;
+        let textEight = numbTwo.toString(); //converts to "884"
+        let paddedFive = textEight.padEnd(16, "P"); //will add 13 P's after (3) 884
+        document.getElementById("pad-four").innerHTML = (paddedFive); // 884PPPPPPPPPPPPP
+
+        //REPEAT() method returns string w/ # of copies of string - doesn't change orig
+        let textNine = "Wrinkle, the duck, ran a marathon";
+        let result = textNine.repeat(6);
+        document.getElementById("repeat").innerHTML = (result); //repeats string 6x, no space b/w end & start of next
+
+
+        //SPLIT() - can convert string to an array 
+        let textTen = "TV, DVD, DVR, VCR";
+        document.getElementById("split").innerHTML = (textTen + " --- orig string that will be split into array by commas");
+        let commaSplit = textTen.split(","); //split on commas
+        document.getElementById("split-one").innerText = (commaSplit + " --- do console log and it will show as array");
+        console.log("comma", commaSplit); //array w/ 4 items
+
+        let textEleven = "I have a lovely bunch of coconuts";
+        document.getElementById("split-orig").innerHTML = (textEleven + " --- orig string that will be split into array by spaces");
+        let spaceSplit = textEleven.split(" "); //splits on space
+        document.getElementById("split-two").innerHTML = (spaceSplit);
+        console.log('space', spaceSplit); //array w/ 7 items
+
+        let vegetables = "Cucumber|Celery|Cabbage|Cauliflower|Carrots|Capers";
+        document.getElementById("split-orig-two").innerHTML = (vegetables + " --- orig string that will be split into array by pipes");
+        let pipeSplit = vegetables.split("|"); //splits on pipes
+        document.getElementById("split-three").innerHTML = (pipeSplit);
+        console.log('pipe', pipeSplit); //array w/ 6 items
 
     </script>
 </body>
