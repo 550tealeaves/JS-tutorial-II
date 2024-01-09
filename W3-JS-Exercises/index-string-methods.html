@@ -178,7 +178,7 @@
         let char = text.charAt(8);
         document.getElementById("character").innerHTML = (char + " -- is the character that has index of 8"); //shows 8th character (includes space) - G
 
-        //CHARCODEAT() method returns code fo character at specified index in string - returns a UTF-16 code (int b/w 0-65535)
+        //CHARCODEAT() method returns code of character at specified index in string - returns a UTF-16 code (int b/w 0-65535)
         let charText = "HELLO WORLD";
         let code = text.charCodeAt(6); //101
         document.getElementById("char-code").innerHTML = (code + " --- this is the UTF-16 code"); //returns 101
@@ -252,7 +252,7 @@
         
 
         //STRING PADDING
-        //PADStart() method - pads string from start w/ another string until given length reached
+        //PADSTART() method - pads string from start w/ another string until given length reached
         let textThree = "5";
         let padded = textThree.padStart(4, "0"); //pads string w/ 0 until reaches length 4 - string has to be 4 characters long - add 3 0s at START of string
         document.getElementById('pad-start').innerHTML = (padded + " --- from padStart() that pads string from start w/ another string until given length reached"); //0005
