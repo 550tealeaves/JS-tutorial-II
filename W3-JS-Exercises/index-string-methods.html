@@ -13,6 +13,16 @@
             color: rgb(157, 236, 39);
             font-style: italic;
         }
+
+        h3{
+            color: darkmagenta;
+            text-decoration: underline;
+        }
+
+        h4{
+            color: olivedrab;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
@@ -36,6 +46,7 @@
     <br>
     <br>
     <h3>Extracting String Parts</h3>
+    <h4>Original string - Apple, Banana, Kiwi!</h4>
     <div id="slice"></div>
     <br>
     <div id="slice-one"></div>
@@ -43,6 +54,14 @@
     <div id="slice-neg"></div>
     <br>
     <div id="slice-two"></div>
+    <br>
+    <div id="substring"></div>
+    <br>
+    <div id="substring-two"></div>
+    <br>
+    <div id="substr"></div>
+    <br>
+    <div id="substr-two"></div>
 
     <script>
         //UPPERCASE - .toUpperCase() will capitalize entire string
@@ -102,7 +121,28 @@
         //slice can have two negative parameters
         let textTwo = "Apple, Banana, Kiwi!";
         let partTwo = textTwo.slice(-12, -6); //goes from 6th to 12th indexes starting from end
-        document.getElementById("slice-two").innerHTML = (partTwo); //returns anana, + space after comma
+        document.getElementById("slice-two").innerHTML = (partTwo + " -- goes from the 6th to 12th indexes starting from end"); //returns anana, + space after comma
+
+        //SUBSTRING() - sim to slice() but start/end values < 0 are treated as 0
+        let str = "Apple, Banana, Kiwi!";
+        let partString = str.substring(1, 4); //returns ppl (starts at 1st index and then stops at 4th - excludes the 4th - only returns 1,2,3)
+        document.getElementById("substring").innerHTML = (partString + " -- returns substring w/ indexes 1,2,3 (excludes 4th)"); //ppl
+
+        //if you omit 2nd parameter, substring() slices out the rest of the string
+        let strSub = "Apple, Banana, Kiwi!";
+        let partStringSub = strSub.substring(4); //starts at 4th index (e) & returns the rest
+        document.getElementById("substring-two").innerHTML = (partStringSub + " -- is the substring returned when you omit the 2nd parameter"); // e, Banana, Kiwi! 
+
+        //SUBSTR() method - starts at 1st parameter & 2nd parameter tells the length of the extracted part
+        let strSubstr = "Apple, Banana, Kiwi!";
+        let partSubstr = str.substr(10, 6); //starts at 10th index (a) and extends 6 characters - returns ana, K
+        document.getElementById("substr").innerHTML = (partSubstr); //returns ana, K
+
+        //if you omit 2nd parameter, substr() slices out the rest of the string
+        let strThree = "Apple, Banana, Kiwi!";
+        let partThree = strThree.substr(3); //returns everything starting at 3rd index (l)
+        document.getElementById("substr-two").innerHTML = (partThree); //le, Banana, Kiwi! 
+
 
     </script>
 </body>
