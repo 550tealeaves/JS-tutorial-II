@@ -21,10 +21,28 @@
     <br>
     <div id="lower"></div>
     <br>
-    <div id="slice"></div>
-    <br>
     <div id="before"></div>
     <div id="string"></div>
+    <br>
+    <br>
+    <h3>Extracting String Characters</h3>
+    <div id="character"></div>
+    <br>
+    <div id="char-code"></div>
+    <br>
+    <div id="at"></div>
+    <br>
+    <div id="at-two"></div>
+    <br>
+    <br>
+    <h3>Extracting String Parts</h3>
+    <div id="slice"></div>
+    <br>
+    <div id="slice-one"></div>
+    <br>
+    <div id="slice-neg"></div>
+    <br>
+    <div id="slice-two"></div>
 
     <script>
         //UPPERCASE - .toUpperCase() will capitalize entire string
@@ -37,16 +55,54 @@
         feel = feel.toLowerCase();
         document.getElementById("lower").innerHTML = (feel); //the man exclaimed, you have no balls!
 
-        //SLICE - .slice() method - use slice to return "bananas"
-        let txt = "I refuse to eat bananas any day";
-        let x = txt.slice(16, 23); //characters 16-23 (INCLUDES spaces)
-        document.getElementById("slice").innerHTML = (x); //returns bananas
-
         //REPLACE - .replace() method - replaces word "buying" with "eating"
         let newTxt = "I love buying cheese.";
         document.getElementById("before").innerHTML = (newTxt); //I love buying cheese
         newTxt = newTxt.replace("buying", "eating");
         document.getElementById("string").innerHTML = (newTxt); //I love eating cheese 
+
+
+        //EXTRACTING STRING CHARACTERS - 3 methods -charAt(), charCodeAt(), name.at()
+        //charAt() - returns character at a specified index (position) in string
+        let text = "Welcome Globe"
+        let char = text.charAt(8);
+        document.getElementById("character").innerHTML = (char + " -- is the character that has index of 8"); //shows 8th character (includes space) - G
+
+        //charCodeAt() method returns code fo character at specified index in string - returns a UTF-16 code (int b/w 0-65535)
+        let charText = "HELLO WORLD";
+        let code = text.charCodeAt(6); //101
+        document.getElementById("char-code").innerHTML = (code); //returns 101
+
+        //AT() method - returns character at specified index (position) - allows use of negative indexes, unlike charAt()
+        let name = "W3Schools";
+        let letter = name.at(2); //returns 3rd letter - S
+        document.getElementById("at").innerHTML = (letter + " -- is the 3rd letter (index 2) in W3Schools");
+        //Alternative
+        let nameTwo = "W3Schools";
+        let letterTwo = name[5]; //returns o
+        document.getElementById("at-two").innerHTML = (letterTwo + " -- is the 6th letter (index 5) in W3Schools");
+
+        //EXTRACTING STRING PARTS - 3 methods - .splice(), .substring(), .substr()
+        //SLICE - returns extracted part as new string - 2 parameters (start, end)
+        //.slice() method - use slice to return "bananas"
+        let txt = "I refuse to eat bananas any day";
+        let x = txt.slice(16, 23); //characters 16-23 (INCLUDES spaces)
+        document.getElementById("slice").innerHTML = (x + " -- was spliced from the sentence \"I refuse to eat bananas any day\""); //returns bananas
+
+        //don't have to use 2 parameters - method will slice out rest of string
+        let textSlice = "Apple, Banana, Kiwi!";
+        let part = textSlice.slice(9); //extracts 9th index (10th position) and up (removes 0-8 indexes)
+        document.getElementById("slice-one").innerHTML = (part + " -- is extracted from \"Apple, Banana, Kiwi!\" It's the 9th index position and up"); //nana, Kiwi!
+
+        //slice can take negative parameters and position is counted from end of string
+        let textNeg = "Apple, Banana, Kiwi!";
+        let partNeg = textNeg.slice(-15); //extracts from 15th index (16th pos) start counting from end
+        document.getElementById("slice-neg").innerHTML = (partNeg + " -- is extracted from \"Apple, Banana, Kiwi!\" It starts counting indexes from end of string"); // returns , Banana, Kiwi!
+
+        //slice can have two negative parameters
+        let textTwo = "Apple, Banana, Kiwi!";
+        let partTwo = textTwo.slice(-12, -6); //goes from 6th to 12th indexes starting from end
+        document.getElementById("slice-two").innerHTML = (partTwo); //returns anana, + space after comma
 
     </script>
 </body>
