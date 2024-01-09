@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dates</title>
+    <style>
+        body{
+            background-color: moccasin;
+            font-size: 24px;
+            margin-left: 20px;
+        }
+
+        h1{
+            color: mediumblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>W3 JS Dates Exercises</h1>
+    <div id="date"></div>
+    <br>
+   <div id="year"></div> 
+   <br>
+   <div id="month"></div> 
+   <br>
+   <div id="day"></div>
+   <br>
+   <div id="new-year"></div>  
+
+    <script>
+        //Create date object and alert current date and time
+        let d = new Date(); //shows current date and time
+        //alert(d);
+        document.getElementById("date").innerHTML = (d);
+
+        //Extract the year from a date object
+        year = d.getFullYear(); //shows the year from the full date
+        document.getElementById("year").innerHTML = (year); 
+
+        //Extract the month from the date object
+        month = d.getMonth(); //shows the month
+        document.getElementById("month").innerHTML = (month); //shows "0" instead of current month
+
+        //Extract the day from the date object
+        day = d.getDay();
+        document.getElementById("day").innerHTML = (day); //shows "1" instead of current day
+
+        //Set the year of a date object to 2020
+        changeYear = d.setFullYear(2020); //sets year to 2020
+        document.getElementById("new-year").innerHTML = (changeYear); //shows year in seconds or minutes since a certain year
+    </script>
+</body>
+</html>

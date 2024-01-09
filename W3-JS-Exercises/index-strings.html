@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Strings</title>
+    <style>
+        body{
+            background-color: beige;
+        }
+        h1{
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <h1>JS Strings Exercises</h1>
+    <div id="demo"></div>
+    <br>
+    <div id="sentence"></div>
+    <br>
+    <div id="escape"></div>
+    <br>
+    <div id="food"></div>
+    
+    <script>
+        //.length property (to get length of variable)
+        let txt = "Hola todos!";
+        let x = txt.length; //gets the length (# characters) of the string in the var
+        alert(x); //returns length of 11 (includes space)
+        document.getElementById("demo").innerHTML = (x); //prints 11
+        document.getElementById("sentence").innerHTML = (x + " characters are in the string - Hola todos"); //prints 11 + statement
+
+        //ESCAPE CHARACTERS - use these to make a string with quotes in it
+        //Can also use single quotes for the string and then add double quotes
+        let statement = "We are \"Vikings\"";
+        //Alternative way - use single quotes on outside
+        //let statement = 'We are "Vikings"';
+        alert(statement);
+        document.getElementById("escape").innerHTML = (statement);
+
+        //CONCATENATE STRINGS
+        let str1 = "Mushroom";
+        let str2 = "Omelette";
+        alert(str1 + str2); //shows MushroomOmelette
+        document.getElementById("food").innerHTML = (str1 + str2); //connects 2 strings together - prints MushroomOmelette on pg
+    </script>
+</body>
+</html>

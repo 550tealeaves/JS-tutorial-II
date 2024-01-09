@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <style>
+        body{
+            background-color: lightgreen;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>W3 JS Arrays Exercises</h1>
+    <div id="orig"></div>
+    <br>
+    <div id="cars"></div>
+    <br>
+    <div id="length"></div>
+    <div id="list"></div>
+
+    <script>
+        let cars = ["BMW", "Volvo", "Honda"];
+        document.getElementById("orig").innerHTML = (cars); //shows BMW, Volvo & Honda
+        console.log(cars);
+        let x = cars[1];
+        document.getElementById("cars").innerHTML = (x); //will print Volvo
+
+        //CHANGE AN ITEM IN THE ARRAY
+        let carsList = ["Volvo", "Jeep", "Mercedes"];
+        alert(carsList.length); //returns 3
+        document.getElementById("length").innerHTML = (carsList.length); // 3
+        carsList[0] = "Ford"; //replaces Volvo w/ Ford
+        alert(carsList);
+        document.getElementById("list").innerHTML = (carsList); //Ford, Jeep, Mercedes
+    </script>
+</body>
+</html>

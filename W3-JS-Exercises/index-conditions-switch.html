@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions and Switch</title>
+    <style>
+        body{
+            background-color: linen;
+            font-size: 24px;
+            margin-left: 20px;
+        }
+        h1{
+            color: turquoise;
+        }
+    </style>
+</head>
+<body>
+    <h1>W3 Conditions and Switch exercises</h1>
+
+    <div id="condition"></div>
+    <br>
+    <div id="true"></div>
+    <br>
+    <div id="false"></div>
+    <br>
+    <div id="switch"></div>
+
+
+    <script>
+        //CONDITIONS
+        x=10;
+        y=5;
+        if (x>y) {
+            document.getElementById("condition").innerHTML = ("This shows b/c x>y"); //statement shows on pg if condition is true
+        }
+
+        if (x<y) {
+            document.getElementById("true").innerHTML = ("Pasta is the best food");
+        } else {
+            document.getElementById("false").innerHTML = ("Maybe salmon is the best food"); //statement will show on pg b/c condition is false
+        }
+
+        //SWITCH STATEMENTS
+        //switch is like if and case is like else conditional
+        //Will alert one statement if the condition is met and the other if it is not
+        fruits = "apples"; 
+        
+        switch(fruits) {
+            case "bananas":
+                //alert("salutations")
+                document.getElementById("switch").innerHTML = ("salutations");
+                break;
+            case "apples":
+                //alert("greetings")
+                document.getElementById("switch").innerHTML = ("greetings");
+                break;
+            //add statement if neither condition met
+            default: 
+                //alert("be gone")
+                document.getElementById("switch").innerHTML = ("be gone");
+            }
+    </script>
+</body>
+</html>

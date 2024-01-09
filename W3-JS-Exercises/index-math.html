@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math</title>
+    <style>
+        body{
+            background-color: peachpuff
+            font-size 26px;
+            margin-left: 20px;
+        }
+        h1{
+            color: deeppink;   
+        }
+        div{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>W3 JS Math Exercises</h1>
+    <div id="random"></div>
+    <br>
+    <div id="max"></div>
+    <br>
+    <div id="min"></div>
+    <br>
+    <div id="round"></div>
+    <br>
+    <div id="floor"></div>
+    <br>
+    <div id="ceil"></div>
+    <br>
+    <div id="square-root"></div>
+    <br>
+    <div id="cube-root"></div>
+    <br>
+    <div id="absolute"></div>
+    <br>
+    <div id="power"></div>
+    <br>
+    <div id="truncate"></div>
+    <br>
+    <div id="sign"></div>
+
+    <script>
+        //Generate a random #
+        let r = Math.random(); //gets a random number
+        document.getElementById("random").innerHTML = (r + " is a random number");
+
+        //Use Math.max() to return the largest #
+        let x = Math.max(10, 20, 42, 6); //returns 42
+        document.getElementById("max").innerHTML = (x + " is the max number from the set 10, 20, 42, 6.");
+
+        //Use Math.min() to return the largest #
+        let y = Math.min(10, 20, 42, 6); //returns 6
+        document.getElementById("min").innerHTML = (y + " is the min number from set 10, 20, 42, 6.");
+
+        //Use Math.round() to round # to nearest integer
+        let a = Math.round(5.3); //rounds to 5
+        document.getElementById("round").innerHTML = (a + " is what 5.3 rounds to");
+
+        //Use Math.floor() to round down to the nearest integer
+        let c = Math.floor(9.89); //returns 9
+        document.getElementById("floor").innerHTML = (c + " is the floor value of 9.89");
+
+        //Use Math.ceil() to round up to the nearest integer
+        let f = Math.ceil(99.0023);//rounds to 100
+        document.getElementById("ceil").innerHTML = (f + " is the ceiling value of 99.0023");
+
+        //Use Math.sqrt to get square root of #
+        let b = Math.sqrt(9); //returns 3
+        document.getElementById("square-root").innerHTML = (b + " is the square root of 9");
+
+        //Use Math.cbrt() to get the cubed root of #
+        let d = Math.cbrt(343); //returns 7
+        document.getElementById("cube-root").innerHTML = (d + " is the cube root of 343");
+
+        //Use Math.abs to get the absolute value of #
+        let g = Math.abs(-15); //returns 15
+        document.getElementById('absolute').innerHTML = (g + " is the absolute value of -15");
+
+        //Use Math.pow() to get the exponential value of #
+        let e = Math.pow(3,5); //3*3*3*3*3 = 243
+        document.getElementById("power").innerHTML = (e + " equals 3*3*3*3*3");
+
+        //Use Math.trunc() to remove all decimals/fractions and return integer
+        let t = Math.trunc(16.9884325); //returns 16
+        document.getElementById("truncate").innerHTML = (t + " is the truncated value of 16.9884326");
+
+        //Use Math.sign() to determine the sign of number (1/-1) passed through
+        let h = Math.sign(-8878); //returns -1
+        document.getElementById('sign').innerHTML = (h + " signifies that -8878 is a negative number");
+    </script>
+</body>
+</html>

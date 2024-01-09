@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+    <style>
+        body{
+            background-color: ghostwhite;
+            font-size: 20px;
+        }
+        h1{
+            color: rgb(157, 236, 39);
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>W3 JS Strings Methods</h1>
+    <div id="upper"></div>
+    <br>
+    <div id="lower"></div>
+    <br>
+    <div id="slice"></div>
+    <br>
+    <div id="before"></div>
+    <div id="string"></div>
+
+    <script>
+        //UPPERCASE - .toUpperCase() will capitalize entire string
+        let space = "frogs make very loud noises";
+        space = space.toUpperCase();
+        document.getElementById("upper").innerHTML = (space); // FROGS MAKE VERY LOUD NOISES
+
+        //LOWERCASE - .toLowerCase() will lowercase entire string
+        let feel = "The man exclaimed, \"YOU HAVE NO BALLS!\"";
+        feel = feel.toLowerCase();
+        document.getElementById("lower").innerHTML = (feel); //the man exclaimed, you have no balls!
+
+        //SLICE - .slice() method - use slice to return "bananas"
+        let txt = "I refuse to eat bananas any day";
+        let x = txt.slice(16, 23); //characters 16-23 (INCLUDES spaces)
+        document.getElementById("slice").innerHTML = (x); //returns bananas
+
+        //REPLACE - .replace() method - replaces word "buying" with "eating"
+        let newTxt = "I love buying cheese.";
+        document.getElementById("before").innerHTML = (newTxt); //I love buying cheese
+        newTxt = newTxt.replace("buying", "eating");
+        document.getElementById("string").innerHTML = (newTxt); //I love eating cheese 
+
+    </script>
+</body>
+</html>

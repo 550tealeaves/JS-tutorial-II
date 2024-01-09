@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+    <style>
+        body{
+            background-color: plum;
+            font-size: 24px;
+            margin-left: 20px;
+            line-height: 1.5;
+        }
+        h1{
+            color: darkviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>W3 For, While, & Break Loops Exercises</h1>
+    <p>
+        When doing for loops, follow this formula.
+        <br>
+        <br>
+        <em><strong>Create a loop that runs from 0-9</strong></em>
+        <br>
+        let i;
+        <br>
+        for (i = 0; i < 10; i++){
+            <br>
+            console.log(i);
+            <br>
+        }
+        <br>
+        Will display numbers 0,1,2,3,4,5,6,7,8,9
+    </p>
+    <div id="loop"></div>
+
+    <script>
+        //FOR LOOPS
+        //Create loop that runs from 0-9
+        let i;
+        for (i = 0; i < 10; i++){ //could also be i<=9 instead of i<10
+            console.log('for', i); //0,1,2,3,4,5,6,7,8,9
+        }
+
+        //Create a loop that runs through each item in fruits array
+        let fruits = ["lychee", "ackee", "breadfruit", "persimmons"];
+        for (x of fruits) {
+            console.log('array', x); //shows each item in fruit
+        }
+
+        //WHILE LOOPS
+        //Create a loop that runs as long as j < 10
+        let j = 0;
+        while(j < 10){
+            console.log('while', j); //0,1,2,3,4,5,6,7,8,9
+            j++
+        }
+
+        //Create loop that runs as long as h < 10 but increases h by 2 each time
+        let h = 0;
+        while(h < 10){
+            console.log('by-two', h); //0, 2, 4, 6, 8
+            h = h+2; //will increment by 2
+        } 
+
+        //BREAK LOOPS
+        //Stop the loop when a = 5
+        for (a = 0; a < 10; a++) {
+            console.log('break', a); //0, 1, 2, 3, 4, 5
+            if (a == 5){
+                break;
+            }
+        }    
+
+        //Make the loop jump to the next iteration when b = 5
+        for (b = 0; b < 10; b++){
+            if (b == 5) {
+                continue; //makes it jump to next iteration
+            }
+            console.log('continue', b); //0,1,2,3,4,6,7,8,9 (skips #5)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>W3 JS Operators</title>
+    <style>
+        body{
+            background-color: lightblue;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div id="add"></div>
+    <br>
+    <div id="minus"></div>
+    <br>
+    <div id="multiply"></div>
+    <br>
+    <div id="divide"></div>
+
+    <script>
+        alert(5+7);
+        alert(8/2);
+        alert(10*2);
+        alert(15 % 9); //alert remainder
+
+        //Assignment operators
+        //+= is the same as +
+        x = 10;
+        y = 5;
+        x += y; //result is 15 - same as x = x+y
+        //alert(x);
+        document.getElementById("add").innerHTML = x; //result is 15 - same as x=x+y
+
+        //-= is the same as -
+        a = 7;
+        b = 4;
+        a-=b; //result is 3 - same as a = a-b
+        //alert(a);
+        document.getElementById("minus").innerHTML = a; //result is 3 - same as a= a-b
+
+        //*= is the same as *
+        c = 6;
+        d = 8;
+        c*=d; 
+        //alert(c); //result is 48 = same as c = c*d
+        document.getElementById("multiply").innerHTML = c; //result is 48 - same as c = c*d
+
+        // /= is the same as /
+        e = 20;
+        f = 4;
+        e/=f; //result is 5 - same as e = e/f
+        //alert(e);
+        document.getElementById("divide").innerHTML = e; //result is 5 - same as e=e/f
+    </script>
+</body>
+</html>

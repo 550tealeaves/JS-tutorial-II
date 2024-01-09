@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparisons</title>
+    <style>
+        body{
+            background-color: mistyrose;
+            font-size: 24px;
+            margin-left: 20px;
+        }
+        h1{
+            color: slateblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>W3 Comparisons Exercises</h1>
+    <div id="greater"></div>
+    <br>
+    <div id="less"></div>
+    <br>
+    <div id="equal"></div>
+    <br>
+    <div id="not-equal"></div>
+    <br>
+    <div id="conditional"></div>
+
+    <script>
+        //Use > to determine if 1 value is greater than another
+        x = 10;
+        y = 5;
+        document.getElementById("greater").innerHTML = x>y; //true
+        //Use < to determine if 1 value is greater than another
+        document.getElementById("less").innerHTML = x<y; //false
+        //Use == to determine if 1 value is equal to another
+        document.getElementById("equal").innerHTML = x==y; //false
+        //Use != to state one value does NOT equal another
+        document.getElementById("not-equal").innerHTML = x!=y; //true
+
+        //Use correct conditional (ternary) operator to say "too young" if age < 18, otherwise say "old enough"
+        var age = 32;
+        var voteable = (age < 18) ? "Too young" : "Old enough";
+        document.getElementById("conditional").innerHTML = (voteable); //returns old enough
+    </script>
+</body>
+</html>

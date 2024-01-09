@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+    <style>
+        body{
+            background-color: rgb(248, 191, 169);
+        }
+
+        button{
+            background-color: seagreen;
+            color: white;
+            margin: 30px;
+            padding: 15px 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>W3 JS Events Exercises</h1>
+
+    <!--ADD EVENT IN HTML, NOT W/ JS-->
+    <!--Click button and alert shows-->
+    <button onclick = "alert('This event was created in html, not the script file')">Click Me</button>
+    <br>
+    <!--Click button and triggers myFunction function-->
+    <button onclick="myFunction()">Click Here</button>
+    <br>
+    <!--Will change background color of div when mouseover - use this-->
+    <div onmouseover="this.style.backgroundColor='red'">exampleDiv</div>
+
+    <script>
+        //HERE IS HOW TO ADD EVENT IN JS
+        //create variable & select element
+        let btn = document.querySelector("button"); 
+        //define eventListener - could also use this.style
+        btn.addEventListener('mouseover', function(){ //mouseover element
+            btn.style.transform = 'skew(30deg)'; //rotate button 30 degrees
+            btn.style.backgroundColor = 'navy'; //background color changes to navy
+            btn.style.color = 'yellow'; //font color changes to yellow
+            btn.style.opacity = '0.6'; //opacity added
+        });
+
+        //Define the function to run when button is clicked
+        function myFunction(){
+            alert("This is a statement that shows when the button is clicked");
+        }
+    </script>
+</body>
+</html>

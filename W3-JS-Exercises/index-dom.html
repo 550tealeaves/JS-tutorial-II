@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM</title>
+    <style>
+        body{
+            background-color: ivory;
+            font-size: 24px;
+            margin-left: 35px;
+        }
+        h1{
+            color: indigo;
+        }
+    </style>
+</head>
+<body>
+    <h1>W3 JS HTML DOM Exercises</h1>
+
+    <p id="first"></p>
+    <p id="demo"></p>
+    <p id="example">This sentence will hide</p>
+    <p class="test"></p>
+    <p class="test"></p>
+
+    <img id="image" src="smiley.gif">
+
+    <br>
+    <br>
+
+    <input type="text" id="myText" value="Howdy">
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <button id="btn">Click me</button>
+
+
+
+    <script>
+        //Use getElementById to find p element and change text to Fruits are awesome
+        document.getElementById("demo").innerText = "Fruits are awesome";
+
+        //Use getElementByTagName method to find the FIRST p element and change its text - target element and position number
+        document.getElementsByTagName("p")[0].innerText = "Salads are also cool"; //the [0] targets the first p element
+
+        //Change text of first p with class="test"
+        document.getElementsByClassName("test")[0].innerText = "I can't give up bread ever."; //[0] targets 1st p w/ the class name test even if it's not the first p listed in HTML
+
+        //Change value of image's src attribute
+        document.getElementById("image").src = "pic_mountain.jpg"; //will change teh src attribute (won't see change unless you have the files saved)
+
+        //Change value of the input field - use .getElementById().value
+        document.getElementById("myText").value = "Have a nice day"; //changes value in input field
+
+        //Change text color of p element to "red"
+        document.getElementById("demo").style.color = "red"; //changes text color 
+
+        //Change font-size of p element to 40px
+        document.getElementById('demo').style.fontSize = "40px";
+
+        //Use CSS display property to hide p element
+        document.getElementById("example").style.display = "none";
+
+        //Use eventListener to assign onclick event to button element
+        document.getElementById("btn").addEventListener("click", someFunction);
+
+        function someFunction() {
+            btn.style.color = "green";
+            btn.style.transform = 'skew(50deg)';
+            btn.style.backgroundColor = 'violet';
+            btn.style.opacity = '0.8';
+            btn.style.fontSize = '50px';
+            btn.innerText = "I have been clicked";
+        }
+    </script>
+</body>
+</html>

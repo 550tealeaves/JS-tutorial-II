@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+    <style>
+        body{
+            background-color: lemonchiffon;
+            font-size: 20px;
+        }
+        h1{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>W3 Array Methods Exercises</h1>
+    <div id="fruits"></div>
+    <br>
+    <div id="list"></div>
+    <br>
+    <div id="short"></div>
+    <br>
+    <div id="order"></div>
+    
+    <script>
+        //REMOVE LAST ITEM IN ARRAY - use .pop() method
+        let fruits = ["pineapples", "raspberries", "grapes", "cherries"];
+        console.log('fruits', fruits); //pineapples, raspberries, grapes, cherries
+        console.log(fruits[3]); //cherries
+        fruits.pop(); //removes last item in array
+        document.getElementById("fruits").innerHTML = (fruits); //pineapples, raspberries, grapes
+
+        //ADD ITEM TO ARRAY - use .push() method
+        fruits.push("kiwi", "oranges", "blueberries"); //adds items to end of array
+        console.log('newFruits', fruits); 
+        document.getElementById("list").innerHTML = (fruits); //pineapples, raspberries, grapes, kiwi, oranges, blueberries
+
+        //REMOVE ITEMS IN ARRAY (NOT LAST) - use .slice(index#1, index#2)
+        fruits.splice(1,3); //removes 1st, 2nd, & 3rd items in array 
+        console.log('spliceFruits', fruits); //pineapples, oranges, blueberries
+        document.getElementById('short').innerHTML = (fruits); //pineapples, oranges, blueberries
+
+        //SORT - use .sort() method to sort items alphabetically
+        fruits.sort();
+        console.log('sort', fruits);
+        document.getElementById("order").innerHTML = (fruits); //blueberries, oranges, pineapples
+        
+    </script>
+</body>
+</html>

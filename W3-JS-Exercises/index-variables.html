@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Variables</title>
+    <style>
+        body{
+            background-color: pink;
+        }
+        h1{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>W3 JavaScript Exercises - Variables</h1>
+    <div id="demo"></div>
+    <br>
+    <div id="name"></div>
+
+<script>
+    
+    
+    function sum(){
+        let x = 5;
+        let y = 10;
+        document.getElementById("demo").innerHTML = x + y; //will show the sum results on the HTML instead of doing console log
+    }
+    sum(); //must call function for it work
+
+    function sumTwo(){
+        let x = 5;
+        let y = 10;
+        let z = x+y;
+        alert(z); 
+    }
+    sumTwo();
+    
+    //declare variables - can declare a list and separate by comma
+    let firstName = "Walter", lastName = "Ellering", age = 35;
+
+    //orig way of declaring var w/ let statement for each line
+    // let firstName = "Walter";
+    // let lastName = "Ellering";
+    // let age = 35;
+    document.getElementById("name").innerHTML = `${firstName} ${lastName} is ${age} years old!`; //will show statement Walter Ellering is 35 years old Use `` to interpolate the variables 
+</script>
+</body>
+</html>

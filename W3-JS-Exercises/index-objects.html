@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Objects</title>
+    <style>
+        body{
+            background-color: oldlace;
+            font-size: 20px;
+        }
+        h1{
+            color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>W3 JS Objects</h1>
+    <br>
+    <div id="first"></div>
+    <br>
+    <div id="last"></div>
+    <br>
+    <div id="place"></div>
+    <br>
+    <div id="demo"></div>
+
+
+    <script>
+        const person = {
+            firstName: "Harold",
+            lastName: "Thompson",
+            country: "Norway"
+        };
+        //show the firstName variable - use person.firstName
+        alert(person.firstName); //shows Harold
+
+        document.getElementById("first").innerHTML = person.firstName; //shows Harold
+        document.getElementById("last").innerHTML = person.lastName; //shows Thompson
+        document.getElementById("place").innerHTML = person.country; //shows Norway
+
+        const example = {
+            name: "Alice",
+            age: 30
+        };
+        alert(example.name + " is " + example.age); //alerts Alice is 30
+        document.getElementById("demo").innerHTML = (example.name) + " is " + (example.age) + " today."; //shows Alice is 30 today in HTML
+
+    </script>
+</body>
+</html>
