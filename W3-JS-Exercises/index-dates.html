@@ -40,11 +40,11 @@
 
         //Extract the month from the date object
         month = d.getMonth(); //shows the month
-        document.getElementById("month").innerHTML = (month); //shows "0" instead of current month
+        document.getElementById("month").innerHTML = (month + " --- value is indexed [0-11] Jan-Dec"); //shows "0" instead of current month
 
         //Extract the day from the date object
         day = d.getDay();
-        document.getElementById("day").innerHTML = (day); //shows "1" instead of current day
+        document.getElementById("day").innerHTML = (day + " --- value is indexed [0-6] Sun-Sat"); //shows "1" instead of current day
 
         //Set the year of a date object to 2020
         changeYear = d.setFullYear(2020); //sets year to 2020
