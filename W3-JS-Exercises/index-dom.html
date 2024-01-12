@@ -13,6 +13,16 @@
         h1{
             color: indigo;
         }
+        button{
+            background-color: red;
+            color: chartreuse;
+            font-size: 20px;
+            margin: 30px auto;
+            margin-left: 200px;
+            padding: 40px;
+            border: 3px solid silver;
+            border-radius: 15px;
+        }
     </style>
 </head>
 <body>
@@ -24,7 +34,7 @@
     <p class="test"></p>
     <p class="test"></p>
 
-    <img id="image" src="smiley.gif">
+    <img id="image" width="30%" src="DSC07353.JPG">
 
     <br>
     <br>
@@ -51,7 +61,7 @@
         document.getElementsByClassName("test")[0].innerText = "I can't give up bread ever."; //[0] targets 1st p w/ the class name test even if it's not the first p listed in HTML
 
         //Change value of image's src attribute
-        document.getElementById("image").src = "pic_mountain.jpg"; //will change teh src attribute (won't see change unless you have the files saved)
+        document.getElementById("image").src = "DSC07378.jpg"; //will change teh src attribute (won't see change unless you have the files saved)
 
         //Change value of the input field - use .getElementById().value
         document.getElementById("myText").value = "Have a nice day"; //changes value in input field
@@ -74,6 +84,8 @@
             btn.style.backgroundColor = 'violet';
             btn.style.opacity = '0.8';
             btn.style.fontSize = '50px';
+            btn.style.border = "10px dashed blue";
+            btn.style.padding = "100px";
             btn.innerText = "I have been clicked";
         }
     </script>

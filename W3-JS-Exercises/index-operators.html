@@ -8,6 +8,7 @@
         body{
             background-color: lightblue;
             font-size: 18px;
+            margin-left: 40px;
         }
         h1{
             color: crimson;
@@ -36,28 +37,28 @@
         y = 5;
         x += y; //result is 15 - same as x = x+y
         //alert(x);
-        document.getElementById("add").innerHTML = x; //result is 15 - same as x=x+y
+        document.getElementById("add").innerHTML = (x + " --- x+=y is same as x = x+y"); //result is 15 - same as x=x+y
 
         //-= is the same as -
         a = 7;
         b = 4;
         a-=b; //result is 3 - same as a = a-b
         //alert(a);
-        document.getElementById("minus").innerHTML = a; //result is 3 - same as a= a-b
+        document.getElementById("minus").innerHTML = (a + " --- a-=b is same as a = a-b"); //result is 3 - same as a= a-b
 
         //*= is the same as *
         c = 6;
         d = 8;
         c*=d; 
         //alert(c); //result is 48 = same as c = c*d
-        document.getElementById("multiply").innerHTML = c; //result is 48 - same as c = c*d
+        document.getElementById("multiply").innerHTML = (c + " --- c*=d is same as c = c*d"); //result is 48 - same as c = c*d
 
         // /= is the same as /
         e = 20;
         f = 4;
         e/=f; //result is 5 - same as e = e/f
         //alert(e);
-        document.getElementById("divide").innerHTML = e; //result is 5 - same as e=e/f
+        document.getElementById("divide").innerHTML = (e + " --- e/=f is same as e = e/f"); //result is 5 - same as e=e/f
     </script>
 </body>
 </html>
