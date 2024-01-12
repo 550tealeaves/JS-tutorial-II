@@ -56,8 +56,12 @@
     <!--Click button and triggers myFunction function-->
     <button onclick="myFunction()" class="second">Click Here</button>
     <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <!--Will the styling of the div when cursor does mouseover - use this-->
-    <div onmouseover="this.style.backgroundColor='red'; this.style.color = 'yellow'; this.style.fontStyle = 'italic'; this.style.fontSize = '18px'">Place cursor here to see magic</div>
+    <div onmouseover="this.style.backgroundColor='indigo'; this.style.color = 'yellow'; this.style.fontStyle = 'italic'; this.style.fontSize = '28px'; this.style.margin = '40px'; this.style.textAlign = 'center'">Place cursor here to see magic</div>
 
     <script>
         //HERE IS HOW TO ADD EVENT IN JS
@@ -81,6 +85,7 @@
             btn.style.animation = "slidein 2s linear"; //adds an animation - define keyframes in cSS
             btn.style.boxShadow = '12px 12px 2px 1px rgba(0, 153, 255, .4)'; //adds box-shadow
             btn.style.textTransform = 'uppercase'; //makes text uppercase
+            btn.style.textAlign = 'right'; //text will be right align during animation
         });
 
         //Define the function to run when button is clicked
