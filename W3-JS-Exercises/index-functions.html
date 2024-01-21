@@ -13,12 +13,31 @@
 <body>
     <h1>W3 Functions exercise</h1>
     <div id="demo"></div>
+    <br>
+    <br>
+    <div id="example"></div>
+    <br>
+    <br>
+    <div id="trial"></div>
 
     <script>
         function myFunction() {
             return "Hello to all, this function reveals this statement"; 
         }
         document.getElementById("demo").innerHTML = myFunction(); //will display Hello to all on pg
+
+        function sum (x, y) {
+            return x+=y; //x+y
+        }
+
+        document.getElementById("example").innerHTML = sum(12, 44);
+
+        //RETURN keyword quits the function so code after DOES NOT run
+        function math(a,b) {
+            return a*=b; //a*b   - return quits the function
+            console.log("This is here"); //this doesn't run b/c return quits function
+        }
+        document.getElementById('trial').innerHTML = math(15, 88);
     </script>
 </body>
 </html>
