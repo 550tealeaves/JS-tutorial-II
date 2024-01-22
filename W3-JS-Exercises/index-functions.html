@@ -13,76 +13,12 @@
 <body>
     <h1>W3 Functions exercise</h1>
     <div id="demo"></div>
-    <br>
-    <br>
-    <div id="example"></div>
-    <br>
-    <br>
-    <div id="trial"></div>
-    <br>
-    <br>
-    <div id="sample"></div>
 
     <script>
         function myFunction() {
             return "Hello to all, this function reveals this statement"; 
         }
-        document.getElementById("demo").innerHTML = myFunction(); //will display Hello to all on pg
-
-        function sum (x, y) {
-            return x+=y; //x+y
-        }
-
-        document.getElementById("example").innerHTML = sum(12, 44);
-
-        //RETURN keyword quits the function so code after DOES NOT run
-        function math(a,b) {
-            return a*=b; //a*b   - return quits the function
-            console.log("This is here"); //this doesn't run b/c return quits function
-        }
-        document.getElementById('trial').innerHTML = math(15, 88);
-
-
-        function sumTwo (c, d){
-            console.log(c);
-            console.log(c-d);
-            return c/=d; // c/d - return is the last thing to run in a functions
-        }
-        document.getElementById("sample").innerHTML = sumTwo(31, 112);
-
-
-        //Create function that will takes strings and returns the lengths
-        function getCharCount(str) { //taking in strings as parameter
-                return str.length; //will return the string length of anything put it
-
-            }
-
-        // Call function with strings as argument
-        console.log(getCharCount("Sam")); // 3
-        console.log(getCharCount("Alex 123")); // 8
-        console.log(getCharCount("Charley is here")); // 15
-
-
-        //Create function that takes in "name" strings and returns them as uppercase
-        function shoutMyName(name) { //accepts "name" as parameter
-                return name.toUpperCase(); //will return uppercase strings
-            }
-
-        // Call function with strings as argument
-        console.log(shoutMyName("Sam")); // "SAM"
-        console.log(shoutMyName("Charley")); // "CHARLEY"
-        console.log(shoutMyName("alex")); // "ALEX"
-
-
-        // Create function that returns strings as lowercase
-        function lowerName(name) { //accepts "name" as parameter
-                return name.toLowerCase(); 
-            }
-
-        // Call function with strings as argument
-        console.log(lowerName("Sam")); // "sam"
-        console.log(lowerName("ALEX")); // "alex"
-
+        document.getElementById("demo").innerHTML = myFunction(); //will display Hello to all on pg     
     </script>
 </body>
 </html>
