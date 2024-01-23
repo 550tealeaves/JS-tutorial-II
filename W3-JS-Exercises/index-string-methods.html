@@ -294,12 +294,14 @@
         document.getElementById("split-one").innerText = (commaSplit + " --- do console log and it will show as array");
         console.log("comma", commaSplit); //array w/ 4 items
 
+
         let textEleven = "I have a lovely bunch of coconuts";
         document.getElementById("split-orig").innerHTML = (textEleven + " --- orig string that will be split into array by spaces");
         let spaceSplit = textEleven.split(" "); //splits on space
         document.getElementById("split-two").innerHTML = (spaceSplit);
         console.log('space', spaceSplit); //array w/ 7 items
 
+        
         let vegetables = "Cucumber|Celery|Cabbage|Cauliflower|Carrots|Capers";
         document.getElementById("split-orig-two").innerHTML = (vegetables + " --- orig string that will be split into array by pipes");
         let pipeSplit = vegetables.split("|"); //splits on pipes

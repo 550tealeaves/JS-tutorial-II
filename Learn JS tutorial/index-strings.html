@@ -24,6 +24,27 @@
     <br>
     <br>
     <div id="sample"></div>
+    <br>
+    <br>
+    <div id="fruit"></div>
+    <br>
+    <br>
+    <div id="fruit-two"></div>
+    <br>
+    <br>
+    <div id="fruit-three"></div>
+    <br>
+    <br>
+    <div id="skip"></div>
+    <br>
+    <br>
+    <div id="skip-two"></div>
+    <br>
+    <br>
+    <div id="name"></div>
+    <br>
+    <br>
+    <div id="name-two"></div>
 
     <script>
         function sum(x, y) {
@@ -78,6 +99,88 @@
         // Call function with strings as argument
         console.log(lowerName("Sam")); // "sam"
         console.log(lowerName("ALEX")); // "alex"
+
+        //CHARACTER ACCESS - use [] to access characters
+        const language = "JavaScript";
+
+        console.log(language[3]); //a
+        console.log(language[4]); //S
+        console.log(language[8]); //p
+        
+        //combine character access w/ length property
+        language[language - length - 3]; //i - 3rd to last character
+
+        
+        //.AT(INDEX) method - reads character at certain index
+        //When index is negative - 1st character starts w/ -1
+        //So for 5 letter string - positive index 0-4 & negative index -1 - -5
+       let food = "vegetable";
+        console.log(food.at(3)); //e
+        console.log(food.at(5)); //a
+        console.log(food.at(-7)); //g
+        console.log(food.at(-2)); //l 
+
+
+        //Function returns first index of string - argument = countries
+        function getFirstCharacter(country) {
+            return country[4];
+        }
+
+        console.log(getFirstCharacter("Japan")); //n
+        console.log(getFirstCharacter("Haiti")); //i
+        console.log(getFirstCharacter("Kazakhstan")); //k
+
+
+        function getLastCharacter(name) {
+            return name.at(-1); //returns last character in string
+        }
+
+        console.log(getLastCharacter("Ivan")); //n
+        console.log(getLastCharacter("George")); //e
+        console.log(getLastCharacter("Kennedy")); //y
+
+        //substring - 2 parameters (indexStart - starting character), (indexEnd - excludes character)
+        let fruit = "pomegranate";
+        console.log(fruit.length); //11 characters
+        console.log(fruit.substring(3, 8)); //"egran" - characters 3-7 - excludes 8th
+        document.getElementById("fruit").innerHTML = fruit.substring(3,8); //egran
+
+        document.getElementById("fruit-two").innerHTML = fruit.substring(2, 5); //meg - starts at 2nd index and ends at 5th (excludes it)
+
+        document.getElementById("fruit-three").innerHTML = fruit.substring(6); //anate - no indexEnd assumes yo go through length of string
+
+        //SKIP 1ST CHARACTER
+        function skipFirstCharacter(text) {
+            return text.substring(1);
+        }
+        document.getElementById("skip").innerHTML = skipFirstCharacter("nuisance");
+        document.getElementById("skip-two").innerHTML = skipFirstCharacter('remote control');
+
+
+        //PLUS OPERATOR - used for addition or concatenation
+        let test = "Ship" + "builder"; 
+        console.log(test); //Shipbuilder
+
+        let name = "Evelyn";
+        name = name + "Grace"; //reassign name variable & join another string
+        console.log(name); //EvelynGrace
+        document.getElementById("name").innerHTML = (name + " ... concatenation using name = name + \"Grace\"");
+
+        //SHORTER WAY USING += OPERATOR
+        let nameTwo = "Gordon";
+        nameTwo += "Waverly";  //just like nameTwo = nameTwo + "Waverly"
+        console.log(nameTwo); //GordonWaverly
+        document.getElementById("name-two").innerHTML = nameTwo;
+        document.getElementById("name-two").innerHTML = (nameTwo + " ... concatenation using nameTwo += \"Waverly\"");
+
+
+        //RETURN STRING & CONCATENATE INITIALS
+        function concatInitials(firstNameInitial, lastNameInitial) {
+            return firstNameInitial += lastNameInitial;
+        }
+
+        console.log(concatInitials ("N", "P")); //NP
+        console.log(concatInitials("W", "K")); //WK
     </script>
 </body>
 </html>
