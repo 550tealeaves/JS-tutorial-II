@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers</title>
+    <style>
+        body{
+            background-color: papayawhip;
+            font-size: 18px;
+            margin-left: 25px;
+        }
+
+        h1{
+            color: lawngreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Numbers</h1>
+
+    <h3>Use _ to represent large #s or make them more readable</h3>
+    <div id="one"></div>
+    <br>
+    <br>
+    <div id="two"></div>
+
+
+    <script>
+        //Use _ to represent large #s or make them more readable
+        let nb = 1_000; // 1000
+        console.log(nb);
+        document.getElementById("one").innerHTML = nb;
+        let nbOne = 1_000_000; //1000000
+        console.log(nbOne);
+        document.getElementById("two").innerHTML = nbOne + " --- use _ to make 1_000_000 more readable";
+
+        let answer = 42;
+        console.log(typeof(answer));
+        answer.toString(); // converts to "42"
+        console.log(typeof(answer.toString()));
+
+
+        function convertToString(number) {
+            return number.toString();
+        }
+
+        console.log(convertToString(97)); //"97"
+        console.log(convertToString(112484)); //"112484"
+    </script>
+</body>
+</html>
