@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <style>
+        body{
+            background-color: ghostwhite;
+            margin-left: 30px;
+            font-size: 24px;
+        }
+
+        h1{
+            color: hotpink;
+        }
+        
+        h3{
+            color: indigo;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Variables</h1>
+    <h3>Use let to assign variables. Reassign them w/ just the variable - do not use let again</h3>
+    <div id="one"></div>
+    <br>
+    <br>
+    <div id="two"></div>
+    <br>
+    <br>
+    <div id="three"></div>
+    <br>
+    <br>
+    <h3>Can use let to assign and reassign variables with numbers</h3>
+    <div id="four"></div>
+    <br>
+    <br>
+    <div id="five"></div>
+
+
+    <script>
+        //Use let to declare a variable - can be reassigned
+        //To reassign a variable, just write variable name and it's new assignment, DO NOT write let - leads to error
+        let language = "C++"; //
+        console.log('orig', language); //C++
+        document.getElementById("one").innerHTML = language
+        language = "JavaScript"; //reassigned language variable
+        console.log('reassign', language); //JavaScript
+        document.getElementById("two").innerHTML = language;
+
+        //can reassign variables that contain numbers
+        let sum = 0;
+        console.log(sum); //0
+        document.getElementById("four").innerHTML = sum;
+        sum += 1; 
+        console.log(sum); //1
+        document.getElementById("five").innerHTML = sum;
+
+
+        //EXERCISEs
+        //CREATE VARIABLE (COUNT) AND INCREMENT IT
+        let count = 0; //assign 0 to count
+        count += 1; //increments by 1
+
+        //Define var (agelimit) w/ value 18 that CANNOT be reassigned
+        const ageLimit = 18; //cannot be reassigned
+        
+    </script>
+</body>
+</html>
