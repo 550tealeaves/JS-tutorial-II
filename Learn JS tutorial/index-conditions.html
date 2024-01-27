@@ -13,16 +13,89 @@
         h1{
             color: lime;
         }
+
+        h3{
+            color: purple;
+        }
     </style>
 </head>
 <body>
     <h1>Conditions</h1>
+    <h3>Use if to define a condition and what the code does if true</h3>
     <div id="one"></div>
     <br>
     <br>
     <div id="two"></div>
     <br>
     <br>
+    <h3>Use else to define what happens if the initial condition is false</h3>
     <div id="three"></div>
+    <br>
+    <br>
+    <h3>Use else if to check series of conditions sequentially</h3>
+    <div id="four"></div>
+    <br>
+    <br>
+    <h3>EXERCISES</h3>
+    <h3>Create function that returns true if age is 18+ & false if not</h3>
+    <div id="five"></div>
+    <br>
+    <div id="six"></div>
+    <br>
+    <div id="seven"></div>
+
+
+    <script>
+        //if  condition is meant, then code will do something
+
+        let grade = 15;
+        //code will run b/c this is true
+        if (grade >= 10) {
+            document.getElementById("one").innerHTML = "Passing Grade";
+        }
+
+
+        //Define else statement to determine what happens if the condition is not true
+        grade = 3; //reassign variable
+
+        if (grade >= 10) {
+            document.getElementById("two").innerHTML = "Passing Grade";
+        } else { 
+            document.getElementById("three").innerHTML = "Failing Grade";
+        }
+
+        //Use else if to check several conditions sequentially
+        grade = 10; //reassign variable
+
+        if (grade > 10) {
+            document.getElementById("four").innerHTML = "Passing Grade";
+        } else if (grade === 10) {
+            document.getElementById("four").innerHTML = "Passed by a hair"
+        } else {
+            document.getElementById("four").innerHTML = "Failing Grade";
+        }
+        
+
+        //EXERCISES
+        //Make function canVote return true if age is 18+ and false if younger
+        let age = 15;
+
+        function canVote (age) {
+            if (age >= 18) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        console.log(canVote(23));
+        console.log(canVote(2));
+
+        document.getElementById("five").innerHTML = canVote(25);
+        document.getElementById("six").innerHTML = canVote(18);
+        document.getElementById("seven").innerHTML = canVote(7);
+        
+
+    </script>
 </body>
 </html>
