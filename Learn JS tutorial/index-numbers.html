@@ -24,6 +24,9 @@
     <br>
     <br>
     <div id="two"></div>
+    <br>
+    <br>
+    <div id="three"></div>
 
 
     <script>
@@ -47,6 +50,51 @@
 
         console.log(convertToString(97)); //"97"
         console.log(convertToString(112484)); //"112484"
+
+        //number.parseInt() - 2 parameters (1) string & (2) radix - base numerical system that's usually 10
+        //preferred over parseInt() but they are equivalent
+        let str = "10082"; 
+        console.log(Number.parseInt(str, 10)); //10082
+        console.log(typeof(Number.parseInt(str, 10))); //number
+
+
+        //Number.parseInt() works when string starts w/ # & ends w/ non-numeric value
+        console.log(Number.parseInt("123abcdef", 10)); //123
+        console.log(Number.parseInt("5 kilometers", 10)); //5
+
+        //doesn't work if the numbers/letters are mixed in
+        console.log(Number.parseInt("23 butterflies 553", 10)); //only shows 23
+        console.log(Number.parseInt("730z16", 10));; //only shows 730
+        console.log(Number.parseInt("n182552", 10)); //NaN
+
+
+
+        //USE CASES FOR CONVERTING TO #
+        //if user enters # in textbox = string & if # read from DOM
+        //if you don't convert to string, then it will concatenate instead of do math
+        let a = 10; //number
+        let b = "20"; //string
+        console.log(a+b); //1020 instead of 30 b/c b not converted to #
+        document.getElementById("three").innerHTML = a+b + " ---shows 1020 instead of 30 b/c '20' wasn't converted to # before";
+
+        //OPERATORS
+        //% = reminder operator ex: 7/2 = 3.5, remove decimal and multiply quotient by divisor = 3*2 = 6. 7-6 = 1 - so remainder = 1
+        console.log(7 % 2); //1
+        console.log(10 % 4); //2
+        console.log(100 % 6); //16.667 - 16*6 = 96, 100-96 = 4 (remainder)
+
+        //Number methods - include Math.min(), max(), round(), ceil(), floor() 
+        console.log(Math.round(2.1)); //2
+        console.log(Math.round(4.6)); //5
+        console.log(Math.round(9.8)); //10
+
+        console.log(Math.floor(2.1)); //2
+        console.log(Math.floor(4.6)); //4
+        console.log(Math.floor(9.8)); //9
+
+        console.log(Math.ceil(2.1)); //3
+        console.log(Math.ceil(4.6)); //5
+        console.log(Math.ceil(9.8)); //10
     </script>
 </body>
 </html>
