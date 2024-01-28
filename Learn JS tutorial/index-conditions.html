@@ -43,7 +43,36 @@
     <div id="six"></div>
     <br>
     <div id="seven"></div>
-
+    <br>
+    <br>
+    <h3>Can drop the ELSE if the function only performs 2 actions based on condition</h3>
+    <div id="eight"></div>
+    <br>
+    <br>
+    <div id="nine"></div>
+    <br>
+    <br>
+    <h3>Create function that shows first 10 characters of string but then shows ellipses after 10th character</h3>
+    <div id="ten"></div>
+    <br>
+    <div id="short"></div>
+    <br>
+    <div id="long"></div>
+    <br>
+    <h3>If condition returns true/false, then don't need to write if/else</h3>
+    <div id="eleven"></div>
+    <br>
+    <div id="twelve"></div>
+    <br>
+    <div id="thirteen"></div>
+    <br>
+    <div id="fourteen"></div>
+    <br>
+    <br>
+    <h3>Even and Odd</h3>
+    <div id="fifteen"></div>
+    <br>
+    <div id="sixteen"></div>
 
     <script>
         //if  condition is meant, then code will do something
@@ -94,8 +123,111 @@
         document.getElementById("five").innerHTML = canVote(25);
         document.getElementById("six").innerHTML = canVote(18);
         document.getElementById("seven").innerHTML = canVote(7);
+
+        
+        //CAN DROP THE ELSE WHEN FUNCTION PERFORMS ONLY 2 ACTIONS
+        //original w/ else
+        let newAge = 23;
+        function shouldVote(age) {
+            if (newAge >= 18) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        document.getElementById("eight").innerHTML = shouldVote(); //shows true
+
+
+
+        newAge = 3;
+
+        //Only 2 actions in function so can omit the else
+        function willVote (age) {
+            if (newAge >= 18) {
+                return true;
+            }
+            return false;
+        }
+
+        document.getElementById('nine').innerHTML = willVote(); //shows false
         
 
+
+        
+        //Creates function that will display ellipses after the first 10 characters
+        function getDescription (text) {
+            if (text.length > 10) {
+                return text.substring(0, 10) + "...";
+            } else {
+                return text;
+            }
+        }
+
+        document.getElementById("ten").innerHTML = getDescription("deciduously"); //shows first 10 characters and then ellipses
+        document.getElementById("short").innerHTML = getDescription('brazen'); //will show entire string
+        document.getElementById("long").innerHTML = getDescription("1976ersPhilly");
+
+
+
+        //When condition returns boolean, don't have to use if/else
+        
+        //ORIGINAL code with if/else
+        function isPassing (grade) {
+            if (grade >= 10) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        console.log(isPassing(12)); // true
+        document.getElementById("eleven").innerHTML = isPassing(12);
+
+
+        //REFACTORED CODE W/O IF/ELSE THAT IS EQUIVALENT 
+        //will return true if the grade is 10+ and false if less
+        function passGrade(grade) {
+            return grade >= 10;
+        }
+
+        console.log(passGrade(3)); //false
+        console.log(passGrade(13)); //true
+        document.getElementById("twelve").innerHTML = passGrade(8);
+
+
+        //function returns true if age 16+ and false if <16
+        function canDrive(age){
+            return age >= 16;
+        }
+
+        console.log(canDrive(43)); //true
+        console.log(canDrive(5)); //false
+        document.getElementById("thirteen").innerHTML = canDrive(16); //true
+        document.getElementById("fourteen").innerHTML = canDrive(2); //false
+
+        
+        //CAN USE THE REMAINDER TO DETERMINE IF ORIG # WAS EVEN/ODD
+        //If % = 0 - even, if % 1 - odd
+        //EVEN
+        4 % 2 //0
+        6 % 2 //0
+
+        //ODD
+        3 % 2 //1
+        99 % 2 //1
+
+        
+        //since only 2 options don't need else
+        function evenOrOdd(number){
+            if (number % 2 === 0){
+                return "even";
+            } 
+            return "odd";
+        }
+
+        document.getElementById("fifteen").innerHTML = evenOrOdd(376); //even
+        document.getElementById("sixteen").innerHTML = evenOrOdd(81); //odd
     </script>
 </body>
 </html>
