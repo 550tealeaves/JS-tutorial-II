@@ -21,11 +21,181 @@
 </head>
 <body>
     <h1>Arrays</h1>
+    <h3>Arrays.length - use this to see how many elements are in array</h3>
+    <div id="one"></div>
+    <br>
+    <div id="two"></div>
+    <br>
+    <div id="three"></div>
+    <br>
+    <div id="four"></div>
+    <br>
+    <br>
+    <h3>GET ELEMENT BY INDEX - Use [] or .at(index) method - latter takes negative indices</h3>
+    <div id="five"></div>
+    <br>
+    <div id="six"></div>
+    <br>
+    <div id="seven"></div>
+    <br>
+    <br>
+    <h3>ADDING AN ELEMENT - use .push() method & will add element at end of array</h3>
+    <div id="first"></div>
+    <div id="eight"></div>
+    <br>
+    <div id="second"></div>
+    <div id="nine"></div>
+    <br>
+    <div id="third"></div>
+    <div id="ten"></div>
+    <br>
+    <br>
+    <h3 style="text-decoration: underline;">EXERCISES</h3>
+    <h3>Create function that returns # of elements in any array</h3>
+    <div id="eleven"></div>
+    <br>
+    <div id="twelve"></div>
+    <br>
+    <br>
+    <h3>Create function that adds "Calculator" string to apps array - then return apps array</h3>
+    <div id="thirteen"></div>
+    <br>
+    <div id="fourteen"></div>
+    <br>
+    <br>
+    <h3>Create function that adds app variable to the apps array - return apps</h3>
+    <div id="fifteen"></div>
+    <br>
+    <br>
+    <h3>Create function that returns the first item of the browser array</h3>
+    <div id="sixteen"></div>
+    <br>
+    <br>
+    <h3>Create function that returns the last element of the array</h3>
+    <div id="seventeen"></div>
 
 
     
     <script>
+        //Arrays allow you to mix and store as many data types you want
+        const users = []; //empty array
+        const grades = [10, 8, 13, 15]; //array of #s
+        const attendees = ["Sam", "Alex", "Charlie", "Brandon", "Silvia"]; //array of strings
+        const values = [10, 47, true, "Cynthia", "Paul", false]; //mixed
+
+        //.length property tells you how many elements are there
+        console.log(users.length); //0
+        console.log(grades.length); //4
+        console.log(attendees.length); //5
+        console.log(values.length); //6
+
+        document.getElementById("one").innerHTML = users.length;
+        document.getElementById("two").innerHTML = grades.length;
+        document.getElementById("three").innerHTML = attendees.length;
+        document.getElementById("four").innerHTML = values.length;
+
         
+        //GET ELEMENT BY INDEX
+        // Use [] or .at(index) method - latter takes negative indices
+        document.getElementById("five").innerHTML = attendees[2];
+        document.getElementById("six").innerHTML = grades.at(1);
+        document.getElementById("seven").innerHTML = values.at(-4);
+
+        
+        //ADDING AN ELEMENT - use .push() method & will add element at end of array
+        grades.push(20);
+        attendees.push("Jonathan", "Chris"); //can add multiple things
+        values.push(true, 37, "Taylor", "554 Macguyver");
+
+        console.log(grades);
+        console.log(grades.length);
+        console.log(attendees);
+        console.log(attendees.length);
+        console.log(values);
+        console.log(values.length);
+
+        document.getElementById("first").innerHTML = grades;
+        document.getElementById("second").innerHTML = attendees;
+        document.getElementById("third").innerHTML = values;
+
+        document.getElementById("eight").innerHTML = grades.length;
+        document.getElementById("nine").innerHTML = attendees.length;
+        document.getElementById("ten").innerHTML = values.length;
+
+
+        //ARRAYS & CONST - assign 1x but can change contents of array, but array remains array
+        const numbers = []; //start w/ empty array
+        numbers.push(10); //add 10 into array = new length = 1
+        console.log(numbers); //[10] still array but w/ changed content
+        numbers.push(23); //add 23 - new length = 2
+        console.log(numbers); //[10, 23] still array w/ changed content
+
+        //EXERCISE
+        //Create function that returns empty array
+        function getEmptyArray() {
+            return [];
+        }
+        console.log(getEmptyArray()); //[]
+
+
+        //Create function that returns # of elements in array
+        function getNumberOfElements(elements){
+            return elements.length;
+        }
+
+        document.getElementById("eleven").innerHTML = getNumberOfElements(['a', '6', 3, false]);
+        document.getElementById("twelve").innerHTML = getNumberOfElements([]);
+        console.log(getNumberOfElements(['a', '6', 3, false])); //4
+        console.log(getNumberOfElements([])); //0
+
+
+        //Create function that adds "Calculator" string to the apps array - then return apps array
+        function useCalculator(apps){
+            apps.push("Calculator"); //adds "Calculator" to end of array
+            return apps; //will include "Calculator" as last element
+        }
+
+        console.log(useCalculator(["Github", "Maps", "Calendar", "Mail"]));
+        document.getElementById("thirteen").innerHTML = useCalculator(["Github", "Maps", "Calendar", "Mail"]);
+
+        console.log(useCalculator([1103, true, "Melanie", "434 True Warriors"]));
+        document.getElementById("fourteen").innerHTML = useCalculator([1103, true, "Melanie", "434 True Warriors"]);
+
+
+        //Create function that adds app variable to the apps array - return apps
+        function useApp(apps, app){ //takes arguments apps array & app var
+            apps.push(app); //add app var to end of apps array
+            return apps;
+        }
+        console.log(useApp(["Clock", "Twitter", false, 55], "Firefox")); //apps array + app var
+        document.getElementById("fifteen").innerHTML = useApp(["Clock", "Twitter", false, 55], "Firefox"); //Firefox added to array
+
+        console.log(useApp([], "Safari")); //apps=empty array + app var
+        document.getElementById.innerHTML = useApp([], "Safari"); //Safari added to array
+
+
+        //Create function that returns the first item of the browser array
+        function getOneTool(tools){
+            return tools[2];
+        }
+
+        console.log(getOneTool(["hammer", "nail", "drill", "screwdriver"]));
+        document.getElementById("sixteen").innerHTML = getOneTool(["hammer", "nail", "drill", "screwdriver"]);
+
+
+        //Create function that returns the last element of the array
+        function getLastTool(tools){
+            return tools.at(-1);
+        }
+
+        console.log(getLastTool(["hammer", "nail", "drill", "screwdriver"]));
+        document.getElementById("seventeen").innerHTML = getLastTool(["hammer", "nail", "drill", "screwdriver"]);
+
+        
+        
+
+
+
     </script>
 </body>
 </html>
