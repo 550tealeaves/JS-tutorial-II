@@ -73,6 +73,13 @@
     <br>
     <h3>Create function that returns the last element of the array</h3>
     <div id="seventeen"></div>
+    <br>
+    <br>
+    <h3 style="text-decoration: underline;">Array Iteration</h3>
+    <h3>.forEach(callback) method runs the callback function for every item in array. Cb = function definition passed as
+    argument to another function. Pass the function definition as an argument to .forEach() method</h3>
+    <div id="eighteen"></div>
+
 
 
     
@@ -192,6 +199,22 @@
         document.getElementById("seventeen").innerHTML = getLastTool(["hammer", "nail", "drill", "screwdriver"]);
 
         
+        //ARRAY ITERATION
+        //.forEach(callback) method runs the callback function for every item in array. Cb = function definition passed as argument to another function
+        //Cb function receives grade and console logs it = function definition b/c it defines behavior, doesn't execute it
+
+        // function (pet) {
+        //     console.log(pet); //console logs each pet
+        // }
+
+
+        //Pass the function definition as an argument to .forEach() method
+        const pets = ["dogs", "hamsters", "cats", "birds", "fish"];
+        pets.forEach(function(pet) {
+            console.log(pet);
+            //return document.getElementById("eighteen").innerHTML = pet; //only shows fish     
+        });
+
         
 
 
