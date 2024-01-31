@@ -79,7 +79,18 @@
     <h3>.forEach(callback) method runs the callback function for every item in array. Cb = function definition passed as
     argument to another function. Pass the function definition as an argument to .forEach() method</h3>
     <h3 style="font-weight: bold; text-decoration: underline;">BEST PRACTICE - use PLURAL name for array and SINGULAR name for item</h3>
+    <br>
+    <h3>DO NOT place the return within the cb function b/c it's only returning the cb function w/ .forEach() & not the original</h3>
     <div id="eighteen"></div>
+    <br>
+    <br>
+    <br>
+    <main class="container">
+        <form>
+            <label>Choose a country</label>
+            <select id="countries-dropdown"></select>
+        </form>
+    </main>
 
 
 
@@ -237,14 +248,94 @@
             //})
         //}
         //firstName(['item1', 'item2', 'item3'...]);
+        const scores = [10, 14, 15]; // array (plural)
+            scores.forEach(function (score) { // array item (singular)
+                console.log(score);
+            });
 
+        function logScores(scores){
+            scores.forEach(function(score){
+                console.log(grade);
+                return 10; //will be undefined
+            })
+            return 20; // this will work b/c returning from outer function
+        }
+
+        const people = ["Sam", "Alex"]; // array (plural)
+        people.forEach(function (person) { // array item (singular)
+            console.log(person);
+        });
+
+
+        //DO NOT place the return within the cb function b/c it's only returning the cb function w/ .forEach() & not the original 
         function logUserIds(userIds){
             userIds.forEach(function (idList){
                 console.log(idList);
-            })
+            });
+            return document.getElementById("eighteen").innerHTML = true;
         }
 
         logUserIds([10, 15, 14]); //will show each item individually in console
+
+
+        //Create function that returns the sum of all grades received as parameter
+        function sumGrades(grades){
+            let sum = 0;
+            grades.forEach(function(grade){  //loop through each grade item from grade array
+                sum = sum + grade; //add all the grade items
+            })
+            return sum; 
+        }
+        console.log(sumGrades([15, 5, 10])); //30
+        console.log(sumGrades([12, 10, 13, 19])); //54
+
+
+        //Complete function so it returns sum of all positive #s from numbers parameter
+        //create conditional statement - if number is positive, then add them
+        function sumPositiveNumbers(numbers){
+            let sum = 0;
+            numbers.forEach(function(number){
+                if (number >= 0){
+                    sum = sum + number;
+                }
+            })
+            return sum;
+        }
+
+        console.log(sumPositiveNumbers([15, -5, 10])); //25
+        console.log(sumPositiveNumbers([-3, 4, -2, 1])); //5
+
+
+        //Create function that returns the sum of the odd #s from numbers parameter
+        //need the remainder
+        function sumOddNumbers(numbers){
+            let sum = 0;
+            numbers.forEach(function(number){
+                if (number % 2) {
+                    sum = sum + number;
+                }
+            });
+            return sum;
+        }
+
+        console.log(sumOddNumbers([15, 5, 10])); //20
+        console.log(sumOddNumbers([2, 3, 4, 5, 6])); //8
+        console.log(sumOddNumbers([-2, -3, 4, 5, -1])); //1
+
+        //Complete function so that it returns HTML that will fill the existing <select></select> element - HTML should look like <option value="">Please select</option>
+        //For each country, should show <option value="netherlands">Netherlands</option>
+        const countries = ["Netherlands", "Japan", "Mongolia"];
+        function countryList(countries){
+            console.log(countries);
+            let html = `<option value = "">Please select</option>`; //this is what HTML should look like
+            countries.forEach(function(country){
+                html += `<option value="${country.toLowerCase()}">${country}</option`;
+                const html = countryList(countries);
+                const select = document.querySelector("#countries-dropdown");
+                select.innerHTML = html;
+            });
+            return html;
+        }
     </script>
 </body>
 </html>
