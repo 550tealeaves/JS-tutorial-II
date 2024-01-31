@@ -78,6 +78,7 @@
     <h3 style="text-decoration: underline;">Array Iteration</h3>
     <h3>.forEach(callback) method runs the callback function for every item in array. Cb = function definition passed as
     argument to another function. Pass the function definition as an argument to .forEach() method</h3>
+    <h3 style="font-weight: bold; text-decoration: underline;">BEST PRACTICE - use PLURAL name for array and SINGULAR name for item</h3>
     <div id="eighteen"></div>
 
 
@@ -209,16 +210,41 @@
 
 
         //Pass the function definition as an argument to .forEach() method
+        //pass the function definition as a "single" of the main function
         const pets = ["dogs", "hamsters", "cats", "birds", "fish"];
         pets.forEach(function(pet) {
             console.log(pet);
             //return document.getElementById("eighteen").innerHTML = pet; //only shows fish     
         });
 
-        
+        //EXERCISES
+        //Complete function so it iterates over each item in elements array & console logs them
+        function loopThroughElements(elements){
+            elements.forEach(function (element){
+                console.log(element);
+            })
+        }
+
+        loopThroughElements(["Sam", "Charlie", "Alex"]); //shows each item individually
 
 
 
+        //Complete function so that it console logs each item
+        //function and argument names don't have to necessarily match but best practice is use plural for array and singular for item
+        //function firstName (secondName){
+            //secondName.forEach(function (thirdName){
+                //console.log(thirdName);
+            //})
+        //}
+        //firstName(['item1', 'item2', 'item3'...]);
+
+        function logUserIds(userIds){
+            userIds.forEach(function (idList){
+                console.log(idList);
+            })
+        }
+
+        logUserIds([10, 15, 14]); //will show each item individually in console
     </script>
 </body>
 </html>
