@@ -17,6 +17,36 @@
         h3{
             color: darkcyan;
         }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            }
+
+        .table thead {
+        background-color: var(--primary-1);
+        color: white;
+        border: 1px solid white;
+        }
+
+        .table th {
+        padding: 15px;
+        }
+        .table td {
+        padding: 10px;
+        }
+
+        .table tbody {
+        font-size: 18px;
+        border: 1px solid white;
+        }
+        .table tbody tr:nth-child(2n) {
+        background-color: white;
+        }
+
+        .table tbody tr:nth-child(2n + 1) {
+        background-color: var(--neutral-5);
+        }
     </style>
 </head>
 <body>
@@ -90,6 +120,21 @@
             <label>Choose a country</label>
             <select id="countries-dropdown"></select>
         </form>
+    </main>
+    <br>
+    <br>
+    <br>
+    <br>
+    <main class="container">
+        <table class="table" id="nutrition-table">
+            <thead>
+                <tr>
+                    <th>Nutrition</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
     </main>
 
 
@@ -333,6 +378,22 @@
                 const html = countryList(countries);
                 const select = document.querySelector("#countries-dropdown");
                 select.innerHTML = html;
+            });
+            return html;
+        }
+
+
+
+        //Complete code so that it renders a table with the following arrays
+        //carbs, protein, fat = [0] index and 17g, 19g, 5g = [1] index
+        //table doesn't render - it's created in react
+        const data = [["Carbs", "17g"], ["Protein", "19g"], ["Fat", "5g"]];
+        function renderTableRows(rows){
+            console.log(rows);
+            let html = `<tr><td>label here</td><td>value here</td></tr>`;
+            rows.forEach(function(row){
+                console.log(row);
+                html += `<tr><td>${row[0]}</td><td>${row[1]}</td></tr>`
             });
             return html;
         }
