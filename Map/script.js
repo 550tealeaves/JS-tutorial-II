@@ -11,7 +11,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 console.log('museums', museums);
 //Can chain the different methods - could do L.tilelayer(.....{}).addTo(museumMap).setView([lat, lng], zoom);
 
-museumMap.setView([40.7128, -74.0060], 10.4);
+museumMap.setView([40.7128, -74.0060], 5);
 
 let myIcon = L.icon({
     iconUrl: 'museum.png',
@@ -19,6 +19,8 @@ let myIcon = L.icon({
     iconAnchor: [22, 94],
     popupAnchor: [-3, -76]
 }); 
+
+
 
 //Add the data
 L.geoJSON(museums).addTo(museumMap); //map displays with markers for all places
