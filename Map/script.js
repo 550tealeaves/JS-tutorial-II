@@ -15,7 +15,7 @@ museumMap.setView([40.7128, -74.0060], 5);
 
 let myIcon = L.icon({
     iconUrl: 'museum.png',
-    iconSize: [140, 86],
+    iconSize: [40, 25],
     iconAnchor: [22, 94],
     popupAnchor: [-3, -76]
 }); 
@@ -42,54 +42,6 @@ L.geoJSON(museums, {
         });
     }
 }).addTo(museumMap);
-
-
-//THIS ONLY SHOWS THE COORDINATES IN CONSOLE, DOESN'T SHOW THE SUMMARY OR THE MARKER POPUPS
-
-// function filterResults(filters, labels) {
-//     return L.geoJSON(museums, {
-//         onEachFeature: function (feature, layer) {
-//                 let link = feature.properties.url; //store path to urls in variable
-//                 layer.bindPopup("<h3>" + feature.properties.name + "</h3> <hr> <a href=" + link + " + target='_blank' " + ">" + link + "</a>");
-//                 //Add the summary of the places 
-//                 layer.on('mouseover', function () { //will show the summary when you mouseover icon
-//                     let summary = document.getElementById('info');
-//                     summary.innerHTML = "<h4>" + "<b>" + feature.properties.name + "</b>" + "</h4>" + "<br> " + feature.properties.summary;
-//                     summary.style.textAlign = "center"; //centers the text
-//                 });
-//                 layer.on('mouseout', function () { //will hide the summary when mouse leaves icon
-//                     let hideSummary = document.getElementById('info');
-//                     hideSummary.innerHTML = null;
-//                 });
-//             console.log('feature', feature);
-//             }
-//         // filter: function(feature, layer) {
-//         //     let borough = document.querySelector('#selectBorough');
-//         //         borough.addEventListener('change', function () {
-//         //             pickBorough = $(this).val();
-//         //             updateMap(pickBorough);
-//         //         });
-//         //     let museumFilter = museums.features.filter( //must reference the orig dataset(museums).features.filter
-//         //         function (museum) { //create function to make sure dropdown selection matches the item with city
-//         //             var normalizedMuseum = museum.properties.city; //makes everything lowercase
-//         //             var normalizedPickBorough = pickBorough; //makes everything lowercase
-//         //             return normalizedMuseum === normalizedPickBorough; //set dropdown = to items that had same city
-//         //         },
-//         //     );
-//         //     console.log('filter', museumFilter),
-//         //         // $('#museum-list').hide(); //this works - when option selected from dropdown, museum list hides
-//         //     console.log('pick', pickBorough);
-            
-//         // },
-//         // pointToLayer: function (feature, LatLng) {
-//         //     return L.marker(LatLng, {
-//         //         icon: myIcon
-//         //     });
-//         // },
-        
-//         }).addTo(museumMap)
-
-//     };
 
 
 //FIND THE COORDINATES USING CONSOLE LOG
@@ -154,133 +106,6 @@ $('#museum-list').on("click", "li", function (){ //target museum-list ID when li
 //look up tutorial https://www.tutorialspoint.com/leafletjs/leafletjs_markers.htm
 
 
-// $("input[name=filterEagle]").click('on', function(){
-//     arDivFilterEagle=[];
-//     layer.refresh();
-// });
-
-
-
-// //CREATE The FILTER FROM THE DROPDOWN SELECTION
-$(document).ready(function (event) {
-    //function to update the map based on the selected option
-    function updateMap(pickBorough) {
-        let museumFilter = museums.features.filter( //must reference the orig dataset(museums).features.filter
-            function (museum) { //create function to make sure dropdown selection matches the item with city
-                var normalizedMuseum = museum.properties.city; //makes everything lowercase
-                var normalizedPickBorough = pickBorough; //makes everything lowercase
-                return normalizedMuseum === normalizedPickBorough; //set dropdown = to items that had same city
-            },
-        );
-        console.log('filter', museumFilter);
-        // $('#museum-list').hide(); //this works - when option selected from dropdown, museum list hides
-        console.log('pick', pickBorough);
-    
-    
-    }
-    //Plain JS Event handler for dropdown change
-    let borough = document.querySelector('#selectBorough');
-    borough.addEventListener('change', function (){
-        pickBorough = $(this).val();
-        updateMap(pickBorough);
-    });
-
-//     //jQuery event handler for dropdown change
-//     // $('#selectBorough').on('change', function () {
-//     //     //Get the selected option value
-//     //     pickBorough = $(this).val();
-//     //     //Call the function to update the map
-//     //     updateMap(pickBorough);
-//     //     //let borough = $('#selectBorough');
-//     //     //console.log('borough', borough); //shows borough selected in console
-//     // });
-
-//     // function reinitializeMap() {
-//     //     // Get the current map container
-//     //     var mapContainer = document.getElementById('map');
-
-//     //     // Remove the existing map instance and its content
-//     //     mapContainer.innerHTML = '';
-
-//     //     // Create a new map instance
-//     //     newMap = L.map('map').setView([40.7128, -74.0060], 10.4);
-//     //     console.log('new', newMap);
-
-//     //     // Add any initial layers, markers, etc. to the new map
-//     //     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-//     //         maxZoom: 18,
-//     //         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors and <a href = "https://data.cityofnewyork.us/Recreation/New-York-City-Museums/ekax-ky3z">NYC Open Data</a>'
-//     //     }).addTo(newMap)};
-        
-//     //     L.geoJSON(museums).addTo(newMap);
-
-//     //     L.geoJSON(museums), {
-//     //     onEachFeature: function (feature, layer) {
-//     //         let link = feature.properties.url; //store path to urls in variable
-//     //         layer.bindPopup("<h3>" + feature.properties.name + "</h3> <hr> <a href=" + link + " + target='_blank' " + ">" + link + "</a>");
-//     //         //Add the summary of the places 
-//     //         layer.on('mouseover', function () { //will show the summary when you mouseover icon
-//     //             let summary = document.getElementById('info');
-//     //             summary.innerHTML = feature.properties.summary;
-//     //         });
-//     //         layer.on('mouseout', function () { //will hide the summary when mouse leaves icon
-//     //             let hideSummary = document.getElementById('info');
-//     //             hideSummary.innerHTML = null;
-//     //         });
-//     //     }}.addTo(newMap);
-
-//     //     reinitializeMap();
-});
-
-
-
-
-
-//RE-LOAD THE DATA TO ONLY INCLUDE THE FEATURES FROM THE DROPDOWN SELECTION
-
-
-
-
-// function filter(feature, layer) {
-//     if (feature.properties) {
-//         if (feature.properties.city === normalizedPickBorough) {
-//             return true
-//         } else {
-//             return false
-//         }
-//     }
-// }
-
-//RE-LOAD THE DATA TO ONLY INCLUDE THE FEATURES FROM THE DROPDOWN SELECTION
-//not working - and stops the summary and the popup from showing
-// var includeUpdateMap = false;
-
-// function filter(feature, layer) {
-//     if (feature.properties) {
-//         if (feature.properties.city === undefined || feature.properties.city === includeUpdateMap) {
-//             return false;
-//         } else {
-//             return true;
-//         }
-//     }
-//     return true;
-// }
-
-// function mapStyle(feature) {
-//     return {
-//         stroke: filter(feature)
-//     };
-// }
-
-// const layer = L.geoJSON(museums, {
-//     style: mapStyle
-// }).addTo(museumMap);
-
-// // Change style
-// includeUpdateMap = true;
-// layer.setStyle(mapStyle);
-
-
 //STYLE THE H1
 $("h1").hide(500).delay(1500).show(300).css({
     "text-decoration": "underline",
@@ -297,4 +122,70 @@ $("h1").hide(500).delay(1500).show(300).css({
     "outline-offset": "1rem",
     "padding": "40px",
     "width": "30%"
+});
+
+
+// === FILTER MUSEUMS BY BOROUGH - from chatGPT ===
+
+// Create a single Leaflet layer so we can clear & refill it
+const museumLayer = L.geoJSON(null, {
+  onEachFeature: function (feature, layer) {
+    const link = feature.properties.url;
+    layer.bindPopup(
+      `<h3>${feature.properties.name}</h3><hr>
+       <a href="${link}" target="_blank">${link}</a>`
+    );
+    layer.on("mouseover", function () {
+      document.getElementById("info").innerHTML =
+        `<h4><b>${feature.properties.name}</b></h4><br>${feature.properties.summary}`;
+    });
+    layer.on("mouseout", function () {
+      document.getElementById("info").innerHTML = "";
+    });
+  },
+  pointToLayer: (feature, latlng) => L.marker(latlng, { icon: myIcon })
+}).addTo(museumMap);
+
+// Function to update the layer + list
+function updateMap(selected) {
+  museumLayer.clearLayers();
+  $("#museum-list").empty();
+
+  // Pick features: all if no borough chosen
+  const filtered = !selected
+    ? museums.features
+    : museums.features.filter(f => f.properties.city === selected);
+
+  museumLayer.addData(filtered);
+
+  filtered
+    .map(f => f.properties.name)
+    .sort()
+    .forEach(name => {
+      $("#museum-list").append(`<a href="#"><li>${name}</li></a><br>`);
+    });
+
+  if (filtered.length) {
+    const first = filtered[0].geometry.coordinates;
+    museumMap.setView([first[1], first[0]], 12);
+  }
+}
+
+// When dropdown changes, update
+document.getElementById("selectBorough").addEventListener("change", e => {
+  updateMap(e.target.value);
+});
+
+// Initialize with all museums
+updateMap("");
+
+// Keep click-to-pan behaviour
+$("#museum-list").on("click", "li", function () {
+  const name = $(this).text();
+  const feature = museums.features.find(f => f.properties.name === name);
+  if (feature) {
+    const [lng, lat] = feature.geometry.coordinates;
+    museumMap.panTo([lat, lng]);
+    museumMap.setZoom(18);
+  }
 });
