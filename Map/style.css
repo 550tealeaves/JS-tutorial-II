@@ -58,7 +58,7 @@ section{
 
 /*created <a></a> in JS - can include it in css to style it*/
 #museum-list,a{
-    color: floralwhite;
+    color: yellow;
     text-decoration: none;
     line-height: 1.5;
 }
