@@ -82,7 +82,7 @@ museumMap.on('drag', function () {
 
 
 let myIcon = L.icon({
-    iconUrl: 'museum.png',
+    iconUrl: '../museum.png',
     iconSize: [140, 86],
     iconAnchor: [22, 94],
     popupAnchor: [-3, -76]
