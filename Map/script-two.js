@@ -13,17 +13,18 @@ console.log('museums', museums);
 
 museumMap.setView([40.7128, -74.0060], 5);
 
+//Set museum image - adjust below numbers to reposition/re-size the icon
 let myIcon = L.icon({
     iconUrl: 'museum.png',
-    iconSize: [40, 25],
-    iconAnchor: [20, 25],
-    popupAnchor: [0, -25]
+    iconSize: [40, 45], // <-- controls overall size (width, height)
+    iconAnchor: [20, 25], // <-- where the “tip” of the icon sits on the map
+    popupAnchor: [0, -25] // <-- how far the popup opens from the icon
 }); 
 
 
 
 //Add the data
-L.geoJSON(museums).addTo(museumMap); //map displays with markers for all places
+//L.geoJSON(museums).addTo(museumMap); //map displays with markers for all places
 
 
 L.geoJSON(museums, {

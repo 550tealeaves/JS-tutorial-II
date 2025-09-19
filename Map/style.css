@@ -37,10 +37,10 @@ section{
 #info{
     margin: 40px;
     width: 20%;
-    color: gold;
+    color: lawngreen;
     font-size: 20px;
     font-family: 'Nunito', sans-serif;
-    font-weight: 400;
+    font-weight: bold;
 }
 
 #museum-list{

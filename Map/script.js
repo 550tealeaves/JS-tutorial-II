@@ -13,20 +13,17 @@ console.log('museums', museums);
 
 museumMap.setView([40.7128, -74.0060], 5);
 
+//Set museum image - adjust below numbers to reposition/re-size the icon
 let myIcon = L.icon({
     iconUrl: 'museum.png',
-    iconSize: [40, 25],
-    iconAnchor: [22, 94],
-    popupAnchor: [-3, -76]
+    iconSize: [40, 45], // <-- controls overall size (width, height)
+    iconAnchor: [20, 25], // <-- where the “tip” of the icon sits on the map
+    popupAnchor: [0, -25] // <-- how far the popup opens from the icon
 }); 
 
 
-
-//Add the data
-L.geoJSON(museums).addTo(museumMap); //map displays with markers for all places
-
-
 L.geoJSON(museums, {
+    pointToLayer: (feature, latlng) => L.marker(latlng, { icon: myIcon }),
     onEachFeature: function (feature, layer) {
         let link = feature.properties.url; //got the link to show up
         layer.bindPopup("<h3>" + feature.properties.name + "</h3> <hr> <a href=" + link + " + target='_blank' " + ">" + link + "</a>");
@@ -64,14 +61,6 @@ museumMap.setMaxBounds(boundaries);
 museumMap.on('drag', function () { 
     museumMap.panInsideBounds(boundaries, {animate: false})
 });
-
-
-
-
-// L.marker([
-//     feature.geometry.coordinates
-// ], {icon: myIcon}).addTo(museumMap);
-
 
 
 //LIST ALL THE MUSEUMS
