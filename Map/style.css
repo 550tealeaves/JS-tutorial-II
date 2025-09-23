@@ -7,12 +7,21 @@
     border-radius: 30%;
 }
 
-body{
+/* body{
     background: repeating-linear-gradient(to top right,
     rgb(29, 36, 7),
     rgb(96, 76, 222) 5px,
     rgb(203, 35, 35) 5px,
     rgb(28, 142, 58) 10px);
+
+} */
+
+body{
+    background: repeating-linear-gradient(to top right,
+    rgba(29, 36, 7, 0.491),
+    rgba(95, 76, 222, 0.549) 5px,
+    rgba(203, 35, 35, 0.626) 5px,
+    rgba(28, 142, 58, 0.535) 10px);
 
 }
 
@@ -37,7 +46,7 @@ section{
 #info{
     margin: 40px;
     width: 20%;
-    color: lawngreen;
+    color: rgb(144, 255, 33);
     font-size: 20px;
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
@@ -58,13 +67,13 @@ section{
 
 /*created <a></a> in JS - can include it in css to style it*/
 #museum-list,a{
-    color: yellow;
+    color: indigo;
     text-decoration: none;
     line-height: 1.5;
 }
 
 #museum-list,a:hover{
-    color: limegreen;
+    color: gold;
 }
 
 

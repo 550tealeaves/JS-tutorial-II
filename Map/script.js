@@ -96,18 +96,22 @@ $('#museum-list').on("click", "li", function (){ //target museum-list ID when li
 
 
 //STYLE THE H1
-$("h1").hide(500).delay(1500).show(300).css({
+$("h1")
+  .hide(500) //upon viewing, no h1 visible
+  .delay(1500) //delay for certain time
+  .show(300) //then show h1 after certain time
+  .css({
     "text-decoration": "underline",
     "color": "rgb(129, 234, 144)",
     "text-align": "center",
     "font-style": "italic",
     "font-size": "44px",
-    "border": "0.5rem outset pink",
+    "border": "10px outset pink",
     "border-style": "dashed",
     "border-radius": "16px",
     "border-width": "6px",
-    "box-shadow": "0 0 0 1.5rem navy",
-    "outline": "0.5rem solid gold",
+    "box-shadow": "0 0 0 20px navy",
+    "outline": "8px solid gold",
     "outline-offset": "1rem",
     "padding": "40px",
     "width": "30%"
