@@ -3,52 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Welcome</title>
     <style>
-  /* Make body take up full viewport height */
-  html, body {
-    height: 100%;
-    margin: 0;
-  }
+      /* Make body take up full viewport height */
+      html, body {
+        height: 100%;
+        margin: 0;
+      }
 
-  /* Responsive background image */
-  body {
-    background-image: url("https://media.tacdn.com/media/attractions-splice-spp-674x446/12/e9/5d/c7.jpg");   /* <-- replace with your image path */
-    background-size: cover;                /* scales to cover entire screen */
-    background-position: center;           /* keeps image centered */
-    background-repeat: no-repeat;
-    display: flex;                         /* center content */
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;                          /* text stands out */
-    font-family: Arial, sans-serif;
-  }
+      /* Responsive background image */
+      body {
+        background-image: url("https://media.tacdn.com/media/attractions-splice-spp-674x446/12/e9/5d/c7.jpg");   /* <-- replace with your image path */
+        background-size: cover;                /* scales to cover entire screen */
+        background-position: center;           /* keeps image centered */
+        background-repeat: no-repeat;
+        display: flex;                         /* center content */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;                          /* text stands out */
+        font-family: Arial, sans-serif;
+      }
 
-  h1 {
-    font-size: 3rem;
-    text-shadow: 0 2px 5px rgba(0,0,0,0.6);
-  }
+      h1,p,footer{
+        color: aliceblue;
+      }
 
-  p {
-    max-width: 600px;
-    margin: 1rem;
-    text-shadow: 0 1px 4px rgba(0,0,0,0.6);
-  }
+      h1 {
+        font-size: 48px;
+        text-shadow: 0 2px 5px rgba(0,0,0,0.6);
+      }
 
-  a {
-    background: rgba(79, 9, 132, 0.5);
-    color: white;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    border-radius: 6px;
-    margin-top: 1rem;
-  }
+      p {
+        max-width: 600px;
+        margin: 16px;
+        text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+        font-size: 18px;
+      }
 
-  a:hover {
-    background: rgba(240, 19, 19, 0.7);
-  }
+      a {
+        background: rgba(79, 9, 132, 0.5);
+        color: white;
+        padding: 8px 16px;
+        text-decoration: none;
+        border-radius: 6px;
+        margin-top: 16px;
+      }
+
+      a:hover {
+        background: rgba(240, 19, 19, 0.7);
+      }
+
+      footer{
+        text-shadow: 0 2px 6px black;
+      }
+  
+  /* ---------- Media queries for small devices ---------- */
+      @media (max-width: 768px) {
+        body{
+          width: 100%;
+        }
+        
+        h1 {
+            font-size: 28px;
+        }
+
+        p{
+          font-size: 14px;
+        }
+      
+      
+      }
+
+      @media (max-width: 480px) {
+        body{
+          width: 100%;
+        }
+        
+        h1 {
+            font-size: 20px;
+        }
+        
+        p {
+            font-size: 12px;
+        }
+        
+        
+        footer{
+            font-size: 8px;
+        }
+
+      }
 
 </style>
 
@@ -57,5 +103,6 @@
     <h1>All Open NYC Museums</h1>
     <p>This map shows museums and other cultural institutions within the five boroughs. Use this map to locate and discover some of the educational gems in the city.</p>
      <a href="map.html">Click here to view the map</a>
+    <footer>Project by Nastasia Pollas</footer>
 </body>
 </html>
