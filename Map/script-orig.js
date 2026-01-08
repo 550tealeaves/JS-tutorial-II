@@ -21,6 +21,25 @@ let myIcon = L.icon({
     popupAnchor: [0, -5] // <-- how far the popup opens from the icon
 }); 
 
+//Commented out this so that museum icons filter out. If active, all icons show despite filter
+// L.geoJSON(museums, {
+//     pointToLayer: (feature, latlng) => L.marker(latlng, { icon: myIcon }),
+//     onEachFeature: function (feature, layer) {
+//         let link = feature.properties.url; //got the link to show up
+//         layer.bindPopup("<h3>" + feature.properties.name + "</h3> <hr> <a href=" + link + " + target='_blank' " + ">" + link + "</a>");
+//         //Add the summary of the places 
+//         layer.on('mouseover', function () { //will show the summary when you mouseover icon
+//             let summary = document.getElementById('info');
+//             summary.innerHTML = "<h4>" + "<b>" + feature.properties.name + "</b>" + "</h4>" + "<br> " + feature.properties.summary;
+//             summary.style.textAlign = "center"; //centers the text
+//         });
+//         layer.on('mouseout', function () { //will hide the summary when mouse leaves icon
+//             let hideSummary = document.getElementById('info');
+//             hideSummary.innerHTML = null;
+//         });
+//     }
+// }).addTo(museumMap);
+
 
 //FIND THE COORDINATES USING CONSOLE LOG
 museumMap.on('click', function (e) {  //click on map, .on() method calls function
